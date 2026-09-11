@@ -2,7 +2,7 @@
 
 **Data rozpoczęcia:** 2026-09-11  
 **Zakres:** wszystkie repozytoria właściciela `mojealterego` wykryte przez połączone konto GitHub  
-**Liczba repozytoriów wykryta w aktualnej inwentaryzacji:** **284**  
+**Liczba repozytoriów wykryta w aktualnej inwentaryzacji:** **293**  
 **Repozytorium monitorujące:** `mojealterego/PLANY-I-POST-PY--W-REPOZYTORIACH`
 
 ## Zasada procesu
@@ -13,9 +13,9 @@ Każde repozytorium przechodzi osobny audyt. Dla każdego powstaje osobny plik w
 
 | Zakres | Stan |
 |---|---|
-| Inwentaryzacja portfela | ZAKOŃCZONA — **284 repozytoria** |
-| Audyt szczegółowy | W TOKU — **36/284** |
-| Plany pracy | UTWORZONE — **36/284** |
+| Inwentaryzacja portfela | ZAKOŃCZONA — **293 repozytoria** |
+| Audyt szczegółowy | W TOKU — **38/293** |
+| Plany pracy | UTWORZONE — **38/293** |
 | Refaktoryzacja | OCZEKUJE NA AUDYT DANEGO REPOZYTORIUM |
 | Rebranding | OCZEKUJE |
 | Pełna polonizacja | OCZEKUJE |
@@ -28,6 +28,7 @@ Każde repozytorium przechodzi osobny audyt. Dla każdego powstaje osobny plik w
 | 35 | LTX-Video | Model generowania wideo Python/ML; repozytorium wskazuje LTX-2 jako główny kierunek dalszego rozwoju | KRYTYCZNY | `plan pracy/LTX-Video.md` |
 | 36 | agent-starter-pack | CLI/szablony agentowe Google Cloud; projekt w maintenance mode z migracją do agents-cli | WYSOKI | `plan pracy/agent-starter-pack.md` |
 | 37 | Agriculture_KnowledgeGraph | Archiwalny projekt Django/Neo4j/NLP; bardzo stary stos, projekt nieutrzymywany | ŚREDNI | `plan pracy/Agriculture_KnowledgeGraph.md` |
+| 38 | mini-mobile-7 | Szkielet laboratorium prywatnej sieci LTE/5G; Open5GS, UERANSIM, Kamailio/IMS i RAN, z wyraźnymi bramkami bezpieczeństwa oraz prawnymi | WYSOKI | `plan pracy/mini-mobile-7.md` |
 
 ## Poprzednie audyty
 
@@ -35,12 +36,12 @@ Audyty 1–34 pozostają zapisane w tym rejestrze oraz w odpowiednich plikach `p
 
 ## Postęp
 
-**36 / 284 repozytoriów — 12,68% audytu szczegółowego.**  
-**248 repozytoriów pozostaje do audytu.**
+**38 / 293 repozytoriów — 12,97% audytu szczegółowego.**  
+**255 repozytoriów pozostaje do audytu.**
 
 ## Aktualizacja inwentaryzacji
 
-Portfel wzrósł do **284 repozytoriów**. Licznik jest dynamiczny i będzie ponownie weryfikowany przy każdym kolejnym przebiegu. Nowe repozytoria nie są automatycznie uznawane za zbadane; muszą przejść rzeczywisty audyt zawartości i otrzymać własny plan.
+Portfel wzrósł do **293 repozytoriów**. Licznik jest dynamiczny i będzie ponownie weryfikowany przy każdym kolejnym przebiegu. Nowe repozytoria nie są automatycznie uznawane za zbadane; muszą przejść rzeczywisty audyt zawartości i otrzymać własny plan.
 
 ## Reguła kolejnych audytów
 
