@@ -2,7 +2,7 @@
 
 **Data rozpoczęcia:** 2026-09-11  
 **Zakres:** wszystkie repozytoria właściciela `mojealterego` wykryte przez połączone konto GitHub  
-**Liczba repozytoriów wykryta w aktualnej inwentaryzacji:** 205  
+**Liczba repozytoriów wykryta w aktualnej inwentaryzacji:** **251**  
 **Repozytorium monitorujące:** `mojealterego/PLANY-I-POST-PY--W-REPOZYTORIACH`
 
 ## Zasada procesu
@@ -13,10 +13,10 @@ Każde repozytorium przechodzi osobny audyt. Dla każdego powstaje osobny plik w
 
 | Zakres | Stan |
 |---|---|
-| Inwentaryzacja portfela | ZAKOŃCZONA — 205 repozytoriów |
-| Audyt szczegółowy | W TOKU — 21/205 |
-| Plany pracy | UTWORZONE — 21/205 |
-| Refaktoryzacja | OCZEKUJE NA AUDYT DANego REPOZYTORIUM |
+| Inwentaryzacja portfela | ZAKOŃCZONA — **251 repozytoriów** |
+| Audyt szczegółowy | W TOKU — **34/251** |
+| Plany pracy | UTWORZONE — **34/251** |
+| Refaktoryzacja | OCZEKUJE NA AUDYT DANEGO REPOZYTORIUM |
 | Rebranding | OCZEKUJE |
 | Pełna polonizacja | OCZEKUJE |
 | Projekty z bazy wiedzy | OCZEKUJĄ NA ZAKOŃCZENIE ETAPU ISTNIEJĄCEGO PORTFELA |
@@ -46,11 +46,28 @@ Każde repozytorium przechodzi osobny audyt. Dla każdego powstaje osobny plik w
 | 19 | fotografaandrzej333.github.io | Repozytorium puste | WYSOKI | `plan pracy/fotografaandrzej333.github.io.md` |
 | 20 | chrome-devtools-mcp | MCP server do Chrome DevTools; szerokie uprawnienia i domyślna telemetria | KRYTYCZNY | `plan pracy/chrome-devtools-mcp.md` |
 | 21 | omega7-messenger | Android; deklarowane zabezpieczenia, ale brak gotowego produkcyjnego E2EE | KRYTYCZNY | `plan pracy/omega7-messenger.md` |
+| 22 | free-esim | Tylko README; deklarowany stos eSIM nie jest potwierdzony kodem | WYSOKI | `plan pracy/free-esim.md` |
+| 23 | PaulaA | Kivy/Python + Gemini; jawny placeholder klucza; brak testów | KRYTYCZNY | `plan pracy/PaulaA.md` |
+| 24 | G0DM0D3 | Wielomodelowa aplikacja webowa; telemetria, API, modele lokalne, rozbudowana dokumentacja | KRYTYCZNY | `plan pracy/G0DM0D3.md` |
+| 25 | SYSTEM-EKSPERCKI-GRANT-BUSINESS-ARCHITECT | Bootstrap wieloagentowy; ledger dowodów, finanse, compliance, red team | KRYTYCZNY | `plan pracy/SYSTEM-EKSPERCKI-GRANT-BUSINESS-ARCHITECT.md` |
+| 26 | pegasus-skills | Biblioteka umiejętności AI dla Django/SaaS Pegasus | ŚREDNI | `plan pracy/pegasus-skills.md` |
+| 27 | mojealterego.github.io | Portal React/Vite; kanoniczne źródła treści i ledger właściciela | KRYTYCZNY | `plan pracy/mojealterego.github.io.md` |
+| 28 | AI-Email-Reply-Generator | React/Vite + FastAPI + Gemini; wymagane testy i hardening | WYSOKI | `plan pracy/AI-Email-Reply-Generator.md` |
+| 29 | tempmail | Node CLI; `trashx`; test jest atrapą kończącą się błędem | WYSOKI | `plan pracy/tempmail.md` |
+| 30 | sms-verification-platforms | Publikacja porównawcza; dynamiczne dane, źródła i metodologia | ŚREDNI | `plan pracy/sms-verification-platforms.md` |
+| 31 | PaulaAI | Szablon Streamlit GDP niespójny z nazwą repozytorium | NISKI | `plan pracy/PaulaAI.md` |
+| 32 | Rap-Agent | Autonomiczny silnik kreatywny; SQLite/API/MCP, pamięć i bramki jakości | KRYTYCZNY | `plan pracy/Rap-Agent.md` |
+| 33 | WAO-AI-2 | System agentowy specyfikacji wizualnej; graf ograniczeń, adaptery, QA | KRYTYCZNY | `plan pracy/WAO-AI-2.md` |
+| 34 | tempnumber-api-client | Biblioteka PHP klienta API; aktywacje, polling, OTP i historia | WYSOKI | `plan pracy/tempnumber-api-client.md` |
 
 ## Postęp
 
-**21 / 205 repozytoriów — 10,24% audytu szczegółowego.**  
-**184 repozytoria pozostają do audytu.**
+**34 / 251 repozytoriów — 13,55% audytu szczegółowego.**  
+**217 repozytoriów pozostaje do audytu.**
+
+## Aktualizacja inwentaryzacji
+
+Portfel wzrósł z 205 do **251 repozytoriów**. Licznik jest traktowany jako dynamiczny i będzie ponownie weryfikowany przy kolejnych przebiegach. Repozytoria nowo wykryte nie są automatycznie uznawane za nieaudytowane bez porównania z istniejącym rejestrem.
 
 ## Reguła kolejnych audytów
 
