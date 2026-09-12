@@ -14,8 +14,8 @@ Każde repozytorium przechodzi osobny audyt. Dla każdego powstaje osobny plik w
 | Zakres | Stan |
 |---|---|
 | Inwentaryzacja portfela | ZAKOŃCZONA — **293 repozytoria** |
-| Audyt szczegółowy | W TOKU — **56/293** |
-| Plany pracy | UTWORZONE — **56/293** |
+| Audyt szczegółowy | W TOKU — **61/293** |
+| Plany pracy | UTWORZONE — **61/293** |
 | Refaktoryzacja | OCZEKUJE NA AUDYT DANEGO REPOZYTORIUM |
 | Rebranding | OCZEKUJE |
 | Pełna polonizacja | OCZEKUJE |
@@ -25,28 +25,25 @@ Każde repozytorium przechodzi osobny audyt. Dla każdego powstaje osobny plik w
 
 | Nr | Repozytorium | Wynik audytu | Priorytet | Plan pracy |
 |---:|---|---|---|---|
-| 44 | JARVIS-2.0 | Android/Expo + Node backend; foundation działa, ale backend ma jeszcze plikowy stan, auth fail-open przy braku tokenu i CORS `*` | KRYTYCZNY | `plan pracy/JARVIS-2.0.md` |
-| 45 | omega-x-neuromesh | Verification-first control plane dla Unreal; mocny default-deny prototyp, ale UE 5.8/MCP runtime nadal nieweryfikowane | KRYTYCZNY | `plan pracy/omega-x-neuromesh.md` |
-| 46 | hermes-mobile | Dojrzały klient Android dla Hermes Agent; silne testy i szyfrowanie, ale release dopuszcza cleartext i wymaga pełnej weryfikacji transportu | WYSOKI | `plan pracy/hermes-mobile.md` |
-| 47 | ESIM2 | Historyczna implementacja ESIM dla NLI/PyTorch; wartość referencyjna wysoka, lecz packaging i środowisko wymagają modernizacji | ŚREDNI | `plan pracy/ESIM2.md` |
-| 48 | Text2Image-Generation | Projekt text-to-image bez dostępnego README; nieprzypięte zależności i szeroki stos ML/web | WYSOKI | `plan pracy/Text2Image-Generation.md` |
-| 49 | artemis | Zaawansowana automatyzacja realnych urządzeń Android przez AI/MCP; silne testowanie, ale wymagane niezależne potwierdzenie benchmarków i security boundary | KRYTYCZNY | `plan pracy/artemis.md` |
-| 50 | Kartografia | React/Vite/PWA + Capacitor Android; rozbudowany fundament gry, ale zależności `latest` osłabiają reprodukowalność | WYSOKI | `plan pracy/Kartografia.md` |
-| 51 | MetaGPT | Duży framework wieloagentowy; wysoka wartość referencyjna, konieczna weryfikacja kompatybilności, granic narzędzi i aktualności dokumentacji | KRYTYCZNY | `plan pracy/MetaGPT.md` |
 | 52 | Agentic-Cinema-The-Blockbuster-Hackathon | StudioSync: agentowa warstwa odzyskiwania produkcji filmowej; deterministyczne demo jest rozdzielone od live, ale live runner/session ADK wymaga dokończenia | KRYTYCZNY | `plan pracy/Agentic-Cinema-The-Blockbuster-Hackathon.md` |
 | 53 | Nebius-x-NVIDIA-Global-AI-Hackathon | InfraSentinel: evidence-first SRE z deterministyczną polityką, governance i symulatorem; realna infrastruktura wymaga osobnych adapterów i kontroli blast radius | KRYTYCZNY | `plan pracy/Nebius-x-NVIDIA-Global-AI-Hackathon.md` |
 | 54 | ChatGPT-CodeReview | Probot/GitHub Action do automatycznego code review; historyczna dokumentacja, szerokie permissions w przykładzie i błędne `homepage` wymagają uporządkowania | WYSOKI | `plan pracy/ChatGPT-CodeReview.md` |
 | 55 | AgentGPT | Duży system webowy do uruchamiania agentów autonomicznych; historyczny stos Next/FastAPI wymaga aktualizacji i ponownej weryfikacji granic narzędzi | KRYTYCZNY | `plan pracy/AgentGPT.md` |
 | 56 | mcp-coding-agent | Builder agentów i oprogramowania przez MCP; silne ograniczenia workspace, ale potrzebna twarda izolacja wykonania niezaufanego kodu | KRYTYCZNY | `plan pracy/mcp-coding-agent.md` |
+| 57 | agent-command-center-sdk | SDK Python/TypeScript z integracjami frameworków; wymaga kontraktów OpenAI-compatible, testów niezależnych od gatewaya i audytu sekretów/endpointów | KRYTYCZNY | `plan pracy/agent-command-center-sdk.md` |
+| 58 | llm-graph-builder | FastAPI + React + Neo4j, wieloźródłowy RAG/Knowledge Graph i wielu providerów LLM; istotne granice auth, uploadów, URL fetch i izolacji danych | KRYTYCZNY | `plan pracy/llm-graph-builder.md` |
+| 59 | Local-Diffusion | Flutter/Android, lokalna inferencja diffusion, FFI i wiele formatów modeli; konieczne testy urządzeniowe, integralność modeli i reprodukowalność benchmarków | WYSOKI | `plan pracy/Local-Diffusion.md` |
+| 60 | cookbooks | Katalog niezależnych przykładów AI/RAG/agentów; wartość referencyjna wysoka, wymagane indeksowanie statusów i zależności zamiast wspólnej refaktoryzacji | ŚREDNI | `plan pracy/cookbooks.md` |
+| 61 | locally-uncensored | Duże desktopowe studio lokalnego AI z Tauri, ComfyUI, coding agentem i wieloma backendami; krytyczna powierzchnia subprocess/MCP/model downloads | KRYTYCZNY | `plan pracy/locally-uncensored.md` |
 
 ## Poprzednie audyty
 
-Audyty 1–43 pozostają zapisane w tym rejestrze oraz w odpowiednich plikach `plan pracy/`. Pozycje 44–56 są opisane powyżej.
+Audyty 1–51 pozostają zapisane w tym rejestrze oraz w odpowiednich plikach `plan pracy/`. Pozycje 52–61 są opisane powyżej.
 
 ## Postęp
 
-**56 / 293 repozytoriów — 19,11% audytu szczegółowego.**  
-**237 repozytoriów pozostaje do audytu.**
+**61 / 293 repozytoriów — 20,82% audytu szczegółowego.**  
+**232 repozytoria pozostają do audytu.**
 
 ## Aktualizacja inwentaryzacji
 
