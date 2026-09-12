@@ -14,46 +14,46 @@ Każde repozytorium przechodzi osobny audyt. Dla każdego powstaje osobny plik w
 | Zakres | Stan |
 |---|---|
 | Inwentaryzacja portfela | ZAKOŃCZONA — **319 repozytoriów** |
-| Audyt szczegółowy | W TOKU — **197/319** |
-| Plany pracy | UTWORZONE — **197/319** |
+| Audyt szczegółowy | W TOKU — **217/319** |
+| Plany pracy | UTWORZONE — **217/319** |
 | Refaktoryzacja | OCZEKUJE NA AUDYT DANEGO REPOZYTORIUM |
 | Rebranding | OCZEKUJE |
 | Pełna polonizacja | OCZEKUJE |
 | Projekty z bazy wiedzy | OCZEKUJĄ NA ZAKOŃCZENIE ETAPU ISTNIEJĄCEGO PORTFELA |
 
-## Ostatnio wykonane audyty
+## Ostatnio wykonane audyty — 198–217
 
 | Nr | Repozytorium | Wynik audytu | Priorytet | Plan pracy |
 |---:|---|---|---|---|
-| 178 | High-Delivery-Non-VoIP-Numbers-for-Telegram-WhatsApp-Google-OTP | Publikacja/oferta carrier-backed eSIM i numerów; brak potwierdzonego kodu aplikacyjnego | ŚREDNI/WYSOKI | `plan pracy/High-Delivery-Non-VoIP-Numbers-for-Telegram-WhatsApp-Google-OTP.md` |
-| 179 | suno-cli | Rust CLI dla nieoficjalnego API Suno; auth z przeglądarki, generacja, CAPTCHA i self-update | WYSOKI | `plan pracy/suno-cli.md` |
-| 180 | awesome-voip | Historyczny katalog SIP/RTP/NAT/STUN/TURN/ICE/TLS/PJSIP/Kamailio | NISKI/ŚREDNI | `plan pracy/awesome-voip.md` |
-| 181 | gonnect | Qt/C++ desktopowy klient UC/VoIP z SIP, kontaktami, kalendarzami i urządzeniami audio | WYSOKI | `plan pracy/gonnect.md` |
-| 182 | agents-voice | LiveKit Agents: głos, WebRTC, telephony, MCP, handoff i testy agentowe | WYSOKI | `plan pracy/agents-voice.md` |
-| 183 | electron-builder | System pakowania/dystrybucji Electron dla macOS/Windows/Linux, signing i auto-update | WYSOKI | `plan pracy/electron-builder.md` |
-| 184 | deep-research-agent | Wieloagentowy research z human-in-the-loop, web/academic search, scrapingiem i wersjonowaniem raportów | WYSOKI | `plan pracy/deep-research-agent.md` |
-| 185 | ShipinKit | Typowany Swift SDK do prototypowania generowania wideo Runway/Luma, fixtures i redagowane credentials | WYSOKI | `plan pracy/ShipinKit.md` |
-| 186 | open-agent-builder | Wizualny no-code builder agentów: LangGraph, MCP, Firecrawl, Convex, Clerk, E2B i approval gates | KRYTYCZNY | `plan pracy/open-agent-builder.md` |
-| 187 | sugar | Lokalna pamięć agentów, MCP, kolejka zadań i opcjonalne autonomiczne zmiany GitHub | KRYTYCZNY | `plan pracy/sugar.md` |
-| 188 | NekokoLPA | Android/iOS LPA/eSIM z OMAPI, USB CCID, CryptoTokenKit, WASM i Mac Catalyst | WYSOKI | `plan pracy/NekokoLPA.md` |
-| 189 | SPYZIER-APP | Stary ukryty system monitorowania Androida z lokalizacją, SMS, połączeniami i screen capture | KRYTYCZNY | `plan pracy/SPYZIER-APP.md` |
-| 190 | CubicByteWebsite | Statyczna strona portfolio z Firebase Firestore, formularzami, SEO i animacjami | ŚREDNI | `plan pracy/CubicByteWebsite.md` |
-| 191 | opencode | Duży open-source AI coding agent z trybem build/plan, subagentem i aplikacją desktopową | KRYTYCZNY | `plan pracy/opencode.md` |
-| 192 | NeoApps.AI-CodeGenerator | Generator aplikacji/kodu AI; wymagane dalsze mapowanie pipeline'u i sandboxa | KRYTYCZNY | `plan pracy/NeoApps.AI-CodeGenerator.md` |
-| 193 | con-terminal | Projekt terminalowy o niepotwierdzonym jeszcze dokładnym zakresie funkcjonalnym | ŚREDNI/WYSOKI | `plan pracy/con-terminal.md` |
-| 194 | hackai-2025 | Projekt konkursowy AI; wymaga rozdzielenia demonstratora od komponentów produkcyjnych | ŚREDNI/WYSOKI | `plan pracy/hackai-2025.md` |
-| 195 | SentryPeerHQ | Projekt telekomunikacyjny/SIP wymagający kontroli ekspozycji usług i danych operacyjnych | WYSOKI | `plan pracy/SentryPeerHQ.md` |
-| 196 | Googleskills | Biblioteka skills związanych z ekosystemem Google; potrzebne provenance i permission matrix | ŚREDNI/WYSOKI | `plan pracy/Googleskills.md` |
-| 197 | Stable-Diffusion | Duży projekt generowania obrazów/modeli dyfuzyjnych; reproducibility, GPU i provenance wag | WYSOKI | `plan pracy/Stable-Diffusion.md` |
+| 198 | alexandria-audiobook | Lokalny generator audiobooków: LLM, Qwen3-TTS, voice cloning, LoRA, Docker/Colab | WYSOKI | `plan pracy/alexandria-audiobook.md` |
+| 199 | Shadowbroker | Platforma geospatial OSINT z FastAPI/Next.js, Shodan, recon i kanałem agentowym | KRYTYCZNY | `plan pracy/Shadowbroker.md` |
+| 200 | builder | Duże monorepo buildera z Nx/Yarn, EAS, przykładami i systemem zmian | WYSOKI | `plan pracy/builder.md` |
+| 201 | langchain | Duży framework agentowy/LLM i ekosystem integracji | WYSOKI/REFERENCYJNY | `plan pracy/langchain.md` |
+| 202 | ComfyUI-audio | Eksperymentalne rozszerzenie audio dla ComfyUI; development wstrzymany | NISKI/ŚREDNI | `plan pracy/ComfyUI-audio.md` |
+| 203 | AhMyth-Android-RAT | Android RAT: panel Electron + backdoor; tylko analiza defensywna/laboratoryjna | KRYTYCZNY | `plan pracy/AhMyth-Android-RAT.md` |
+| 204 | agnes-ai-video-suite | EchoSync — self-hosted prototyper wideo z TTS, napisami i avatarem | WYSOKI | `plan pracy/agnes-ai-video-suite.md` |
+| 205 | MumbleLink | Klientowy mod Minecraft Forge dla positional audio Mumble | NISKI/ŚREDNI | `plan pracy/MumbleLink.md` |
+| 206 | unity-mcp | MCP dla Unity: 47 narzędzi do scen, assetów, kodu, testów i buildów | KRYTYCZNY | `plan pracy/unity-mcp.md` |
+| 207 | USB-Uncensored-LLM | Przenośne lokalne AI z Ollama/GGUF, skryptami wieloplatformowymi i UI LAN | WYSOKI | `plan pracy/USB-Uncensored-LLM.md` |
+| 208 | agent | 1MCP unified runtime: agregacja MCP, CLI, filtrowanie i progressive discovery | KRYTYCZNY | `plan pracy/agent.md` |
+| 209 | Claude-Code-Game-Studios | System 49 agentów, 73 skills, hooks, rules i templates dla produkcji gier | WYSOKI | `plan pracy/Claude-Code-Game-Studios.md` |
+| 210 | krypton-byte.github.io | GitProfile: React/Vite automatyczny builder portfolio GitHub | ŚREDNI | `plan pracy/krypton-byte.github.io.md` |
+| 211 | baresip-studio | Android SIP/VoIP user agent oparty na baresip/libbaresip | WYSOKI | `plan pracy/baresip-studio.md` |
+| 212 | GDevelop | Duży no-code silnik/IDE 2D/3D/multiplayer z React/Electron/WASM | WYSOKI/REFERENCYJNY | `plan pracy/GDevelop.md` |
+| 213 | getbelmo | MCP CLI do auth, workspace, GitHub, deploymentów, env vars i domen | KRYTYCZNY | `plan pracy/getbelmo.md` |
+| 214 | citibank-van | Historyczny nieoficjalny klient Citibank Virtual Account Numbers | KRYTYCZNY | `plan pracy/citibank-van.md` |
+| 215 | eSIM-Tools | Webowe narzędzie eSIM dla Giffgaff/Simyo z auth/OTP i QR | KRYTYCZNY | `plan pracy/eSIM-Tools.md` |
+| 216 | elevenlabs-android | Oficjalny SDK ElevenAgents dla Android/Kotlin, LiveKit/WebRTC i WebSocket | WYSOKI | `plan pracy/elevenlabs-android.md` |
+| 217 | ai-email-generator-2 | React/Vite + Express + Supabase + LLM generator wiadomości | ŚREDNI/WYSOKI | `plan pracy/ai-email-generator-2.md` |
 
 ## Poprzednie audyty
 
-Audyty 1–177 pozostają zapisane w tym rejestrze oraz w odpowiednich plikach `plan pracy/`. Pozycje 178–197 są opisane powyżej.
+Audyty 1–197 pozostają zapisane w tym rejestrze oraz w odpowiednich plikach `plan pracy/`. Pozycje 198–217 zostały dodane w bieżącym przebiegu.
 
 ## Postęp
 
-**197 / 319 repozytoriów — 61,76% audytu szczegółowego.**  
-**122 repozytoria pozostają do audytu.**
+**217 / 319 repozytoriów — 68,03% audytu szczegółowego.**  
+**102 repozytoria pozostają do audytu.**
 
 ## Aktualizacja inwentaryzacji
 
