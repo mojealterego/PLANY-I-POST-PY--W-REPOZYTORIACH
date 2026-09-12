@@ -14,8 +14,8 @@ Każde repozytorium przechodzi osobny audyt. Dla każdego powstaje osobny plik w
 | Zakres | Stan |
 |---|---|
 | Inwentaryzacja portfela | ZAKOŃCZONA — **293 repozytoria** |
-| Audyt szczegółowy | W TOKU — **38/293** |
-| Plany pracy | UTWORZONE — **38/293** |
+| Audyt szczegółowy | W TOKU — **43/293** |
+| Plany pracy | UTWORZONE — **43/293** |
 | Refaktoryzacja | OCZEKUJE NA AUDYT DANEGO REPOZYTORIUM |
 | Rebranding | OCZEKUJE |
 | Pełna polonizacja | OCZEKUJE |
@@ -25,23 +25,25 @@ Każde repozytorium przechodzi osobny audyt. Dla każdego powstaje osobny plik w
 
 | Nr | Repozytorium | Wynik audytu | Priorytet | Plan pracy |
 |---:|---|---|---|---|
-| 35 | LTX-Video | Model generowania wideo Python/ML; repozytorium wskazuje LTX-2 jako główny kierunek dalszego rozwoju | KRYTYCZNY | `plan pracy/LTX-Video.md` |
-| 36 | agent-starter-pack | CLI/szablony agentowe Google Cloud; projekt w maintenance mode z migracją do agents-cli | WYSOKI | `plan pracy/agent-starter-pack.md` |
-| 37 | Agriculture_KnowledgeGraph | Archiwalny projekt Django/Neo4j/NLP; bardzo stary stos, projekt nieutrzymywany | ŚREDNI | `plan pracy/Agriculture_KnowledgeGraph.md` |
 | 38 | mini-mobile-7 | Szkielet laboratorium prywatnej sieci LTE/5G; Open5GS, UERANSIM, Kamailio/IMS i RAN, z wyraźnymi bramkami bezpieczeństwa oraz prawnymi | WYSOKI | `plan pracy/mini-mobile-7.md` |
+| 39 | Agents-for-Humans-Hackathon | CogniSync Professional; agent profesjonalny z bramką decyzji człowieka, audytem i deterministycznym demo | KRYTYCZNY | `plan pracy/Agents-for-Humans-Hackathon.md` |
+| 40 | 500-AI-Agents-Projects | Katalog 500+ projektów i przypadków użycia agentów; wartość głównie referencyjna i indeksacyjna | ŚREDNI | `plan pracy/500-AI-Agents-Projects.md` |
+| 41 | no-code-ml-mpodel-training-app | Minimalna aplikacja Streamlit do treningu modeli ML; słaba dokumentacja i brak widocznej automatyzacji | WYSOKI | `plan pracy/no-code-ml-mpodel-training-app.md` |
+| 42 | AI-Rental-Hunter | Pythonowy MCP do wyszukiwania/rankingu ofert najmu; wymagane hardening SSRF, adapterów i testów | WYSOKI | `plan pracy/AI-Rental-Hunter.md` |
+| 43 | CALL-E-Your-Code-Is-Calling-Hacktown | AegisFleet; sterowany workflow telefoniczny z policy gate, idempotencją, walidacją wyniku i eskalacją | WYSOKI | `plan pracy/CALL-E-Your-Code-Is-Calling-Hacktown.md` |
 
 ## Poprzednie audyty
 
-Audyty 1–34 pozostają zapisane w tym rejestrze oraz w odpowiednich plikach `plan pracy/`.
+Audyty 1–37 pozostają zapisane w tym rejestrze oraz w odpowiednich plikach `plan pracy/`.
 
 ## Postęp
 
-**38 / 293 repozytoriów — 12,97% audytu szczegółowego.**  
-**255 repozytoriów pozostaje do audytu.**
+**43 / 293 repozytoriów — 14,68% audytu szczegółowego.**  
+**250 repozytoriów pozostaje do audytu.**
 
 ## Aktualizacja inwentaryzacji
 
-Portfel wzrósł do **293 repozytoriów**. Licznik jest dynamiczny i będzie ponownie weryfikowany przy każdym kolejnym przebiegu. Nowe repozytoria nie są automatycznie uznawane za zbadane; muszą przejść rzeczywisty audyt zawartości i otrzymać własny plan.
+Portfel wynosi obecnie **293 repozytoria**. Licznik jest dynamiczny i będzie ponownie weryfikowany przy każdym kolejnym przebiegu. Nowe repozytoria nie są automatycznie uznawane za zbadane; muszą przejść rzeczywisty audyt zawartości i otrzymać własny plan.
 
 ## Reguła kolejnych audytów
 
