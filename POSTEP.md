@@ -3,56 +3,55 @@
 ## Stan bieżący
 
 - Data aktualizacji: 2026-09-12
-- Faza: **1 — konsolidacja wyników 414 audytów**
+- Faza: **2 — ranking priorytetów**
 - Inwentaryzacja portfela: **414 repozytoriów**
 - Rekonsyliacja inwentarza: **414/414 — zakończona**
 - Audyt szczegółowy: **414/414 — zakończony**
-- Konsolidacja wyników: **W TOKU**
-- Refaktoryzacja: oczekuje na zakończenie konsolidacji
+- Konsolidacja wyników: **zakończona**
+- Ranking priorytetów: **utworzony**
+- Refaktoryzacja: oczekuje na wybór pierwszego P0
 - Rebranding: oczekuje
 - Polonizacja: oczekuje
-- Nowe projekty: oczekują na kwalifikację po konsolidacji
+- Nowe projekty: oczekują na kwalifikację
 
-## Korekta historycznego mianownika
+## Ranking priorytetów
 
-Wcześniejsza wartość 415 była zawyżona o jeden błędny wpis systemowy. Prawidłowy mianownik aktualnego portfela użytkownika wynosi **414**. Wszystkie statystyki końcowego audytu są od tej pory liczone względem 414.
+Utworzono `RANKING_PRIORYTETOW_414.md`. Ranking rozdziela potencjał biznesowy od gotowości produkcyjnej i uwzględnia: problem biznesowy, gotowość kodu, MRR/ARPU, B2B, aktywa technologiczne, skalowalność, bezpieczeństwo/regulacje oraz time-to-market.
 
-## Konsolidacja
+### P0 — strategiczny rdzeń
 
-Utworzono `KONSOLIDACJA_414.md`, który normalizuje wyniki audytów do wspólnego modelu decyzyjnego. Konsolidacja obejmuje klasyfikację repozytoriów, wspólne problemy techniczne i bezpieczeństwa, aktywa strategiczne, priorytety hardeningu, kryteria biznesowe oraz zasady łączenia aktywów w przyszłe produkty.
+1. B2B AI Agent / AI Employee
+2. Agent automatyzacji procesów przedsiębiorstwa
+3. Agent programistyczny z izolowanym execution sandbox
+4. Agent mobilny Android
+5. Agent dokumentów + RAG / Knowledge Agent
+6. AI Customer Support / Voice Agent
+7. AI Sales / CRM Agent
 
-### Główne klasy portfela
+### P1 — bardzo wysoki
 
-- produkty i aplikacje własne,
-- fundamenty agentowe / AI / MCP,
-- mobile / Android / iOS / desktop,
-- workflow / low-code / platformy biznesowe,
-- generative AI / media,
-- gry i interaktywne doświadczenia,
-- telekomunikacja / PBX / SMS / eSIM / VoIP,
-- cybersecurity / research,
-- dokumentacja / benchmarki / granty,
-- upstream / fork / mirror / reference,
-- empty / bootstrap / minimal.
+8. Private / Offline AI Assistant
+9. Agent Research / Knowledge Management
+10. Platforma budowy agentów i workflowów
+11. AI Developer Tools
+12. Platforma AI dla twórców — obraz/wideo/audio
 
-### Wspólne P0/P1
+### P2 — średni/wysoki
 
-Najważniejsze wspólne ryzyka portfela to execution boundaries, shell/filesystem/MCP, mobilne AccessibilityService, sekrety, SSRF, uploady, RBAC/multi-tenancy, prywatność pamięci agentów, supply chain, provenance modeli, brak testów oraz niezweryfikowane deklaracje README.
+13. Telecom / PBX / Voice automation
+14. Mobile productivity agents
+15. Lokalne generowanie obrazu/wideo
+16. AI app/workflow builder
+17. Gry z AI
 
-### Kierunek biznesowy
+### P3–P5
 
-Konsolidacja wskazuje jako główne obszary dalszej kwalifikacji: B2B AI Agents, AI employees, agentów workflow/CRM/sprzedaży, agentów programistycznych, agentów mobilnych, prywatnego/offline AI, document/RAG agents, voice/customer-support agents oraz platformę budowy agentów.
+Upstream/reference, research/lab oraz repozytoria minimalne są kierowane do odpowiednio zachowania, wykorzystania jako źródła wiedzy lub archiwizacji. Nie są bezpośrednimi kandydatami do ślepego rebrandingu.
 
-Potencjał biznesowy nie jest utożsamiany z gotowością produkcyjną.
+## Decyzja strategiczna
 
-## Zasada dalszej pracy
+Pierwszym celem po rankingu jest budowa **jednego bezpiecznego, modułowego rdzenia B2B AI Agent / AI Employee**, z którego będą wyprowadzane wyspecjalizowane produkty. Nie rozpoczynamy równoległej produkcji wielu niezależnych aplikacji.
 
-Po zakończeniu konsolidacji należy utworzyć ranking kandydatów według wspólnego scoringu techniczno-biznesowego, następnie przejść do refaktoryzacji wybranych projektów. Każdy projekt musi przejść implementację, build, testy i weryfikację przed uznaniem go za produkcyjny.
+## Następny etap
 
-## Dokumenty etapu
-
-- `README.md` — stan globalny
-- `AUDYT_GLOBALNY.md` — zasady audytu
-- `POSTEP.md` — dziennik procesu
-- `KONSOLIDACJA_414.md` — konsolidacja wyników 414 audytów
-- `plan pracy/*.md` — indywidualne plany repozytoriów
+**Etap 3 — wybór konkretnego produktu P0 i rozpoczęcie refaktoryzacji.** Przed wdrożeniem obowiązują bramki: deny-by-default, sandbox, approval dla działań konsekwencyjnych, izolacja tenantów, testy bezpieczeństwa, obserwowalność, recovery, SBOM/provenance oraz weryfikacja licencji.
