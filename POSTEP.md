@@ -2,14 +2,21 @@
 
 ## Stan bieżący
 
-- Data: 2026-09-11
-- Faza: 1 — audyt globalny
-- Inwentaryzacja repozytoriów: wykonana
-- Liczba repozytoriów objętych audytem: 100
-- Repozytorium monitorujące: utworzone i aktywne
+- Data aktualizacji: 2026-09-12
+- Faza: 1 — audyt globalny i rekonsyliacja
+- Inwentaryzacja historyczna: 415 repozytoriów
+- Aktualnie dostępne przez połączone konto GitHub: 100 repozytoriów
+- Audyt szczegółowy: 390/415
+- Ostatnia tura: 27 repozytoriów zweryfikowanych bez sztucznego zwiększania licznika
 - Refaktoryzacja: oczekuje na wyniki audytu
 - Polonizacja: oczekuje na kwalifikację zakresu
 - Nowe projekty: zablokowane do czasu zamknięcia audytu istniejącego ekosystemu
+
+## Rekonsyliacja
+
+Historyczna liczba 415 i bieżący wynik 100 nie opisują tego samego zbioru w czasie. 415 to inwentaryzacja historyczna, natomiast 100 to repozytoria aktualnie zwracane przez połączone konto GitHub. Nie wolno utożsamiać różnicy 315 z brakującymi audytami.
+
+Pozycje historyczne bez jednoznacznego odpowiednika pozostają `RECONCILIATION_REQUIRED`. Licznik 390/415 pozostaje bez zmian do czasu znalezienia dowodu brakującego, unikalnego audytu.
 
 ## Sekwencja wykonawcza
 
@@ -49,6 +56,8 @@ Po zakończeniu prac nad istniejącym portfelem wykorzystać bazę `Knowledge-pr
 |---|---|---|---|
 | 2026-09-11 | PLANY-I-POST-PY--W-REPOZYTORIACH | Utworzenie rejestru | OK |
 | 2026-09-11 | wszystkie 100 repozytoriów | Inwentaryzacja globalna | OK |
+| 2026-09-12 | 27 repozytoriów | Weryfikacja README + porównanie planów | OK — bez podwójnego naliczenia |
+| 2026-09-12 | PLANY-I-POST-PY--W-REPOZYTORIACH | Rekonsyliacja 415 vs 100 | OK — licznik 390/415 zachowany |
 
 ## Reguła integralności
 
