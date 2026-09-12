@@ -14,8 +14,8 @@ Każde repozytorium przechodzi osobny audyt. Dla każdego powstaje osobny plik w
 | Zakres | Stan |
 |---|---|
 | Inwentaryzacja portfela | ZAKOŃCZONA — **299 repozytoriów** |
-| Audyt szczegółowy | W TOKU — **157/299** |
-| Plany pracy | UTWORZONE — **157/299** |
+| Audyt szczegółowy | W TOKU — **177/299** |
+| Plany pracy | UTWORZONE — **177/299** |
 | Refaktoryzacja | OCZEKUJE NA AUDYT DANEGO REPOZYTORIUM |
 | Rebranding | OCZEKUJE |
 | Pełna polonizacja | OCZEKUJE |
@@ -25,35 +25,35 @@ Każde repozytorium przechodzi osobny audyt. Dla każdego powstaje osobny plik w
 
 | Nr | Repozytorium | Wynik audytu | Priorytet | Plan pracy |
 |---:|---|---|---|---|
-| 138 | Lemon-termux | Termux/Linux, narzędzie powiązane z L3MON/AhMyth; GPS, mikrofon, SMS, kontakty, pliki i polecenia | KRYTYCZNY | `plan pracy/Lemon-termux.md` |
-| 139 | OpenMusic | README nieobecny; nie znaleziono `package.json`, zakres wymaga mapowania bez zgadywania | ŚREDNI | `plan pracy/OpenMusic.md` |
-| 140 | react-portfolio | Szablon React/Vite z React-Bootstrap, EmailJS i wielostronicowym UI | ŚREDNI | `plan pracy/react-portfolio.md` |
-| 141 | Paula | Minimalne README „Nowy czat AI”; brak potwierdzonego stosu i funkcjonalności | KRYTYCZNY | `plan pracy/Paula.md` |
-| 142 | SMS-MAN-Reality-Check-2026-cheap-numbers-hidden-trads | Publikacja porównawcza usług numerów wirtualnych; dane cenowe i dostępność dynamiczne | ŚREDNI | `plan pracy/SMS-MAN-Reality-Check-2026-cheap-numbers-hidden-trads.md` |
-| 143 | VideoiOSSDK | SDK iOS Kaleyra Video: audio/wideo, chat, screen sharing, nagrywanie, PIP i pliki | WYSOKI | `plan pracy/VideoiOSSDK.md` |
-| 144 | project-voice | Eksperymentalne narzędzie dostępnościowe z Gemini, GCP/App Engine, Firebase i lokalizacją | WYSOKI | `plan pracy/project-voice.md` |
-| 145 | emailnator-tempmail | Node CLI do tymczasowej poczty; axios/cookies i nagłówki imitujące przeglądarkę | ŚREDNI/WYSOKI | `plan pracy/emailnator-tempmail.md` |
-| 146 | InvokeAI | Duży lokalny silnik kreatywny AI z React UI, Canvas, workflow/node i wieloma modelami | WYSOKI | `plan pracy/InvokeAI.md` |
-| 147 | No-code_AI_app_builder | Next.js/Firebase/Gemini generator aplikacji z podglądem wygenerowanego kodu | KRYTYCZNY | `plan pracy/No-code_AI_app_builder.md` |
-| 148 | Awesome-Hacking | Kuratorowany katalog zasobów cyberbezpieczeństwa, także treści ofensywnych | NISKI/ŚREDNI | `plan pracy/Awesome-Hacking.md` |
-| 149 | AI-Powered-Cold-Email-Generator-Job-Client-Outreach | Python/LLM/Streamlit generator spersonalizowanych cold maili | ŚREDNI | `plan pracy/AI-Powered-Cold-Email-Generator-Job-Client-Outreach.md` |
-| 150 | fingerprint-browser-guide.github.io | Chińskojęzyczny serwis porównawczy fingerprint browserów, proxy, SMS, mail i automatyzacji | ŚREDNI | `plan pracy/fingerprint-browser-guide.github.io.md` |
-| 151 | ai-email-writer | FastAPI + Streamlit + Groq; kontrola tonu/intencji i generowanie wiadomości | ŚREDNI/WYSOKI | `plan pracy/ai-email-writer.md` |
-| 152 | voice-builder | Eksperymentalny system budowania głosów TTS na GCP/Firebase z GCS i pipeline'em treningowym | WYSOKI | `plan pracy/voice-builder.md` |
-| 153 | awesome-gpt-image-2-API-and-Prompts | Duże repozytorium bez treści README; zakres promptów/API wymaga mapowania | ŚREDNI/WYSOKI | `plan pracy/awesome-gpt-image-2-API-and-Prompts.md` |
-| 154 | Text-To-Video-API | Cienki klient zewnętrznego API generacji wideo z kluczem i webhookiem | WYSOKI | `plan pracy/Text-To-Video-API.md` |
-| 155 | predator | Platforma testów obciążeniowych z UI, REST, runnerami, harmonogramami i Kubernetes/Chaos Mesh | WYSOKI | `plan pracy/predator.md` |
-| 156 | hackingtool | Pythonowy toolkit bezpieczeństwa z warstwą AI, katalogiem narzędzi i zasadą braku automatycznego wykonania | KRYTYCZNY | `plan pracy/hackingtool.md` |
-| 157 | HunyuanPortraitLCM | Badawczy model dyfuzyjny animacji portretów; PyTorch/Gradio/LCM/LoRA, wymagane GPU 24 GB | WYSOKI | `plan pracy/HunyuanPortraitLCM.md` |
+| 158 | youpac-ai | React Router 7/React 19 + Convex/Clerk/OpenAI/ElevenLabs; agentic tworzenie treści YouTube i canvas | KRYTYCZNY/WYSOKI | `plan pracy/youpac-ai.md` |
+| 159 | tmpsms | Archiwalny POSIX sh wrapper; README potwierdza, że usługa Upmasked już nie działa | NISKI | `plan pracy/tmpsms.md` |
+| 160 | twilio-pbx | Node/Firebase PBX dla Twilio; połączenia, SMS, DTMF, forwarding i alerty e-mail | WYSOKI | `plan pracy/twilio-pbx.md` |
+| 161 | Hands-on-with-SMS-MAN-complete-virtual-number-benchmark2026 | Publikacja benchmarkowa usług numerów; ceny i dostępność dynamiczne | NISKI/ŚREDNI | `plan pracy/Hands-on-with-SMS-MAN-complete-virtual-number-benchmark2026.md` |
+| 162 | esim-response-selection | Historyczny ESIM dla wieloturowego wyboru odpowiedzi; Python 2.7/TensorFlow 1.x | NISKI/ŚREDNI | `plan pracy/esim-response-selection.md` |
+| 163 | superpowers | Metodologia skills dla agentów kodujących: TDD, planowanie, worktree, subagenty i review | WYSOKI | `plan pracy/superpowers.md` |
+| 164 | JieMa_2025 | Chińskojęzyczna publikacja o usługach wirtualnych numerów/SMS z tabelami i linkami afiliacyjnymi | NISKI/ŚREDNI | `plan pracy/JieMa_2025.md` |
+| 165 | OpenMontage | Agentic pipeline produkcji wideo z Backlot, approval gates, provider registry, Remotion/FFmpeg/Blender | KRYTYCZNY/WYSOKI | `plan pracy/OpenMontage.md` |
+| 166 | hhvm | Duży upstreamowy runtime HHVM/JIT dla Hack z Proxygen/FastCGI i wieloma licencjami | ŚREDNI | `plan pracy/hhvm.md` |
+| 167 | promptfoo | CLI/biblioteka do evals i red-teamingu LLM, CI/CD i code scanning | WYSOKI | `plan pracy/promptfoo.md` |
+| 168 | unsloth | Desktop/Studio/Core do uruchamiania i treningu modeli lokalnych, MCP, RAG i API | KRYTYCZNY/WYSOKI | `plan pracy/unsloth.md` |
+| 169 | bulk-email-scraper | Bardzo małe repozytorium; funkcja sugerowana przez nazwę wymaga potwierdzenia kodem | ŚREDNI | `plan pracy/bulk-email-scraper.md` |
+| 170 | Nowe-projekty | Puste repozytorium przeznaczone potencjalnie na przyszłe projekty | KRYTYCZNY | `plan pracy/Nowe-projekty.md` |
+| 171 | Cinematic-Agents | Mały prototyp o niepotwierdzonym stosie; nazwa wskazuje na agentów filmowych | ŚREDNI/WYSOKI | `plan pracy/Cinematic-Agents.md` |
+| 172 | TorBot | Narzędzie OSINT/Tor o podwyższonym ryzyku dual-use | WYSOKI | `plan pracy/TorBot.md` |
+| 173 | work-companion-pro | Mały prototyp narzędzia produktywności; stos wymaga dalszego mapowania | ŚREDNI | `plan pracy/work-companion-pro.md` |
+| 174 | AI-Email-Generator | Bardzo mały generator e-maili AI; zakres wymaga mapowania | ŚREDNI | `plan pracy/AI-Email-Generator.md` |
+| 175 | homebrew-engram | Minimalny kanał dystrybucji Homebrew dla Engram | NISKI/ŚREDNI | `plan pracy/homebrew-engram.md` |
+| 176 | graphify | Knowledge graph repozytoriów z tree-sitter, zapytaniami/path/explain i integracją skills | WYSOKI | `plan pracy/graphify.md` |
+| 177 | mars | Repo ~38 MB bez dostępnego README; zakres nie został zgadnięty | ŚREDNI | `plan pracy/mars.md` |
 
 ## Poprzednie audyty
 
-Audyty 1–137 pozostają zapisane w tym rejestrze oraz w odpowiednich plikach `plan pracy/`. Pozycje 138–157 są opisane powyżej.
+Audyty 1–157 pozostają zapisane w tym rejestrze oraz w odpowiednich plikach `plan pracy/`. Pozycje 158–177 są opisane powyżej.
 
 ## Postęp
 
-**157 / 299 repozytoriów — 52,51% audytu szczegółowego.**  
-**142 repozytoria pozostają do audytu.**
+**177 / 299 repozytoriów — 59,20% audytu szczegółowego.**  
+**122 repozytoria pozostają do audytu.**
 
 ## Aktualizacja inwentaryzacji
 
