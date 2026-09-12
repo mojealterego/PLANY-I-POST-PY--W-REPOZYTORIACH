@@ -14,8 +14,8 @@ Każde repozytorium przechodzi osobny audyt. Dla każdego powstaje osobny plik w
 | Zakres | Stan |
 |---|---|
 | Inwentaryzacja portfela | ZAKOŃCZONA — **293 repozytoria** |
-| Audyt szczegółowy | W TOKU — **61/293** |
-| Plany pracy | UTWORZONE — **61/293** |
+| Audyt szczegółowy | W TOKU — **66/293** |
+| Plany pracy | UTWORZONE — **66/293** |
 | Refaktoryzacja | OCZEKUJE NA AUDYT DANEGO REPOZYTORIUM |
 | Rebranding | OCZEKUJE |
 | Pełna polonizacja | OCZEKUJE |
@@ -25,25 +25,25 @@ Każde repozytorium przechodzi osobny audyt. Dla każdego powstaje osobny plik w
 
 | Nr | Repozytorium | Wynik audytu | Priorytet | Plan pracy |
 |---:|---|---|---|---|
-| 52 | Agentic-Cinema-The-Blockbuster-Hackathon | StudioSync: agentowa warstwa odzyskiwania produkcji filmowej; deterministyczne demo jest rozdzielone od live, ale live runner/session ADK wymaga dokończenia | KRYTYCZNY | `plan pracy/Agentic-Cinema-The-Blockbuster-Hackathon.md` |
-| 53 | Nebius-x-NVIDIA-Global-AI-Hackathon | InfraSentinel: evidence-first SRE z deterministyczną polityką, governance i symulatorem; realna infrastruktura wymaga osobnych adapterów i kontroli blast radius | KRYTYCZNY | `plan pracy/Nebius-x-NVIDIA-Global-AI-Hackathon.md` |
-| 54 | ChatGPT-CodeReview | Probot/GitHub Action do automatycznego code review; historyczna dokumentacja, szerokie permissions w przykładzie i błędne `homepage` wymagają uporządkowania | WYSOKI | `plan pracy/ChatGPT-CodeReview.md` |
-| 55 | AgentGPT | Duży system webowy do uruchamiania agentów autonomicznych; historyczny stos Next/FastAPI wymaga aktualizacji i ponownej weryfikacji granic narzędzi | KRYTYCZNY | `plan pracy/AgentGPT.md` |
-| 56 | mcp-coding-agent | Builder agentów i oprogramowania przez MCP; silne ograniczenia workspace, ale potrzebna twarda izolacja wykonania niezaufanego kodu | KRYTYCZNY | `plan pracy/mcp-coding-agent.md` |
-| 57 | agent-command-center-sdk | SDK Python/TypeScript z integracjami frameworków; wymaga kontraktów OpenAI-compatible, testów niezależnych od gatewaya i audytu sekretów/endpointów | KRYTYCZNY | `plan pracy/agent-command-center-sdk.md` |
+| 57 | agent-command-center-sdk | SDK Python/TypeScript z integracjami frameworków; wymagane kontrakty OpenAI-compatible, testy niezależne od gatewaya i audyt sekretów/endpointów | KRYTYCZNY | `plan pracy/agent-command-center-sdk.md` |
 | 58 | llm-graph-builder | FastAPI + React + Neo4j, wieloźródłowy RAG/Knowledge Graph i wielu providerów LLM; istotne granice auth, uploadów, URL fetch i izolacji danych | KRYTYCZNY | `plan pracy/llm-graph-builder.md` |
 | 59 | Local-Diffusion | Flutter/Android, lokalna inferencja diffusion, FFI i wiele formatów modeli; konieczne testy urządzeniowe, integralność modeli i reprodukowalność benchmarków | WYSOKI | `plan pracy/Local-Diffusion.md` |
 | 60 | cookbooks | Katalog niezależnych przykładów AI/RAG/agentów; wartość referencyjna wysoka, wymagane indeksowanie statusów i zależności zamiast wspólnej refaktoryzacji | ŚREDNI | `plan pracy/cookbooks.md` |
 | 61 | locally-uncensored | Duże desktopowe studio lokalnego AI z Tauri, ComfyUI, coding agentem i wieloma backendami; krytyczna powierzchnia subprocess/MCP/model downloads | KRYTYCZNY | `plan pracy/locally-uncensored.md` |
+| 62 | hermes-agent | Duży wieloplatformowy agent z terminalem, MCP, skills/plugins, gatewayami i sandboxami; OS isolation jest rzeczywistą granicą bezpieczeństwa | KRYTYCZNY | `plan pracy/hermes-agent.md` |
+| 63 | gptAssist | Lekki klient Android/WebView dla ChatGPT; kluczowe są allowlista URL, WebView, uploady, intenty i modernizacja SDK | WYSOKI | `plan pracy/gptAssist.md` |
+| 64 | simplex-chat | Bardzo duży komunikator wieloplatformowy z kryptografią i Haskell; wymagane audyty protokołu, FFI, storage, zależności Git i reprodukowalności | KRYTYCZNY | `plan pracy/simplex-chat.md` |
+| 65 | element-x-android | Duży klient Matrix Android oparty o Compose i Matrix Rust SDK; krytyczne FFI, E2EE, storage, release i separacja upstream/własne zmiany | KRYTYCZNY | `plan pracy/element-x-android.md` |
+| 66 | strykerapp | Rootowana aplikacja pentestowa Android z chroot, root/su, Wi-Fi/BLE, USB HID, Metasploit i innymi narzędziami; wymaga ścisłych granic laboratoryjnych | KRYTYCZNY | `plan pracy/strykerapp.md` |
 
 ## Poprzednie audyty
 
-Audyty 1–51 pozostają zapisane w tym rejestrze oraz w odpowiednich plikach `plan pracy/`. Pozycje 52–61 są opisane powyżej.
+Audyty 1–56 pozostają zapisane w tym rejestrze oraz w odpowiednich plikach `plan pracy/`. Pozycje 57–66 są opisane powyżej.
 
 ## Postęp
 
-**61 / 293 repozytoriów — 20,82% audytu szczegółowego.**  
-**232 repozytoria pozostają do audytu.**
+**66 / 293 repozytoriów — 22,53% audytu szczegółowego.**  
+**227 repozytoriów pozostaje do audytu.**
 
 ## Aktualizacja inwentaryzacji
 
