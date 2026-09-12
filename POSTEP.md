@@ -3,55 +3,55 @@
 ## Stan bieżący
 
 - Data aktualizacji: 2026-09-12
-- Faza: **2 — ranking priorytetów**
+- Faza: **3 — wybór produktu P0 i rozpoczęcie refaktoryzacji**
 - Inwentaryzacja portfela: **414 repozytoriów**
 - Rekonsyliacja inwentarza: **414/414 — zakończona**
 - Audyt szczegółowy: **414/414 — zakończony**
 - Konsolidacja wyników: **zakończona**
-- Ranking priorytetów: **utworzony**
-- Refaktoryzacja: oczekuje na wybór pierwszego P0
+- Ranking priorytetów: **zakończony**
+- Produkt P0: **B2B AI Employee**
+- Główny fundament implementacyjny: **Agent-Android**
+- Refaktoryzacja: **ROZPOCZĘTA**
 - Rebranding: oczekuje
 - Polonizacja: oczekuje
-- Nowe projekty: oczekują na kwalifikację
+- Nowe produkty pochodne: oczekują
 
-## Ranking priorytetów
+## Decyzja P0
 
-Utworzono `RANKING_PRIORYTETOW_414.md`. Ranking rozdziela potencjał biznesowy od gotowości produkcyjnej i uwzględnia: problem biznesowy, gotowość kodu, MRR/ARPU, B2B, aktywa technologiczne, skalowalność, bezpieczeństwo/regulacje oraz time-to-market.
+Wybrano **B2B AI Employee** jako produkt nadrzędny pierwszej kolejności. `Agent-Android` jest własnym, modularnym fundamentem wykonawczym i zostaje bazą pierwszej implementacji. Repo nie jest jeszcze oznaczone jako produkcyjne.
 
-### P0 — strategiczny rdzeń
+Pozostałe aktywa będą dołączane selektywnie, zgodnie z kontraktami i licencjami. `sim`, `n8n`, `ToolJet`, `langflow` i inne projekty upstream/reference pozostają przede wszystkim źródłami architektury i integracji; nie są bezrefleksyjnie przepisywane ani rebrandowane.
 
-1. B2B AI Agent / AI Employee
-2. Agent automatyzacji procesów przedsiębiorstwa
-3. Agent programistyczny z izolowanym execution sandbox
-4. Agent mobilny Android
-5. Agent dokumentów + RAG / Knowledge Agent
-6. AI Customer Support / Voice Agent
-7. AI Sales / CRM Agent
+## Wykonane prace Etapu 3
 
-### P1 — bardzo wysoki
+W `mojealterego/Agent-Android`:
 
-8. Private / Offline AI Assistant
-9. Agent Research / Knowledge Management
-10. Platforma budowy agentów i workflowów
-11. AI Developer Tools
-12. Platforma AI dla twórców — obraz/wideo/audio
+- rozszerzono wspólne kontrakty o `organizationId`, `actorId` i `AgentExecutionContext`,
+- dodano kontrakty `ToolAuthorizationRequest` i `ToolAuthorizationDecision`,
+- dodano dokument `docs/P0-B2B-AI-EMPLOYEE.md` definiujący MVP, architekturę, granice bezpieczeństwa i kolejność refaktoryzacji.
 
-### P2 — średni/wysoki
+## Następna kolejka implementacyjna
 
-13. Telecom / PBX / Voice automation
-14. Mobile productivity agents
-15. Lokalne generowanie obrazu/wideo
-16. AI app/workflow builder
-17. Gry z AI
+1. Auth/session + rzeczywista weryfikacja tenant context.
+2. Deny-by-default tool authorization.
+3. Approval state machine.
+4. MCP/execution isolation.
+5. Memory/RAG z kontrolą dostępu.
+6. Audyt i obserwowalność.
+7. Testy kontraktowe/authz/E2E.
+8. Integracje B2B.
+9. Billing, quotas i kontrola kosztów.
+10. Android E2E oraz reprodukowalny release.
 
-### P3–P5
+## Bramka produkcyjna
 
-Upstream/reference, research/lab oraz repozytoria minimalne są kierowane do odpowiednio zachowania, wykorzystania jako źródła wiedzy lub archiwizacji. Nie są bezpośrednimi kandydatami do ślepego rebrandingu.
+Żaden wynik etapu audytu ani rozpoczęcie refaktoryzacji nie oznacza produkcyjności. Status produkcyjny może zostać nadany dopiero po buildzie, testach, hardeningu bezpieczeństwa, weryfikacji izolacji tenantów, recovery/migracjach, obserwowalności, provenance zależności/modeli i kontroli kosztów.
 
-## Decyzja strategiczna
+## Dokumenty
 
-Pierwszym celem po rankingu jest budowa **jednego bezpiecznego, modułowego rdzenia B2B AI Agent / AI Employee**, z którego będą wyprowadzane wyspecjalizowane produkty. Nie rozpoczynamy równoległej produkcji wielu niezależnych aplikacji.
-
-## Następny etap
-
-**Etap 3 — wybór konkretnego produktu P0 i rozpoczęcie refaktoryzacji.** Przed wdrożeniem obowiązują bramki: deny-by-default, sandbox, approval dla działań konsekwencyjnych, izolacja tenantów, testy bezpieczeństwa, obserwowalność, recovery, SBOM/provenance oraz weryfikacja licencji.
+- `README.md` — stan globalny
+- `AUDYT_GLOBALNY.md` — zasady audytu
+- `POSTEP.md` — dziennik procesu
+- `KONSOLIDACJA_414.md` — konsolidacja
+- `RANKING_PRIORYTETOW_414.md` — ranking
+- `plan pracy/*.md` — indywidualne plany
