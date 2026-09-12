@@ -20,30 +20,30 @@ Pozycje historyczne bez jednoznacznego odpowiednika pozostają `RECONCILIATION_R
 
 ## Ostatnia tura — 20 repozytoriów
 
-Zweryfikowano rzeczywistą zawartość README i dostępne informacje projektowe dla: `plasmic`, `budibase`, `grapesjs`, `ZeroAI`, `lonlybot`, `FastGPT`, `anything-llm`, `ragflow`, `visionclaw`, `Ptero`, `lore`, `PaulaAI`, `NetGuard`, `agent-command-center-sdk`, `FastRecvSMS`, `exiftool`, `chappie-bot`, `tempmail`, `OnlineSimBot2`, `26CP3600177-ai-email-generator`.
+Zweryfikowano rzeczywistą zawartość README i dostępne informacje projektowe dla: `Problemy-milenijne`, `aider`, `free-claude-code`, `MCP-Server-Eleven-Labs`, `Longview-Philanthropy-Grant`, `packages`, `elevenlabs-swift-sdk`, `cli`, `elevenlabs-js`, `elevenlabs-python`, `elevenlabs-android`, `plugin`, `examples`, `homebrew-tap`, `scoop-bucket`, `ui`, `elevenlabs-mcp-player`, `elevenlabs-n8n`, `unity`, `Alibaba-Grants`.
 
 ### Najważniejsze ustalenia
 
-- `plasmic` — duży open-source visual builder/CMS; kluczowe są codegen, integracje z codebase, RBAC, webhooki i kontrola wersji pakietów.
-- `budibase` — monorepo platformy operations/apps/agents/automations; krytyczne są API, integracje danych, uprawnienia i wykonywanie działań przez agentów.
-- `grapesjs` — README nie został odczytany przez aktualny konektor; wymagane dalsze rozpoznanie drzewa przed dopisaniem nowych twierdzeń.
-- `ZeroAI` — eksperymentalny Android AI agent Kotlin/Rust/UniFFI z usługą działającą w tle, kanałami Telegram/Discord/Messages, terminalem, SSH, MCP/pluginami i sandboxowanym Rhai; bardzo wysoki priorytet bezpieczeństwa.
-- `lonlybot` — Next.js AI companion z wieloma providerami, pamięcią localStorage i silnie antropomorfizującym promptem; wymagają kontroli prywatności, sekretów, retencji oraz granic produktu.
-- `FastGPT` — rozbudowana platforma Agent/RAG/Flow/MCP; dokumentacja zawiera domyślne dane logowania, co wymaga hardeningu wdrożeniowego.
-- `anything-llm` — duża platforma desktop/web z agentami, MCP, scheduled tasks, RAG, multi-user i wieloma providerami; krytyczne są izolacja narzędzi, uprawnienia i sandbox.
-- `ragflow` — duży RAG/agent engine z code executorem wymagającym sandboxa/gVisor; kluczowe są izolacja wykonania, sekrety, uploady i granice wielodostępności.
-- `visionclaw` — visionOS/RealityKit voice AI companion z Bonjour/WebSocket bridge do Maca; krytyczne są zaufanie sieci lokalnej, autoryzacja i prywatność audio.
-- `Ptero` — prosty multi-model AI chat z deklarowaną lokalną historią i integracją WordPress; trzeba zweryfikować rzeczywiste granice backendu i prywatności względem deklaracji README.
-- `lore` — upstreamowy system kontroli wersji Epic Games, Rust/content-addressed/Merkle/binary-first; traktowany jako referencja technologiczna, nie projekt do sztucznego rebrandingu.
-- `PaulaAI` — faktyczna zawartość to prosty Streamlit GDP dashboard, więc nazwa repozytorium nie odpowiada aktualnej funkcji; wymagane uporządkowanie tożsamości projektu.
-- `NetGuard` — Android firewall oparty na VPNService; bezpieczeństwo polityki sieciowej, kompatybilność Androida i poprawność filtrowania są pierwszoplanowe.
-- `agent-command-center-sdk` — Python/TypeScript SDK dla gatewaya OpenAI-compatible z routingiem, guardrailami, budżetami i integracjami frameworków; kluczowe są kontrakty SDK i bezpieczeństwo credentials.
-- `FastRecvSMS` — CLI/MCP do zakupu numerów i odbioru SMS; pozostaje w ścisłym zakresie audytu bezpieczeństwa, zgodności i poprawności API, bez rozbudowy mechanizmów obchodzenia zabezpieczeń.
-- `exiftool` — README nie został odczytany; dalsza klasyfikacja wymaga odczytu drzewa/plików.
-- `chappie-bot` — historyczny wielofunkcyjny bot Python z licznymi komendami pobierania i mediami; wymaga klasyfikacji archiwalnej oraz przeglądu zależności/API.
-- `tempmail` — README wskazuje minimalny interfejs narzędzia Trashx; wymaga sprawdzenia rzeczywistego kodu i zależności.
-- `OnlineSimBot2` — bot Telegram wykorzystujący wirtualne numery i skrzynkę SMS; konfiguracja tokenu w pliku jest problemem bezpieczeństwa, a zakres użycia wymaga compliance review.
-- `26CP3600177-ai-email-generator` — edukacyjny/template'owy projekt z niespójnym, szerokim opisem stacku i placeholderami; nie należy traktować deklarowanego backendu jako potwierdzonej implementacji.
+- `Problemy-milenijne` — prywatny projekt badawczy formalizujący TRS i odnoszący się do P≠NP, RH, Hodge i BSD; README utrzymuje status hipotez jako OPEN i wymaga niezależnej falsyfikacji. Priorytet: rygor formalny, śledzenie dowodów i oddzielenie hipotez od twierdzeń.
+- `aider` — duży upstreamowy agent pair-programming w terminalu z obsługą wielu LLM, mapowaniem codebase, Git, testów i voice-to-code; traktować jako referencję technologiczną, nie jako własny produkt do ślepego rebrandingu. Kluczowe są granice wykonywania zmian, sekrety i kontrola skutków poleceń.
+- `free-claude-code` — rozbudowany lokalny proxy/router dla wielu providerów i agentów kodujących, z fallbackiem modeli, UI administracyjnym, lokalną historią i integracjami desktop/IDE/telefon; bardzo wysoki priorytet dla credentiali, powierzchni proxy, instalatorów zdalnych, izolacji narzędzi i kontroli kosztów.
+- `MCP-Server-Eleven-Labs` — produkcyjnie ukierunkowany serwer MCP dla głosu, z osobnym tokenem MCP, rate limitingiem, limitami wejścia/audio, correlation IDs, Docker/Render i JSON state; migracja MCP SDK v2 jest świadomie odłożona do wspólnej migracji kodu i testów. Przed publicznym wdrożeniem potrzebny trwały storage i pełna weryfikacja protokołu.
+- `Longview-Philanthropy-Grant` — dossier badawcze AI integrity/secret loyalties oraz digital minds; README rozdziela fakty, hipotezy i status aplikacji. Kluczowe są provenance, reproducibility, responsible disclosure i brak nieudokumentowanych twierdzeń o kwalifikacjach lub wynikach.
+- `packages` — upstreamowy monorepo ElevenAgents SDK dla JS/TS/React/React Native/widgetów; obejmuje WebRTC, client tools i audio. Traktować jako kod referencyjny/upstream; priorytetem są zgodność API, bezpieczeństwo client tools i aktualność zależności.
+- `elevenlabs-swift-sdk` — SDK Swift dla iOS/macOS/visionOS/tvOS oparte na LiveKit WebRTC, z Client Tools i MCP; README ostrzega przed umieszczaniem API key w aplikacji. Kluczowe: concurrency, tokeny tymczasowe, uprawnienia audio/sieciowe i sandbox client tools.
+- `cli` — oficjalny CLI ElevenLabs z pełnym API, Agents as Code, lokalnymi konfiguracjami JSON, synchronizacją push/pull, testami oraz data residency; szczególnie istotne są operacje mutujące, dry-run, TLS overrides i rozdzielenie testów E2E od zwykłego API key.
+- `elevenlabs-js` — oficjalny Node SDK generowany programatycznie, z TTS, streamingiem, Speech Engine, retry/timeout i WebSocket auth; wyraźna powierzchnia bezpieczeństwa to Speech Engine, gdzie wyłączenie auth wymaga zewnętrznego ograniczenia sieciowego.
+- `elevenlabs-python` — oficjalny Python SDK generowany programatycznie, obejmujący TTS, voice cloning, ElevenAgents, ClientTools i Speech Engine; wymaga rygorystycznego auth i kontroli narzędzi po stronie serwera.
+- `elevenlabs-android` — oficjalny Android SDK Kotlin z LiveKit/WebRTC, text-only WebSocket, tokenami prywatnych agentów i client tools; nie należy umieszczać API keys w aplikacji. Kluczowe: runtime permissions, lifecycle, audio thread, transport security i ograniczenie lokalnych narzędzi agenta.
+- `plugin` — plugin ElevenLabs dla Cursor/Claude Code/Codex z drzewem skills i hostowanym MCP OAuth; upstream/reference. Kluczowe są scope OAuth, uprawnienia narzędzi i rozdzielenie skills od mutujących operacji MCP.
+- `examples` — repozytorium przykładów ElevenLabs generowanych z promptów, obejmujące TTS/STT/music/sound effects/agents, z template'ami i automatycznym generowaniem. Krytyczne: provenance generowanego kodu, reprodukowalność oraz kontrola prompt-runnera.
+- `homebrew-tap` — automatycznie generowany tap Homebrew dla CLI; repozytorium dystrybucyjne, nie projekt do ręcznej refaktoryzacji. Należy kontrolować provenance artefaktów i integralność release pipeline.
+- `scoop-bucket` — automatycznie generowany bucket Scoop dla CLI; traktować jako artefakt dystrybucyjny i kontrolować podpis/provenance manifestów.
+- `ui` — upstreamowa biblioteka komponentów ElevenLabs UI oparta na shadcn/ui, instalowana przez CLI/registry; kluczowe są bezpieczeństwo zdalnego registry, integralność komponentów i kompatybilność Tailwind/shadcn.
+- `elevenlabs-mcp-player` — repozytorium MCPB dla Claude Desktop z TTS/audio/music/local playback, jawnie zdeprecjonowane na rzecz hostowanego MCP i nieutrzymywane. Klasyfikacja: ARCHIVAL/REFERENCE; local audio path access wymagałby sandboxu, gdyby projekt był reaktywowany.
+- `elevenlabs-n8n` — oficjalny node n8n dla ElevenLabs z operacjami Speech/Voice; README ma niedokończoną sekcję Usage. Priorytet: credential handling, compatibility matrix, test coverage i dokumentacja operacji mutujących.
+- `unity` — wczesny ElevenAgents Unity SDK dla Unity 6.3 LTS, z platformami standalone/mobile/Editor/WebGL, WebRTC i lifecycle sesji; status early-stage. Kluczowe: cross-platform audio, WebGL ograniczenia, lifecycle, client tools i test matrix.
+- `Alibaba-Grants` — pakiet aplikacyjno-architektoniczny OMEGA-X dla Alibaba Cloud AI Catalyst, jawnie rozdzielający capability demonstrated/proposed i wymagający źródeł dla twierdzeń o programie. Kluczowe: evidence discipline, aktualność warunków programu, security/compliance oraz brak gwarantowania benefitów bez oficjalnego potwierdzenia.
 
 ## Sekwencja wykonawcza
 
@@ -70,6 +70,7 @@ Po zamknięciu audytu istniejącego portfela wykorzystać `Knowledge-projects` j
 | 2026-09-12 | 27 repozytoriów | Weryfikacja README + porównanie planów | OK — bez podwójnego naliczenia |
 | 2026-09-12 | PLANY-I-POST-PY--W-REPOZYTORIACH | Rekonsyliacja 415 vs 100 | OK — licznik 390/415 zachowany |
 | 2026-09-12 | 20 repozytoriów | Weryfikacja README + klasyfikacja | OK — bez podwójnego naliczenia |
+| 2026-09-12 | 20 repozytoriów | Audyt README + kwalifikacja architektoniczna | OK — bez podwójnego naliczenia |
 
 ## Reguła integralności
 
