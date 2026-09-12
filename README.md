@@ -14,55 +14,38 @@ Każde repozytorium przechodzi osobny audyt. Dla każdego powstaje osobny plik w
 | Zakres | Stan |
 |---|---|
 | Inwentaryzacja portfela | ZAKTUALIZOWANA — **376 repozytoriów** |
-| Audyt szczegółowy | W TOKU — **337/376** |
-| Plany pracy | UTWORZONE — **337/376** |
+| Audyt szczegółowy | W TOKU — **341/376** |
+| Plany pracy | UTWORZONE — **341/376** |
 | Refaktoryzacja | OCZEKUJE NA AUDYT DANEGO REPOZYTORIUM |
 | Rebranding | OCZEKUJE |
 | Pełna polonizacja | OCZEKUJE |
 | Projekty z bazy wiedzy | OCZEKUJĄ NA ZAKOŃCZENIE ETAPU ISTNIEJĄCEGO PORTFELA |
 
-## Ostatnio wykonane audyty — przebieg po wykryciu 376 repozytoriów
+## Ostatnia tura — rekonsyliacja i nowe audyty
 
-Po ponownej inwentaryzacji potwierdzono **376 repozytoriów**. W tej turze dodano **20 nowych, unikalnych planów**, podnosząc stan z 317 do **337/376**. Repozytoria posiadające wcześniejsze plany nie zostały ponownie doliczone.
+Ponownie sprawdzono aktualną inwentaryzację oraz katalog `plan pracy/`. Wśród 20 kolejnych kandydatów **16 posiadało już plany audytowe**, więc nie zostały ponownie doliczone. Cztery repozytoria nie miały planów i otrzymały nowe, zweryfikowane plany:
 
 | Nr | Repozytorium | Wynik audytu | Priorytet |
 |---:|---|---|---|
-| 318 | termux-app | Upstream Android terminal; build/release, pluginy, signing i supply chain | WYSOKI/REFERENCYJNY |
-| 319 | TaskingAI | BaaS dla agentów LLM; FastAPI, multi-tenancy, tools, RAG, Docker i SDK | KRYTYCZNY |
-| 320 | langflow | Visual AI workflow/agent builder; API, MCP, custom Python components i deployment | KRYTYCZNY/REFERENCYJNY |
-| 321 | OpenLLM | Runtime/serwer LLM; API, modele, zasoby GPU i deployment | WYSOKI/REFERENCYJNY |
-| 322 | datadog-agent | Duży agent obserwowalności; collectors, permissions, telemetry i integracje | WYSOKI/REFERENCYJNY |
-| 323 | lume | Duże repozytorium web/3D; renderowanie, assety i build | ŚREDNI/WYSOKI/REFERENCYJNY |
-| 324 | UserLAnd | Linux na Androidzie; procesy, filesystem, sieć i integracja systemowa | WYSOKI/REFERENCYJNY |
-| 325 | openinterpreter | Agent z wykonaniem kodu i działań systemowych | KRYTYCZNY |
-| 326 | AutoGPT | Autonomiczny agent z planowaniem, pamięcią i narzędziami | KRYTYCZNY |
-| 327 | SuperAGI | Platforma agentowa z narzędziami/pamięcią i wykonaniem | KRYTYCZNY/REFERENCYJNY |
-| 328 | ChatDev | Wieloagentowy development i generowanie artefaktów | KRYTYCZNY |
-| 329 | OGAM | On-device AI Android/iOS/macOS; LLM, vision, audio, tools i MCP | KRYTYCZNY |
-| 330 | Cz-owiek-Roku-Film | Kanoniczne repozytorium produkcji filmu AI; source-lock i continuity-lock | KRYTYCZNY |
-| 331 | google-analytics-mcp | Eksperymentalny MCP dla Google Analytics; OAuth/ADC i read-only API | WYSOKI |
-| 332 | mailtm_client | Dart wrapper mail.tm; konta, JWT, wiadomości i załączniki | ŚREDNI/WYSOKI |
-| 333 | ComfyUI-LTXVideo | Custom nodes/workflows dla LTX-2.3; modele, LoRA, HDR, audio/video | WYSOKI/REFERENCYJNY |
-| 334 | rust-sdk | SDK Rust; publiczne API, Cargo, kompatybilność i testy | ŚREDNI/WYSOKI |
-| 335 | agents | Komponenty agentowe; runtime, tools, policy i observability | WYSOKI |
-| 336 | maid | Android React Native; llama.cpp/GGUF, remote LLM, Supabase i model downloads | KRYTYCZNY |
-| 337 | actions | GitHub Actions dla repozytoriów MCP; deploy, cleanup i automatyczny merge | KRYTYCZNY DLA CI/CD |
+| 338 | local-llms-on-android | Android on-device LLM; ONNX/LiteRT, Qwen/Gemma, obraz, OCR, kamera i lokalne dane | KRYTYCZNY |
+| 339 | PhoneClaw | iOS local AI agent; Gemma/MiniCPM-V, Skills, dane systemowe i opcjonalny Mac Gateway | KRYTYCZNY |
+| 340 | Omni-mobile | Android Compose; WebSocket do runtime AI, obecnie domyślny endpoint developerski `ws://10.0.2.2:8000/ws` | WYSOKI |
+| 341 | aider | Agent pair-programming; lokalne/chmurowe LLM, mapowanie codebase i Git | WYSOKI/REFERENCYJNY |
 
-## Dodatkowe ustalenia tej tury
+## Ważna korekta procesu
 
-- Przed dodaniem batcha ponownie pobrano aktualną inwentaryzację; portfel nadal wynosi **376 repozytoriów**.
-- Kandydaci z istniejącymi planami nie zostali doliczeni ponownie. Próby zapisu do istniejących planów zwracały konflikt SHA i były traktowane jako duplikaty.
-- Dla nowych pozycji sprawdzono dostępność repozytorium oraz, gdzie było to wymagane, rzeczywistą zawartość README przed przygotowaniem planu.
-- Szczególną uwagę poświęcono execution boundaries, credentials, MCP, signing, model provenance i prywatności danych.
+W tej turze celowo **nie wymuszono sztucznego zwiększenia licznika o 20**. Próby utworzenia planów dla kolejnych kandydatów zwracały konflikt istniejącego pliku (`sha wasn't supplied`), co potwierdziło, że te repozytoria były już objęte katalogiem `plan pracy/`. Dzięki temu centralny licznik nie podwaja audytów.
+
+Dla nowych pozycji sprawdzono rzeczywistą zawartość README. `local-llms-on-android` potwierdza lokalne modele Qwen/Gemma przez ONNX/LiteRT, multimodalne wejście i brak telemetryki; `PhoneClaw` potwierdza lokalnego agenta iOS z natywnymi Skills oraz kontrolowanymi operacjami; `Omni-mobile` ma jawnie developerski WebSocket `ws://10.0.2.2:8000/ws`; `aider` jest terminalowym agentem pair-programming z integracją Git. fileciteturn799file0 fileciteturn800file0 fileciteturn801file0 fileciteturn802file0
 
 ## Poprzednie audyty
 
-Audyty 1–317 pozostają zapisane w tym rejestrze oraz w odpowiednich plikach `plan pracy/`. Numeracja audytów jest numeracją rejestrową; przy kolejnych turach licznik ma być zwiększany wyłącznie o nowe, unikalne repozytoria.
+Audyty 1–337 pozostają zapisane w tym rejestrze oraz w odpowiednich plikach `plan pracy/`. Numery 338–341 odpowiadają czterem nowym, unikalnym planom zapisanym w tej turze. Licznik ma być zwiększany wyłącznie o nowe, unikalne repozytoria.
 
 ## Postęp
 
-**337 / 376 repozytoriów — 89,63% audytu szczegółowego.**  
-**39 repozytoriów pozostaje do audytu.**
+**341 / 376 repozytoriów — 90,69% audytu szczegółowego.**  
+**35 repozytoriów pozostaje do jednoznacznego rozliczenia/audytu.**
 
 ## Aktualizacja inwentaryzacji
 
