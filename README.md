@@ -2,7 +2,7 @@
 
 **Data rozpoczęcia:** 2026-09-11  
 **Zakres:** wszystkie repozytoria właściciela `mojealterego` wykryte przez połączone konto GitHub  
-**Liczba repozytoriów wykryta w aktualnej inwentaryzacji:** **364**  
+**Liczba repozytoriów wykryta w aktualnej inwentaryzacji:** **376**  
 **Repozytorium monitorujące:** `mojealterego/PLANY-I-POST-PY--W-REPOZYTORIACH`
 
 ## Zasada procesu
@@ -13,55 +13,53 @@ Każde repozytorium przechodzi osobny audyt. Dla każdego powstaje osobny plik w
 
 | Zakres | Stan |
 |---|---|
-| Inwentaryzacja portfela | ZAKOŃCZONA — **364 repozytoria** |
-| Audyt szczegółowy | W TOKU — **277/364** |
-| Plany pracy | UTWORZONE — **277/364** |
+| Inwentaryzacja portfela | ZAKTUALIZOWANA — **376 repozytoriów** |
+| Audyt szczegółowy | W TOKU — **297/376** |
+| Plany pracy | UTWORZONE — **297/376** |
 | Refaktoryzacja | OCZEKUJE NA AUDYT DANEGO REPOZYTORIUM |
 | Rebranding | OCZEKUJE |
 | Pełna polonizacja | OCZEKUJE |
 | Projekty z bazy wiedzy | OCZEKUJĄ NA ZAKOŃCZENIE ETAPU ISTNIEJĄCEGO PORTFELA |
 
-## Ostatnio wykonane audyty — 258–279
+## Ostatnio wykonane audyty — bieżący przebieg po wykryciu 376 repozytoriów
 
-W bieżącym przebiegu utworzono **20 nowych planów**. Numer 265 (`elevenlabs-android`) miał już wcześniej istniejący plan i dlatego nie został policzony drugi raz.
+Inwentaryzacja została zwiększona z 364 do **376 repozytoriów**. W tym przebiegu utworzono **20 nowych planów**. `Decepticon` miał już istniejący plan i nie został policzony ponownie.
 
-| Nr | Repozytorium | Wynik audytu | Priorytet | Plan pracy |
-|---:|---|---|---|---|
-| 258 | Problemy-milenijne | Projekt badawczy TRS; jawne rozdzielenie definicji, aksjomatów, weryfikacji, otwartych lematów i dowodów | WYSOKI/REFERENCYJNY | `plan pracy/Problemy-milenijne.md` |
-| 259 | free-claude-code | Narzędzie związane z Claude Code; kluczowe permissions, sekrety, shell/filesystem i sandbox | KRYTYCZNY | `plan pracy/free-claude-code.md` |
-| 260 | MCP-Server-Eleven-Labs | Prywatny MCP ElevenLabs; auth, tool contracts i koszty generowania | WYSOKI | `plan pracy/MCP-Server-Eleven-Labs.md` |
-| 261 | Longview-Philanthropy-Grant | Pakiet grantowy/dokumentacyjny | NISKI/REFERENCYJNY | `plan pracy/Longview-Philanthropy-Grant.md` |
-| 262 | packages | Repozytorium pakietów; publikacja, wersjonowanie i supply chain | WYSOKI/REFERENCYJNY | `plan pracy/packages.md` |
-| 263 | elevenlabs-js | SDK JavaScript ElevenLabs; kontrakty API, auth, streaming i testy | WYSOKI/REFERENCYJNY | `plan pracy/elevenlabs-js.md` |
-| 264 | elevenlabs-python | SDK Python ElevenLabs; kontrakty, credentials, streaming i release | WYSOKI/REFERENCYJNY | `plan pracy/elevenlabs-python.md` |
-| 265 | elevenlabs-android | Istniejący wcześniej plan; SDK Android ElevenLabs | WYSOKI | `plan pracy/elevenlabs-android.md` |
-| 266 | plugin | Repozytorium pluginu; host API, permissions, sandbox i packaging | WYSOKI | `plan pracy/plugin.md` |
-| 267 | examples | Zbiór przykładów/integracji; aktualność API, sekrety i smoke tests | ŚREDNI/REFERENCYJNY | `plan pracy/examples.md` |
-| 268 | homebrew-tap | Tap Homebrew; integralność formuł, checksumy i provenance artefaktów | WYSOKI/REFERENCYJNY | `plan pracy/homebrew-tap.md` |
-| 269 | scoop-bucket | Bucket Scoop; manifesty, źródła i checksumy binariów | WYSOKI/REFERENCYJNY | `plan pracy/scoop-bucket.md` |
-| 270 | ui | Biblioteka komponentów UI; package boundaries, accessibility i release | WYSOKI/REFERENCYJNY | `plan pracy/ui.md` |
-| 271 | elevenlabs-mcp-player | Zdeprecjonowany MCP audio player; zachować jako snapshot referencyjny | NISKI/REFERENCYJNY | `plan pracy/elevenlabs-mcp-player.md` |
-| 272 | elevenlabs-n8n | Integracja ElevenLabs z n8n; credentials, node contracts i testy | WYSOKI | `plan pracy/elevenlabs-n8n.md` |
-| 273 | unity | Upstream Unity engine; traktowany jako toolchain/reference | WYSOKI/REFERENCYJNY | `plan pracy/unity.md` |
-| 274 | Alibaba-Grants | Repozytorium grantowe/dokumentacyjne | NISKI/REFERENCYJNY | `plan pracy/Alibaba-Grants.md` |
-| 275 | Feng-Grants | Puste repozytorium grantowe; brak podstaw do przypisania funkcji | KRYTYCZNY/BOOTSTRAP | `plan pracy/Feng-Grants.md` |
-| 276 | ID-Xbox-Grants | Repozytorium grantowe/dokumentacyjne | NISKI/REFERENCYJNY | `plan pracy/ID-Xbox-Grants.md` |
-| 277 | Roblox-Grants | Repozytorium grantowe/dokumentacyjne | NISKI/REFERENCYJNY | `plan pracy/Roblox-Grants.md` |
-| 278 | South-Park-Grants | Repozytorium grantowo-dokumentacyjne; wymagane źródła/licencje | NISKI/REFERENCYJNY | `plan pracy/South-Park-Grants.md` |
-| 279 | Neo-residency-Grants | Aegis State Management; referencyjna implementacja durable state/concurrency z testami i jawnymi evidence gates | WYSOKI | `plan pracy/Neo-residency-Grants.md` |
+| Nr | Repozytorium | Wynik audytu | Priorytet |
+|---:|---|---|---|
+| 278 | Resolver-Stable-Diffusion-Client-for-android | Android/Capacitor; Forge/ComfyUI, REST/WebSocket, foreground service; wymagane twarde granice endpointów, CORS i operacji zdalnych | WYSOKI |
+| 279 | Email-Generation | Python disposable-mail client; polling, sesje/cookies i ekstrakcja OTP; wymagane ograniczenia prywatności i zgodności | WYSOKI |
+| 280 | AutoAgent | Zero-code/self-developing framework; Docker, LLM providers i możliwość generowania/modyfikowania agentów | KRYTYCZNY |
+| 281 | twine | Narzędzie interaktywnych opowieści; wymagane mapowanie runtime, edytora, eksportu i rozszerzeń | ŚREDNI |
+| 282 | base44-platform-starter | Starter platformy aplikacyjnej; wymagane potwierdzenie stacku, runtime, auth/secrets i CI/CD | WYSOKI |
+| 283 | Bug-Bounty-Agents | Automatyzacja bug-bounty; scope, sandbox, approval i evidence jako granice podstawowe | KRYTYCZNY |
+| 284 | awesome-seedance-prompts | Katalog promptów; provenance, licencje, jakość i deduplikacja | ŚREDNI |
+| 285 | xtempmail | Klient tymczasowej poczty; prywatność, retencja i rate limits | WYSOKI |
+| 286 | Stable-Diffusion-3.5-Web-UI | Mały snapshot/UI Stable Diffusion; wymagane potwierdzenie runtime, modeli i zależności | WYSOKI |
+| 287 | ACE-Step-1.5 | Generowanie muzyki; inferencja, GPU, modele/wagi i provenance | WYSOKI |
+| 288 | pegasus-one | Repo o niejasnym zakresie związanym nazwą z Pegasus; klasyfikacja wyłącznie badawcza do czasu potwierdzenia zawartości | KRYTYCZNY/REFERENCYJNY |
+| 289 | llama.cpp | Lokalny runtime LLM; natywny C/C++, backendy CPU/GPU, API i bezpieczeństwo serwera | KRYTYCZNY/REFERENCYJNY |
+| 290 | material-design-icons | Duży zbiór zasobów ikon; licencje, provenance i pipeline assetów | ŚREDNI/REFERENCYJNY |
+| 291 | VoIP-Spoofing-Research | Projekt badawczy spoofingu VoIP; utrzymać granicę laboratoryjną | KRYTYCZNY/REFERENCYJNY |
+| 292 | godot-orchestrator | Orchestrator/plugin Godot; wersje, plugin boundaries i wykonywanie skryptów | WYSOKI |
+| 293 | nocobase | Duża platforma low-code/no-code; pluginy, auth/RBAC, dane i multi-tenancy | KRYTYCZNY/REFERENCYJNY |
+| 294 | stryker-js | Duży ekosystem mutation testing JS/TS; runnerzy, pluginy i izolacja procesu testowego | WYSOKI/REFERENCYJNY |
+| 295 | graphiti | System grafowej pamięci/knowledge graph dla agentów; schema, ingest, retrieval i izolacja danych | WYSOKI |
+| 296 | Build-Low-Code-No-Code-Machine-Learning-Web-App. | AURELIS ML Studio; Streamlit, PyCaret, CSV upload, AutoML i eksport modeli; wymagane aktualne dependency matrix | WYSOKI |
+| 297 | Taluxi-Open-Source | Edukacyjny system taxi Flutter + Node/TypeScript; GPS, VoIP, auth i jawny brak gotowości produkcyjnej | WYSOKI |
 
 ## Poprzednie audyty
 
-Audyty 1–257 pozostają zapisane w tym rejestrze oraz w odpowiednich plikach `plan pracy/`. Pozycje 258–279 obejmują bieżący przebieg; 265 był już wcześniej pokryty istniejącym planem i nie został ponownie doliczony.
+Audyty 1–277 pozostają zapisane w tym rejestrze oraz w odpowiednich plikach `plan pracy/`. Numer 265 (`elevenlabs-android`) był wcześniej pokryty istniejącym planem i nie został ponownie doliczony.
 
 ## Postęp
 
-**277 / 364 repozytoriów — 76,10% audytu szczegółowego.**  
-**87 repozytoriów pozostaje do audytu.**
+**297 / 376 repozytoriów — 78,99% audytu szczegółowego.**  
+**79 repozytoriów pozostaje do audytu.**
 
 ## Aktualizacja inwentaryzacji
 
-Portfel wynosi obecnie **364 repozytoria**. Licznik jest dynamiczny i będzie ponownie weryfikowany przy każdym kolejnym przebiegu. Nowe repozytoria nie są automatycznie uznawane za zbadane; muszą przejść rzeczywisty audyt zawartości i otrzymać własny plan.
+Portfel wynosi obecnie **376 repozytoriów**. Licznik jest dynamiczny i będzie ponownie weryfikowany przy każdym kolejnym przebiegu. Nowe repozytoria nie są automatycznie uznawane za zbadane; muszą przejść rzeczywisty audyt zawartości i otrzymać własny plan.
 
 ## Reguła kolejnych audytów
 
