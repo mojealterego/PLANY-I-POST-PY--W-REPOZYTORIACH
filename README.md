@@ -14,38 +14,54 @@ Każde repozytorium przechodzi osobny audyt. Dla każdego powstaje osobny plik w
 | Zakres | Stan |
 |---|---|
 | Inwentaryzacja portfela | ZAKTUALIZOWANA — **376 repozytoriów** |
-| Audyt szczegółowy | W TOKU — **341/376** |
-| Plany pracy | UTWORZONE — **341/376** |
+| Audyt szczegółowy | W TOKU — **353/376** |
+| Plany pracy | UTWORZONE — **353/376** |
 | Refaktoryzacja | OCZEKUJE NA AUDYT DANEGO REPOZYTORIUM |
 | Rebranding | OCZEKUJE |
 | Pełna polonizacja | OCZEKUJE |
 | Projekty z bazy wiedzy | OCZEKUJĄ NA ZAKOŃCZENIE ETAPU ISTNIEJĄCEGO PORTFELA |
 
-## Ostatnia tura — rekonsyliacja i nowe audyty
+## Ostatnia tura — 20 repozytoriów zweryfikowanych
 
-Ponownie sprawdzono aktualną inwentaryzację oraz katalog `plan pracy/`. Wśród 20 kolejnych kandydatów **16 posiadało już plany audytowe**, więc nie zostały ponownie doliczone. Cztery repozytoria nie miały planów i otrzymały nowe, zweryfikowane plany:
+W tej turze przeanalizowano rzeczywistą zawartość **20 repozytoriów**: README, a tam gdzie było to istotne również manifest/dependency file lub główny punkt wejścia. Następnie sprawdzono istnienie planu w centralnym repozytorium przed utworzeniem nowego.
+
+Nowe, unikalne plany utworzone w tej turze:
 
 | Nr | Repozytorium | Wynik audytu | Priorytet |
 |---:|---|---|---|
-| 338 | local-llms-on-android | Android on-device LLM; ONNX/LiteRT, Qwen/Gemma, obraz, OCR, kamera i lokalne dane | KRYTYCZNY |
-| 339 | PhoneClaw | iOS local AI agent; Gemma/MiniCPM-V, Skills, dane systemowe i opcjonalny Mac Gateway | KRYTYCZNY |
-| 340 | Omni-mobile | Android Compose; WebSocket do runtime AI, obecnie domyślny endpoint developerski `ws://10.0.2.2:8000/ws` | WYSOKI |
-| 341 | aider | Agent pair-programming; lokalne/chmurowe LLM, mapowanie codebase i Git | WYSOKI/REFERENCYJNY |
+| 342 | Temp-SMS-Receive | Python CLI; zewnętrzne API SMS, autoryzacja, AES, automatyczne instalowanie zależności i aktualizacje Git | KRYTYCZNY |
+| 343 | Uncensored-Local-Studio | Tauri/React; lokalne Stable Diffusion, LLM, Whisper, Kokoro, pobieranie modeli i subprocessy | KRYTYCZNY |
+| 344 | Rivo-Agent-Application | React Native Android; `llama.rn`, GGUF, Firebase Auth, AsyncStorage, downloader, moduły Kotlin | KRYTYCZNY |
+| 345 | sanna | Governance agentów; konstytucje YAML, Ed25519, receipts, gateway/interceptor i policy enforcement | KRYTYCZNY |
+| 346 | sim | Workspace agentów/workflow; Next.js/Bun/Postgres/Drizzle, Better Auth, jobs, webhooks, E2B/isolated-vm | KRYTYCZNY |
+| 347 | FastGPT | Agent/RAG/workflow/MCP; wizualna orkiestracja, pluginy, knowledge base i API | KRYTYCZNY |
+| 348 | dify | Platforma LLM/Agent/RAG/LLMOps; workflow, providerzy modeli, narzędzia, API i self-hosting | KRYTYCZNY |
+| 349 | pageplug | Fork Appsmith; React + Java/Spring WebFlux + Taro, MongoDB/Redis, data-source proxy | KRYTYCZNY |
+| 350 | claude-code-android | Android/Termux; trzy ścieżki instalacji, patchowane binarium, AVF VM, ADB i security model | KRYTYCZNY |
+| 351 | construct-3-games | Monorepo historycznych gier Construct 3; wiele prototypów i jamów, asset provenance | ŚREDNI/REFERENCYJNY |
+| 352 | saltcorn | No-code database builder; Node/Express/PostgreSQL, multi-tenant, dynamic plugins i CLI | KRYTYCZNY |
+| 353 | MaxKB | Enterprise Agent/RAG; Vue/Django/LangChain/PostgreSQL+pgvector, MCP, workflow i multimodalność | KRYTYCZNY |
 
-## Ważna korekta procesu
+Repozytoria sprawdzone i już posiadające plan lub wymagające dalszej rekonsyliacji nie zostały ponownie doliczone. W tej grupie potwierdzono m.in. istniejące plany dla `plasmic`, `OpenHands` i `ShipinKit`.
 
-W tej turze celowo **nie wymuszono sztucznego zwiększenia licznika o 20**. Próby utworzenia planów dla kolejnych kandydatów zwracały konflikt istniejącego pliku (`sha wasn't supplied`), co potwierdziło, że te repozytoria były już objęte katalogiem `plan pracy/`. Dzięki temu centralny licznik nie podwaja audytów.
+## Dowody z audytu
 
-Dla nowych pozycji sprawdzono rzeczywistą zawartość README. `local-llms-on-android` potwierdza lokalne modele Qwen/Gemma przez ONNX/LiteRT, multimodalne wejście i brak telemetryki; `PhoneClaw` potwierdza lokalnego agenta iOS z natywnymi Skills oraz kontrolowanymi operacjami; `Omni-mobile` ma jawnie developerski WebSocket `ws://10.0.2.2:8000/ws`; `aider` jest terminalowym agentem pair-programming z integracją Git. fileciteturn799file0 fileciteturn800file0 fileciteturn801file0 fileciteturn802file0
+`Temp-SMS-Receive` rzeczywiście zawiera Pythonowy CLI z `requests`, `pycryptodome`, `pyperclip` oraz funkcjami pobierania krajów, numerów i wiadomości; kod zawiera także stały klucz AES i mechanizm `git pull`. fileciteturn810file0 fileciteturn814file0
 
-## Poprzednie audyty
+`Uncensored-Local-Studio` deklaruje lokalne image generation, LLM, Whisper i Kokoro na Windows/Linux/macOS; frontend używa Tauri 2, React 19 i Vite 8. fileciteturn812file0 fileciteturn815file0
 
-Audyty 1–337 pozostają zapisane w tym rejestrze oraz w odpowiednich plikach `plan pracy/`. Numery 338–341 odpowiadają czterem nowym, unikalnym planom zapisanym w tej turze. Licznik ma być zwiększany wyłącznie o nowe, unikalne repozytoria.
+`Rivo-Agent-Application` potwierdza React Native 0.85.3, `llama.rn`, Firebase Auth, AsyncStorage, downloader i natywne moduły Android; README wskazuje także konieczność zastąpienia debug signing przed produkcją. fileciteturn818file0 fileciteturn820file0
+
+`MaxKB`, `FastGPT` i `Dify` potwierdzają duże platformy Agent/RAG/workflow, natomiast `sim` łączy workspace danych z agentami, harmonogramami i izolowanym wykonywaniem kodu. fileciteturn817file0 fileciteturn827file0 fileciteturn837file0 fileciteturn826file0
+
+`claude-code-android` posiada osobny security model, SSRF guard, permission rules i testy claimów; Path A wykorzystuje patchowanie binarium Linux dla Termux. fileciteturn842file0
+
+`GDevelop` oraz `construct-3-games` są projektami/game-development reference o zupełnie innym charakterze niż backendy agentowe: GDevelop jest pełnym no-code IDE/engine, a construct-3-games jest zbiorem historycznych gier i prototypów. fileciteturn841file0 fileciteturn843file0
 
 ## Postęp
 
-**341 / 376 repozytoriów — 90,69% audytu szczegółowego.**  
-**35 repozytoriów pozostaje do jednoznacznego rozliczenia/audytu.**
+**353 / 376 repozytoriów — 93,88% audytu szczegółowego.**  
+**23 repozytoria pozostają do jednoznacznego rozliczenia/audytu.**
 
 ## Aktualizacja inwentaryzacji
 
