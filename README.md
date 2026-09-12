@@ -3,7 +3,7 @@
 **Data rozpoczęcia:** 2026-09-11  
 **Zakres:** wszystkie repozytoria właściciela `mojealterego` wykryte przez połączone konto GitHub  
 **Inwentaryzacja historyczna:** **415 repozytoriów**  
-**Aktualnie dostępne przez połączone konto:** **100 repozytoriów**  
+**Aktualnie wykryte przez stronicowane wyszukiwanie GitHub:** **414 repozytoriów**  
 **Repozytorium monitorujące:** `mojealterego/PLANY-I-POST-PY--W-REPOZYTORIACH`
 
 ## Stan globalny
@@ -11,13 +11,22 @@
 | Zakres | Stan |
 |---|---|
 | Inwentaryzacja historyczna portfela | **415** |
-| Aktualnie dostępna inwentaryzacja GitHub | **100** |
+| Aktualna inwentaryzacja wykryta przez GitHub Search | **414** |
 | Audyt szczegółowy | W TOKU — **390/415 (93,98%)** |
+| Rekonsyliacja inwentarza | **414/415 wykrytych; 1 pozycja historyczna wymaga identyfikacji** |
 | Plany pracy | UTWORZONE dla rozliczonych pozycji; licznik logiczny pozostaje **390/415** |
 | Refaktoryzacja | OCZEKUJE NA AUDYT DANEGO REPOZYTORIUM |
 | Rebranding | OCZEKUJE |
 | Pełna polonizacja | OCZEKUJE |
 | Projekty z bazy wiedzy | OCZEKUJĄ NA ZAKOŃCZENIE ETAPU ISTNIEJĄCEGO PORTFELA |
+
+## Rekonsyliacja inwentarza — aktualizacja 2026-09-12
+
+Wykonano ponowne stronicowane wyszukiwanie `user:mojealterego` przez GitHub Search. Wynik stabilnego sortowania po aktualizacji obejmuje **414 repozytoriów** na stronach 1–5; strona 6 zwraca pusty wynik. Oznacza to, że obecnie potrafimy jednoznacznie wykryć **414 repozytoriów**, podczas gdy historyczny rejestr wskazuje **415**.
+
+Różnica **1 repozytorium** jest teraz właściwym celem rekonsyliacji. Nie należy jej utożsamiać z brakującym audytem. Licznik audytów pozostaje **390/415**, dopóki brakująca pozycja nie zostanie jednoznacznie zidentyfikowana i potwierdzona jako unikalne repozytorium.
+
+W szczególności nie stosujemy już wcześniejszego błędnego modelu „100 aktualnie dostępnych vs 415 historycznych”. Limit 100 wynikał z pojedynczego wywołania listowania połączonego konektora, a nie z pełnego stanu konta GitHub.
 
 ## Ostatnia tura — 27 repozytoriów zweryfikowanych
 
@@ -56,12 +65,6 @@ Zweryfikowano kolejną pulę **27 repozytoriów** z aktualnie dostępnej inwenta
 - `Anthropic-Grants`: scaffold badań nad subliminal transfer/mechanistic interpretability; eksperymenty sandboxed i syntetyczne.
 - `Hound-Grants`: benchmark proceduralnej zgodności agentów w izolowanych środowiskach; outcome success nie zastępuje oceny procedur, autoryzacji i provenance.
 
-## Rekonsyliacja licznika
-
-W bieżącej turze wykryto różnicę między **historyczną inwentaryzacją 415 pozycji** a **100 repozytoriami aktualnie zwracanymi przez połączone konto GitHub**. Nie wolno traktować tej różnicy jako 315 brakujących audytów ani automatycznie zmieniać licznika 390/415.
-
-Pozycje oznaczone wcześniej jako rozliczone zachowują status. Pozycje historyczne, których nie można obecnie jednoznacznie powiązać z aktualnym repozytorium, pozostają w stanie `RECONCILIATION_REQUIRED` do czasu uzyskania jednoznacznego identyfikatora lub ponownego pojawienia się repozytorium.
-
 ## Zasada procesu
 
 Każde repozytorium musi mieć osobny plan pracy oparty na rzeczywistej zawartości. Dla dużych projektów audyt obejmuje README, strukturę, manifesty zależności, build, CI/CD, testy i główne punkty wejścia tam, gdzie jest to możliwe. Projekty archiwalne i referencyjne nie są sztucznie traktowane jako produkty.
@@ -71,11 +74,12 @@ Każde repozytorium musi mieć osobny plan pracy oparty na rzeczywistej zawarto�
 ## Postęp
 
 **390 / 415 repozytoriów — 93,98% audytu szczegółowego.**  
-**25 pozycji pozostaje do jednoznacznego rozliczenia/reconciliacji.**
+**414 / 415 pozycji zostało obecnie wykrytych w bieżącej rekonsyliacji inwentarza.**  
+**1 pozycja historyczna pozostaje do jednoznacznej identyfikacji.**
 
 ## Następna tura
 
-Ponownie porównać historyczny rejestr z aktualnie dostępną inwentaryzacją i szukać wyłącznie pozycji bez jednoznacznego audytu. W jednej turze analizować **co najmniej 20 repozytoriów**, jeżeli dostępnych jest co najmniej 20 nierozliczonych pozycji. Licznik zwiększać wyłącznie dla unikalnych repozytoriów, dla których rzeczywiście powstaje brakujący plan.
+Porównać pełny historyczny rejestr 415 pozycji z aktualnymi 414 wynikami wyszukiwania, identyfikując dokładnie brakujące repozytorium po nazwie, identyfikatorze lub innym jednoznacznym kluczu. Następnie kontynuować audyt wyłącznie dla rzeczywiście nierozliczonych pozycji. W jednej turze analizować **co najmniej 20 repozytoriów**, jeżeli dostępnych jest co najmniej 20 nierozliczonych pozycji. Licznik zwiększać wyłącznie dla unikalnych repozytoriów, dla których rzeczywiście powstaje brakujący plan.
 
 ## Zasada produkcyjna
 
