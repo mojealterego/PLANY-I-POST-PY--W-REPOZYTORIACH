@@ -2,74 +2,65 @@
 
 **Data rozpoczęcia:** 2026-09-11  
 **Zakres:** wszystkie repozytoria właściciela `mojealterego` wykryte przez połączone konto GitHub  
-**Aktualna inwentaryzacja:** **415 repozytoriów**  
+**Inwentaryzacja historyczna:** **415 repozytoriów**  
+**Aktualnie dostępne przez połączone konto:** **100 repozytoriów**  
 **Repozytorium monitorujące:** `mojealterego/PLANY-I-POST-PY--W-REPOZYTORIACH`
 
 ## Stan globalny
 
 | Zakres | Stan |
 |---|---|
-| Inwentaryzacja portfela | ZAKTUALIZOWANA — **415** |
+| Inwentaryzacja historyczna portfela | **415** |
+| Aktualnie dostępna inwentaryzacja GitHub | **100** |
 | Audyt szczegółowy | W TOKU — **390/415 (93,98%)** |
-| Plany pracy | UTWORZONE — **390/415** |
+| Plany pracy | UTWORZONE dla rozliczonych pozycji; licznik logiczny pozostaje **390/415** |
 | Refaktoryzacja | OCZEKUJE NA AUDYT DANEGO REPOZYTORIUM |
 | Rebranding | OCZEKUJE |
 | Pełna polonizacja | OCZEKUJE |
 | Projekty z bazy wiedzy | OCZEKUJĄ NA ZAKOŃCZENIE ETAPU ISTNIEJĄCEGO PORTFELA |
 
-## Ostatnia tura — 20 repozytoriów zweryfikowanych
+## Ostatnia tura — 27 repozytoriów zweryfikowanych
 
-Zweryfikowano kolejną pulę **20 repozytoriów** z aktualnej inwentaryzacji, porównując rzeczywistą zawartość README i wybranych artefaktów projektu z rejestrem planów. Repozytoria posiadające już plan nie zostały ponownie doliczone.
+Zweryfikowano kolejną pulę **27 repozytoriów** z aktualnie dostępnej inwentaryzacji, porównując rzeczywistą zawartość README z rejestrem planów. Nie zwiększono licznika audytów, ponieważ wszystkie sprawdzone pozycje miały już odpowiadające im plany lub były już rozliczone w rejestrze.
 
-### Nowe, unikalne plany
+### Zweryfikowane repozytoria
 
-| Nr | Repozytorium | Wynik audytu | Priorytet |
-|---:|---|---|---|
-| 388 | PornHubBot | archiwalny Python 2.7/Scrapy crawler + MongoDB; zakres wysokowydajnego pobierania wymaga zamrożenia i klasyfikacji | WYSOKI/KRYTYCZNY |
-| 389 | PornHub | archiwalny bot Telegram do dystrybucji treści dla dorosłych; brak podstaw do traktowania jako produkt produkcyjny | WYSOKI/KRYTYCZNY |
-| 390 | agentic-ai-hack | hackathonowy system wieloagentowy do obsługi roszczeń ubezpieczeniowych na Azure AI | KRYTYCZNY |
+`agent-learning-kit`, `aider`, `Problemy-milenijne`, `free-claude-code`, `MCP-Server-Eleven-Labs`, `Longview-Philanthropy-Grant`, `packages`, `elevenlabs-python`, `elevenlabs-android`, `plugin`, `examples`, `homebrew-tap`, `scoop-bucket`, `ui`, `elevenlabs-mcp-player`, `elevenlabs-n8n`, `unity`, `Alibaba-Grants`, `Feng-Grants`, `ID-Xbox-Grants`, `Unity-Grants`, `Roblox-Grants`, `South-Park-Grants`, `Neo-residency-Grants`, `Fellowship-Grants`, `Anthropic-Grants`, `Hound-Grants`.
 
-### Zweryfikowane repozytoria z istniejącym planem
+### Najważniejsze ustalenia
 
-W tej samej turze potwierdzono i/lub ponownie przeanalizowano rzeczywistą zawartość `sugar`, `NekokoLPA`, `SPYZIER-APP`, `TaskingAI`, `claude-code-android`, `OpenLLM`, `langflow`, `OpenHands`, `maid`, `con-terminal`, `hackai-2025`, `Stable-Diffusion`, `agent`, `NeoApps.AI-CodeGenerator`, `MyGirlGPT`, `OpenMusic` oraz repozytoria objęte bieżącą pulą audytową. Ich istniejące plany nie zwiększyły licznika.
+- `agent-learning-kit`: SDK ewaluacji z metrykami lokalnymi, LLM-as-Judge, guardrailami, streamingiem, AutoEval, feedbackiem i OpenTelemetry; wymagane testy deterministyczności, retencja danych i provenance benchmarków.
+- `aider`: terminalowy agent pair-programming z mapowaniem codebase, Git i testami; kluczowe są permission boundary, sekrety, diff/approval i odwracalność zmian.
+- `Problemy-milenijne`: formalna rekonstrukcja TRS dotycząca P≠NP, RH, Hodge i BSD; `PROVED` wyłącznie po pełnej weryfikacji.
+- `free-claude-code`: lokalny proxy/launcher dla wielu agentów i providerów; krytyczne są sekrety, fallbacki, shell/filesystem i instalatory.
+- `MCP-Server-Eleven-Labs`: własny MCP z auth, rate limitingiem, limitami payloadów i stanem projektów; migracja MCP SDK v2 wymaga zmiany źródła i testów razem.
+- `Longview-Philanthropy-Grant`: pakiet badawczo-grantowy; aktualność RFP i dowodów musi być weryfikowana przed kolejną aplikacją.
+- `packages`: monorepo SDK ElevenAgents dla JS/TS/React/React Native i widgetów; client tools są powierzchnią wykonawczą wymagającą least privilege.
+- `elevenlabs-python`: oficjalny SDK z TTS, streamingiem, voice cloning, agentami i Speech Engine; kluczowe są credentials, WebSocket auth, anulowanie zadań i limity payloadów.
+- `elevenlabs-android`: SDK Kotlin dla agentów głosowych/tekstowych, LiveKit/WebRTC i WebSocket; API keys pozostają po stronie backendu, a client tools wymagają kontroli uprawnień.
+- `plugin`: plugin ElevenLabs dla agentów kodujących z umiejętnościami i hosted MCP OAuth; wymagane są granice narzędzi i provenance treści.
+- `examples`: prompt-driven przykłady TTS/STT/music/sound effects/agents; legacy examples są deprecated.
+- `homebrew-tap` i `scoop-bucket`: automatycznie generowane dystrybucje CLI; nie należy ręcznie modyfikować manifestów.
+- `ui`: biblioteka komponentów React/shadcn dla aplikacji audio i agentic; instalacja komponentów wymaga kontroli provenance i zależności.
+- `elevenlabs-mcp-player`: zdeprecjonowane na rzecz hosted MCP; materiał referencyjny/archiwalny.
+- `elevenlabs-n8n`: community node ElevenLabs; README ma niedokończoną sekcję usage.
+- `unity`: wczesny ElevenAgents SDK dla Unity 6.3 LTS; wymaga macierzy kompatybilności i testów platformowych.
+- `Alibaba-Grants`: grantowo-architektoniczny OMEGA-X; demonstrated/proposed są rozdzielone, a twierdzenia programowe wymagają aktualnych źródeł.
+- `Feng-Grants`: repozytorium puste; brak podstaw do przypisywania funkcjonalności.
+- `ID-Xbox-Grants`: pakiet aplikacyjny Pieśń Zapomnianych; twierdzenia o programie Xbox wymagają fact-checku przed zgłoszeniem.
+- `Unity-Grants`: NeuroAdapt AI; projekt R&D, nie gotowy produkt kliniczny; adaptacja trudności nie jest autonomicznym osądem medycznym.
+- `Roblox-Grants`: brak README na aktualnym branchu; potrzebne dalsze rozpoznanie drzewa.
+- `South-Park-Grants`: NeuroSteer; hipoteza badawcza SAE/activation steering, wymagająca eksperymentów.
+- `Neo-residency-Grants`: Aegis State Management; referencyjna implementacja stanu i współbieżności, bez roszczenia do produkcyjnej bazy.
+- `Fellowship-Grants`: LuminaCore; badawczy projekt fotonicznego edge AI z E0–E4 evidence discipline.
+- `Anthropic-Grants`: scaffold badań nad subliminal transfer/mechanistic interpretability; eksperymenty sandboxed i syntetyczne.
+- `Hound-Grants`: benchmark proceduralnej zgodności agentów w izolowanych środowiskach; outcome success nie zastępuje oceny procedur, autoryzacji i provenance.
 
-## Dowody z ostatniej tury
+## Rekonsyliacja licznika
 
-`sugar` potwierdza lokalną pamięć AI coding agents na SQLite, semantic search, MCP, kolejkę zadań i opcjonalną autonomiczną realizację zadań. fileciteturn1045file0
+W bieżącej turze wykryto różnicę między **historyczną inwentaryzacją 415 pozycji** a **100 repozytoriami aktualnie zwracanymi przez połączone konto GitHub**. Nie wolno traktować tej różnicy jako 315 brakujących audytów ani automatycznie zmieniać licznika 390/415.
 
-`NekokoLPA` potwierdza React Native Android/iOS, Mac Catalyst, OMAPI, USB CCID, CryptoTokenKit, WASM/native bridges, warianty buildów i testy/lint/type-check. fileciteturn1046file0 fileciteturn1047file0
-
-`SPYZIER-APP` deklaruje ukryte monitorowanie urządzenia, lokalizację, SMS, połączenia, screen capture i zdalne sterowanie; pozostaje materiałem forensic/research. fileciteturn1048file0
-
-`PornHubBot` ma historyczny projekt Scrapy z MongoDB, middleware Cookie/UA, spiderem, pipeline'em i konfiguracją `ROBOTSTXT_OBEY=True`, `DOWNLOAD_DELAY=1`, `CONCURRENT_REQUESTS=20`. fileciteturn1074file0 fileciteturn1092file0 fileciteturn1093file0
-
-`PornHub` jest botem Telegram do pobierania treści, z konfiguracją przez zmienne środowiskowe i zależnościami Python/FFmpeg; został sklasyfikowany jako materiał archiwalny. fileciteturn1075file0
-
-`agentic-ai-hack` opisuje sześciostopniowy hackathon Azure AI: deployment zasobów, document processing, agentów, ewaluację/observability, agentów specjalistycznych i orkiestrację. Challenge 0 pobiera sekrety do `.env`, więc governance i least privilege są krytyczne. fileciteturn1076file0 fileciteturn1085file0
-
-`TaskingAI` jest self-hosted BaaS dla agentów LLM z FastAPI, narzędziami, RAG, multi-tenancy, Docker i wieloma providerami modeli; README zawiera także domyślne dane logowania, które wymagają usunięcia z bezpiecznej dokumentacji wdrożeniowej. fileciteturn1077file0
-
-`claude-code-android` dokumentuje trzy ścieżki uruchamiania Claude Code na Androidzie, w tym Termux, proot-distro i eksperymentalny AVF, oraz jawny model bezpieczeństwa, SSRF guard i testy claimów. fileciteturn1078file0
-
-`OpenLLM` serwuje otwarte LLM jako API kompatybilne z OpenAI i wspiera lokalne oraz chmurowe deploymenty, w tym Docker/Kubernetes/BentoCloud. fileciteturn1079file0
-
-`langflow` jest wizualną platformą AI workflow/agent z API i MCP serverem, playgroundem, multi-agent orchestration i deploymentem. fileciteturn1080file0
-
-`OpenHands` to self-hosted control center dla agentów z wieloma backendami i automatyzacjami; README wyraźnie ostrzega, że tryb bez sandboxa daje agentowi pełny dostęp do filesystemu. fileciteturn1083file0
-
-`maid` to Androidowy klient lokalnych GGUF przez llama.cpp i zdalnych providerów, z pobieraniem modeli, opcjonalnym sync Supabase i testami/buildami CI. fileciteturn1084file0
-
-`con-terminal` jest aktywnym beta terminalem Rust/GPU z wbudowanym AI harness, trybem shell/agent i integracją SSH/tmux. fileciteturn1087file0
-
-`hackai-2025` jest katalogiem notebooków edukacyjnych obejmujących preprocessing, trening LLM, deployment, MCP, agentów, alignment, reasoning, ASR/TTS, embeddingi, image generation i VLM. fileciteturn1088file0
-
-`Stable-Diffusion` jest repozytorium tutorialowym i edukacyjnym, a nie pojedynczym produktem; zawiera materiały dotyczące Stable Diffusion, LoRA, DreamBooth, ControlNet, video, TTS i innych technik generatywnych. fileciteturn1089file0
-
-`agent` jest 1MCP unified runtime; `package.json` potwierdza TypeScript/Node, pnpm, MCP SDK, CLI, build, lint, testy jednostkowe/E2E, security-permission tests i conformance tests. fileciteturn1081file0 fileciteturn1090file0
-
-`NeoApps.AI-CodeGenerator` łączy generator kodu z GUI Streamlit i wygenerowanym backendem .NET/frontendem React, wykorzystując m.in. MySQL, Redis, RabbitMQ i MinIO; README wskazuje także jawne hasła developerskie i wymaga hardeningu przed produkcją. fileciteturn1086file0
-
-`MyGirlGPT` łączy Telegram, lokalny LLM, TTS i Stable Diffusion; pozostaje projektem referencyjnym wymagającym kontroli prywatności, sekretów i zależności. fileciteturn1091file0
+Pozycje oznaczone wcześniej jako rozliczone zachowują status. Pozycje historyczne, których nie można obecnie jednoznacznie powiązać z aktualnym repozytorium, pozostają w stanie `RECONCILIATION_REQUIRED` do czasu uzyskania jednoznacznego identyfikatora lub ponownego pojawienia się repozytorium.
 
 ## Zasada procesu
 
@@ -80,11 +71,11 @@ Każde repozytorium musi mieć osobny plan pracy oparty na rzeczywistej zawarto�
 ## Postęp
 
 **390 / 415 repozytoriów — 93,98% audytu szczegółowego.**  
-**25 repozytoriów pozostaje do jednoznacznego rozliczenia/audytu.**
+**25 pozycji pozostaje do jednoznacznego rozliczenia/reconciliacji.**
 
 ## Następna tura
 
-Ponownie zweryfikować aktualną inwentaryzację i kontynuować od repozytoriów bez jednoznacznie rozliczonego audytu. W jednej turze analizować **co najmniej 20 repozytoriów**. Licznik zwiększać wyłącznie dla unikalnych repozytoriów, dla których rzeczywiście powstaje brakujący plan.
+Ponownie porównać historyczny rejestr z aktualnie dostępną inwentaryzacją i szukać wyłącznie pozycji bez jednoznacznego audytu. W jednej turze analizować **co najmniej 20 repozytoriów**, jeżeli dostępnych jest co najmniej 20 nierozliczonych pozycji. Licznik zwiększać wyłącznie dla unikalnych repozytoriów, dla których rzeczywiście powstaje brakujący plan.
 
 ## Zasada produkcyjna
 
