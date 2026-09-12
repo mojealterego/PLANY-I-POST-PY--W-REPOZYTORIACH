@@ -14,8 +14,8 @@ Każde repozytorium przechodzi osobny audyt. Dla każdego powstaje osobny plik w
 | Zakres | Stan |
 |---|---|
 | Inwentaryzacja portfela | ZAKOŃCZONA — **299 repozytoriów** |
-| Audyt szczegółowy | W TOKU — **76/299** |
-| Plany pracy | UTWORZONE — **76/299** |
+| Audyt szczegółowy | W TOKU — **96/299** |
+| Plany pracy | UTWORZONE — **96/299** |
 | Refaktoryzacja | OCZEKUJE NA AUDYT DANEGO REPOZYTORIUM |
 | Rebranding | OCZEKUJE |
 | Pełna polonizacja | OCZEKUJE |
@@ -25,25 +25,35 @@ Każde repozytorium przechodzi osobny audyt. Dla każdego powstaje osobny plik w
 
 | Nr | Repozytorium | Wynik audytu | Priorytet | Plan pracy |
 |---:|---|---|---|---|
-| 67 | developerPortfolio | Stary szablon portfolio React/CRA; React 16, CRA 3.2, node-sass i historyczne zależności wymagają modernizacji oraz bezpiecznej integracji GitHub API | ŚREDNI | `plan pracy/developerPortfolio.md` |
-| 68 | eSim | Duży projekt EDA z PyQt6 oraz KiCad/Ngspice/GHDL/Verilator/OpenModelica; wymaga macierzy kompatybilności i testów regresyjnych symulacji | WYSOKI | `plan pracy/eSim.md` |
-| 69 | PyPhone | Eksperymentalny klient VoIP/PyQt z MySQL, socketami, PyAudio i ngrok; krytyczne bezpieczeństwo transportu, sekretów i współbieżności | WYSOKI | `plan pracy/PyPhone.md` |
-| 70 | telephony | Platforma telekomunikacyjna VoxImplant z konfiguracją stref, routingu, harmonogramów i CI/CD; wymaga walidacji konfiguracji i kontroli sekretów | WYSOKI | `plan pracy/telephony.md` |
-| 71 | Issabel-PBX | Konteneryzowany PBX z macvlan, reverse proxy, wieloma portami i NET_ADMIN; wymaga minimalizacji ekspozycji i uprawnień | WYSOKI | `plan pracy/Issabel-PBX.md` |
-| 72 | plasmic | Duży monorepo visual buildera z codegen, CMS, auth/RBAC i wieloma pakietami; dodatkowo zawiera mechanizmy safehouse dla automatyzacji agentowej | KRYTYCZNY | `plan pracy/plasmic.md` |
-| 73 | dcache | Duży rozproszony system storage z wieloma protokołami; Java 21, Maven i Jenkins, wymagane testy recovery/interoperacyjności | KRYTYCZNY | `plan pracy/dcache.md` |
-| 74 | ai | Lokalny generator obrazu/wideo 18+ oparty o Wan 2.5 i LoRA; krytyczne provenance modeli, supply chain i guardraile treściowe | KRYTYCZNY | `plan pracy/ai.md` |
-| 75 | stumblybot | Historyczny eksperyment robotyki Marty + Google Assistant/DialogFlow; README wskazuje brak własnego auth/encryption routera | ŚREDNI | `plan pracy/stumblybot.md` |
-| 76 | grapesjs | Duży monorepo visual web buildera; pnpm/Node 20+, TypeScript, Jest, lint/typecheck i osobne pakiety core/CLI/docs | WYSOKI | `plan pracy/grapesjs.md` |
+| 77 | builder-www | Frappe Builder; low-code builder z AI, CMS, skryptami, publikacją i analityką; workspace frontend/Frappe UI | WYSOKI | `plan pracy/builder-www.md` |
+| 78 | futureagi-sdk | SDK ewaluacji/observability/guardrails/RAG dla Python + TypeScript; kluczowe dane ewaluacyjne i sekrety API | WYSOKI | `plan pracy/futureagi-sdk.md` |
+| 79 | MATS-Grants | Reproducowalny syntetyczny harness badawczy z CI, testami i safety boundary; brak roszczeń o realne scheming | WYSOKI | `plan pracy/MATS-Grants.md` |
+| 80 | Agent-Android | Foundation Android AI agent z Expo/RN, API, MCP, skills i approval gates; Node >=22.13 | KRYTYCZNY | `plan pracy/Agent-Android.md` |
+| 81 | skills | Biblioteka ElevenLabs Agent Skills z trigger/functional evals i izolowanymi workspace'ami testowymi | WYSOKI | `plan pracy/skills.md` |
+| 82 | engram | MCP-native pamięć agentów; verbatim transcripts, semantic search, multi-tenancy, Cloudflare Workers/D1/Vectorize | KRYTYCZNY | `plan pracy/engram.md` |
+| 83 | git-lfs | Duży upstreamowy projekt Git LFS w Go z CI, podpisywanymi release'ami i rozbudowaną specyfikacją | ŚREDNI | `plan pracy/git-lfs.md` |
+| 84 | softphone | Eksperymentalny SIP/RTP softphone PHP/Swoole z bridge RTP↔PCM i aktywną gałęzią inbound | KRYTYCZNY | `plan pracy/softphone.md` |
+| 85 | SMS-MAN-vs-OnlineSIM-2026-disposable-numbers-from-0.01-service-compariso | Mikro-repo porównawcze usług numerów tymczasowych; brak podstaw do klasyfikacji jako aplikacja | NISKI | `plan pracy/SMS-MAN-vs-OnlineSIM-2026-disposable-numbers-from-0.01-service-compariso.md` |
+| 86 | FastRecvSMS | CLI/MCP do usług SMS verification; multi-provider, zakup numerów i operacje na zamówieniach | KRYTYCZNY | `plan pracy/FastRecvSMS.md` |
+| 87 | astro | hermitAI: Astro + Gemini/Vertex + Bright Data + MongoDB RAG + JWT/credits + wiele narzędzi web | KRYTYCZNY | `plan pracy/astro.md` |
+| 88 | layla-sdk | TypeScript SDK dla mini-aplikacji Layla; WebView bridge, SQLite/files, multimodal, audio i generowanie treści | WYSOKI | `plan pracy/layla-sdk.md` |
+| 89 | pentagram | Niezależny memory substrate w TypeScript/S-expression z evaluator sandbox, MCP, HNSW, provenance i tenant isolation | KRYTYCZNY | `plan pracy/pentagram.md` |
+| 90 | agenticSeek | Lokalny/autonomiczny agent z browsingiem, wykonywaniem kodu, Docker/SearXNG/Redis i wieloma providerami LLM | KRYTYCZNY | `plan pracy/agenticSeek.md` |
+| 91 | cli | ElevenLabs CLI/Agents as Code; Rust, OpenAPI-generated SDK, push/pull agentów, tools/tests i data residency | WYSOKI | `plan pracy/cli.md` |
+| 92 | elevenlabs-mcp | Historyczny lokalny MCP ElevenLabs, jednoznacznie deprecated na rzecz hosted MCP; repo nie jest aktywnie utrzymywane | NISKI | `plan pracy/elevenlabs-mcp.md` |
+| 93 | freemail | Cloudflare Workers/D1/R2 temporary-mail service z REST API, forwardingiem, auth i wieloma providerami wysyłki | KRYTYCZNY | `plan pracy/freemail.md` |
+| 94 | 26CP3600177-ai-email-generator | Bardzo mały projekt akademicki z README o charakterze szablonowym i licznymi niezweryfikowanymi alternatywami stacku | NISKI | `plan pracy/26CP3600177-ai-email-generator.md` |
+| 95 | mailtm-client | Lekki Python wrapper MailTM do tworzenia skrzynek, JWT i odczytu inboxu; README zawiera placeholder repo URL | ŚREDNI | `plan pracy/mailtm-client.md` |
+| 96 | krypton-byte | Repozytorium profilowe agregujące projekty autora; m.in. neonize/tryx/thundra i narzędzia komunikatorowe | NISKI/ŚREDNI | `plan pracy/krypton-byte.md` |
 
 ## Poprzednie audyty
 
-Audyty 1–66 pozostają zapisane w tym rejestrze oraz w odpowiednich plikach `plan pracy/`. Pozycje 67–76 są opisane powyżej.
+Audyty 1–76 pozostają zapisane w tym rejestrze oraz w odpowiednich plikach `plan pracy/`. Pozycje 77–96 są opisane powyżej.
 
 ## Postęp
 
-**76 / 299 repozytoriów — 25,42% audytu szczegółowego.**  
-**223 repozytoria pozostają do audytu.**
+**96 / 299 repozytoriów — 32,11% audytu szczegółowego.**  
+**203 repozytoria pozostają do audytu.**
 
 ## Aktualizacja inwentaryzacji
 
