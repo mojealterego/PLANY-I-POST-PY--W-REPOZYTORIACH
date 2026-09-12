@@ -14,8 +14,8 @@ Każde repozytorium przechodzi osobny audyt. Dla każdego powstaje osobny plik w
 | Zakres | Stan |
 |---|---|
 | Inwentaryzacja portfela | ZAKTUALIZOWANA — **376 repozytoriów** |
-| Audyt szczegółowy | W TOKU — **317/376** |
-| Plany pracy | UTWORZONE — **317/376** |
+| Audyt szczegółowy | W TOKU — **337/376** |
+| Plany pracy | UTWORZONE — **337/376** |
 | Refaktoryzacja | OCZEKUJE NA AUDYT DANEGO REPOZYTORIUM |
 | Rebranding | OCZEKUJE |
 | Pełna polonizacja | OCZEKUJE |
@@ -23,45 +23,46 @@ Każde repozytorium przechodzi osobny audyt. Dla każdego powstaje osobny plik w
 
 ## Ostatnio wykonane audyty — przebieg po wykryciu 376 repozytoriów
 
-Po ponownej inwentaryzacji potwierdzono **376 repozytoriów**. W tej turze dodano **20 nowych, unikalnych planów**, podnosząc stan z 297 do **317/376**. Repozytoria posiadające wcześniejsze plany nie zostały ponownie doliczone.
+Po ponownej inwentaryzacji potwierdzono **376 repozytoriów**. W tej turze dodano **20 nowych, unikalnych planów**, podnosząc stan z 317 do **337/376**. Repozytoria posiadające wcześniejsze plany nie zostały ponownie doliczone.
 
 | Nr | Repozytorium | Wynik audytu | Priorytet |
 |---:|---|---|---|
-| 298 | Fellowship-Grants | Repozytorium grantowe/dokumentacyjne; źródła, terminy i kompletność dokumentacji | NISKI/REFERENCYJNY |
-| 299 | agent-learning-kit | SDK ewaluacji LLM: metryki, guardrails, LLM-as-Judge, streaming, AutoEval i OpenTelemetry | WYSOKI |
-| 300 | AI-Resume-Optimizer | Aplikacja AI do analizy CV; dokumenty, dane prywatne i kontrakty AI wymagają hardeningu | WYSOKI |
-| 301 | hmdm-android | Klient Android zarządzania urządzeniami; permissions, auth, usługi i dane urządzeń | WYSOKI |
-| 302 | hmdm-docker | Konteneryzacja HMDM; obrazy, sieć, sekrety, wolumeny i backup | WYSOKI |
-| 303 | local-dream | Lokalny runtime AI; modele, storage, sieć i izolacja wykonania | WYSOKI |
-| 304 | TempMailBot | Automatyzacja poczty tymczasowej; sesje, prywatność i ograniczenia zgodności | ŚREDNI/WYSOKI |
-| 305 | openchakra | Projekt UI/no-code; komponenty, zależności, accessibility i build | ŚREDNI/REFERENCYJNY |
-| 306 | MCQ-Generator-Using-Langchain-and-OpenAI | Generator MCQ z LLM; schema, walidacja, koszty i jakość wyników | ŚREDNI |
-| 307 | Giant-Music-Transformer | Projekt generatywny audio; checkpointy, GPU, dane i provenance | WYSOKI/REFERENCYJNY |
-| 308 | brave-browser | Duży upstream przeglądarki; sandbox, rozszerzenia, sieć i supply chain | WYSOKI/REFERENCYJNY |
-| 309 | Uncensored-Local-AI-Multiplatform | Lokalny AI wieloplatformowy; runtime, modele, pliki i polityka sieciowa | WYSOKI |
-| 310 | TARS | Eksperymentalny agent; rzeczywisty runtime i granice narzędzi wymagają weryfikacji | WYSOKI |
-| 311 | OnlineSimBot | Mała integracja automatyzacyjna z zewnętrznym API; credentials i rate limits | ŚREDNI/WYSOKI |
-| 312 | Low-Code-No-Code-Platforms | Katalog porównawczy platform; metodologia, źródła i aktualność danych | ŚREDNI/REFERENCYJNY |
-| 313 | sipdroid | Klient SIP/VoIP Android; credentials, TLS/SRTP, RTP i permissions | WYSOKI/REFERENCYJNY |
-| 314 | PixelVision8 | Retro/2D engine i narzędzia; runtime, asset pipeline i eksport | ŚREDNI/REFERENCYJNY |
-| 315 | fdroidclient | Klient F-Droid; signing, metadata, aktualizacje i supply chain | WYSOKI/REFERENCYJNY |
-| 316 | Virtual-SMS-at-scale-evaluating-SMS-MAN-s-2026-infrastructu | Materiał badawczo-porównawczy; metodologia, źródła i prywatność | NISKI/REFERENCYJNY |
-| 317 | My-project-2 | Małe repozytorium projektowe; rzeczywisty zakres wymaga potwierdzenia zawartością | ŚREDNI/BOOTSTRAP |
+| 318 | termux-app | Upstream Android terminal; build/release, pluginy, signing i supply chain | WYSOKI/REFERENCYJNY |
+| 319 | TaskingAI | BaaS dla agentów LLM; FastAPI, multi-tenancy, tools, RAG, Docker i SDK | KRYTYCZNY |
+| 320 | langflow | Visual AI workflow/agent builder; API, MCP, custom Python components i deployment | KRYTYCZNY/REFERENCYJNY |
+| 321 | OpenLLM | Runtime/serwer LLM; API, modele, zasoby GPU i deployment | WYSOKI/REFERENCYJNY |
+| 322 | datadog-agent | Duży agent obserwowalności; collectors, permissions, telemetry i integracje | WYSOKI/REFERENCYJNY |
+| 323 | lume | Duże repozytorium web/3D; renderowanie, assety i build | ŚREDNI/WYSOKI/REFERENCYJNY |
+| 324 | UserLAnd | Linux na Androidzie; procesy, filesystem, sieć i integracja systemowa | WYSOKI/REFERENCYJNY |
+| 325 | openinterpreter | Agent z wykonaniem kodu i działań systemowych | KRYTYCZNY |
+| 326 | AutoGPT | Autonomiczny agent z planowaniem, pamięcią i narzędziami | KRYTYCZNY |
+| 327 | SuperAGI | Platforma agentowa z narzędziami/pamięcią i wykonaniem | KRYTYCZNY/REFERENCYJNY |
+| 328 | ChatDev | Wieloagentowy development i generowanie artefaktów | KRYTYCZNY |
+| 329 | OGAM | On-device AI Android/iOS/macOS; LLM, vision, audio, tools i MCP | KRYTYCZNY |
+| 330 | Cz-owiek-Roku-Film | Kanoniczne repozytorium produkcji filmu AI; source-lock i continuity-lock | KRYTYCZNY |
+| 331 | google-analytics-mcp | Eksperymentalny MCP dla Google Analytics; OAuth/ADC i read-only API | WYSOKI |
+| 332 | mailtm_client | Dart wrapper mail.tm; konta, JWT, wiadomości i załączniki | ŚREDNI/WYSOKI |
+| 333 | ComfyUI-LTXVideo | Custom nodes/workflows dla LTX-2.3; modele, LoRA, HDR, audio/video | WYSOKI/REFERENCYJNY |
+| 334 | rust-sdk | SDK Rust; publiczne API, Cargo, kompatybilność i testy | ŚREDNI/WYSOKI |
+| 335 | agents | Komponenty agentowe; runtime, tools, policy i observability | WYSOKI |
+| 336 | maid | Android React Native; llama.cpp/GGUF, remote LLM, Supabase i model downloads | KRYTYCZNY |
+| 337 | actions | GitHub Actions dla repozytoriów MCP; deploy, cleanup i automatyczny merge | KRYTYCZNY DLA CI/CD |
 
 ## Dodatkowe ustalenia tej tury
 
-- `SentryPeerHQ`, `Googleskills` i `Stable-Diffusion` zostały ponownie sprawdzone jako kandydaci, ale nie zostały doliczone, ponieważ repozytoria posiadały już plany audytowe.
-- Próba utworzenia drugiego planu dla generatora MCQ została odrzucona przez GitHub jako istniejący plik; nie zwiększyła licznika unikalnych audytów.
-- Przy analizie dużych repozytoriów zachowano status referencyjny/upstream tam, gdzie bezpośrednia refaktoryzacja byłaby niewłaściwa.
+- Przed dodaniem batcha ponownie pobrano aktualną inwentaryzację; portfel nadal wynosi **376 repozytoriów**.
+- Kandydaci z istniejącymi planami nie zostali doliczeni ponownie. Próby zapisu do istniejących planów zwracały konflikt SHA i były traktowane jako duplikaty.
+- Dla nowych pozycji sprawdzono dostępność repozytorium oraz, gdzie było to wymagane, rzeczywistą zawartość README przed przygotowaniem planu.
+- Szczególną uwagę poświęcono execution boundaries, credentials, MCP, signing, model provenance i prywatności danych.
 
 ## Poprzednie audyty
 
-Audyty 1–297 pozostają zapisane w tym rejestrze oraz w odpowiednich plikach `plan pracy/`. Numeracja audytów jest numeracją rejestrową; przy kolejnych turach licznik ma być zwiększany wyłącznie o nowe, unikalne repozytoria.
+Audyty 1–317 pozostają zapisane w tym rejestrze oraz w odpowiednich plikach `plan pracy/`. Numeracja audytów jest numeracją rejestrową; przy kolejnych turach licznik ma być zwiększany wyłącznie o nowe, unikalne repozytoria.
 
 ## Postęp
 
-**317 / 376 repozytoriów — 84,31% audytu szczegółowego.**  
-**59 repozytoriów pozostaje do audytu.**
+**337 / 376 repozytoriów — 89,63% audytu szczegółowego.**  
+**39 repozytoriów pozostaje do audytu.**
 
 ## Aktualizacja inwentaryzacji
 
