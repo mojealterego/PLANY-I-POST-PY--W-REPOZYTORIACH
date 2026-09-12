@@ -14,8 +14,8 @@ Każde repozytorium przechodzi osobny audyt. Dla każdego powstaje osobny plik w
 | Zakres | Stan |
 |---|---|
 | Inwentaryzacja portfela | ZAKOŃCZONA — **299 repozytoriów** |
-| Audyt szczegółowy | W TOKU — **116/299** |
-| Plany pracy | UTWORZONE — **116/299** |
+| Audyt szczegółowy | W TOKU — **137/299** |
+| Plany pracy | UTWORZONE — **137/299** |
 | Refaktoryzacja | OCZEKUJE NA AUDYT DANEGO REPOZYTORIUM |
 | Rebranding | OCZEKUJE |
 | Pełna polonizacja | OCZEKUJE |
@@ -25,35 +25,36 @@ Każde repozytorium przechodzi osobny audyt. Dla każdego powstaje osobny plik w
 
 | Nr | Repozytorium | Wynik audytu | Priorytet | Plan pracy |
 |---:|---|---|---|---|
-| 97 | mcp-server | MCP do komercyjnego API numerów SMS; operacje płatne, kody weryfikacyjne, TOTP i zewnętrzny provider | WYSOKI | `plan pracy/mcp-server.md` |
-| 98 | mailtm-client | Lekki Python wrapper MailTM z tworzeniem kont, JWT i obsługą inboxu; dokumentacja zawiera placeholder URL | ŚREDNI | `plan pracy/mailtm-client.md` |
-| 99 | Host-a-Static-Website-on-Amazon-S3 | Edukacyjny projekt hostowania strony statycznej w S3; historyczne instrukcje publicznych ACL/polityk wymagają aktualizacji | NISKI | `plan pracy/Host-a-Static-Website-on-Amazon-S3.md` |
-| 100 | xalgorix | Autonomiczna platforma AI pentest z narzędziami ofensywnymi, root/privileged container i szerokim zakresem wykonawczym | KRYTYCZNY | `plan pracy/xalgorix.md` |
-| 101 | Flowise | Duży monorepo wizualnego budowania agentów; upstream oznaczony jako zarchiwizowany | NISKI/ŚREDNI | `plan pracy/Flowise.md` |
-| 102 | lore | Rustowy system kontroli wersji Epic Games, content-addressed/Merkle, binary-first, pre-1.0 | ŚREDNI | `plan pracy/lore.md` |
-| 103 | chappie-bot | Historyczny bot Python z wieloma komendami multimedialnymi, społecznościowymi i administracyjnymi; wiele statusów ERROR/?/BUG | ŚREDNI | `plan pracy/chappie-bot.md` |
-| 104 | email-generator | Repozytorium bez odnalezionego README na domyślnej gałęzi; rzeczywisty zakres wymaga mapowania zawartości | ŚREDNI | `plan pracy/email-generator.md` |
-| 105 | L3MON-1 | Projekt zdalnego monitorowania Android/Termux obejmujący GPS, SMS, mikrofon, pliki i polecenia | KRYTYCZNY | `plan pracy/L3MON-1.md` |
-| 106 | stable-diffusion-webui | Duży interfejs Gradio dla Stable Diffusion z rozszerzeniami, API i opcjonalnym wykonywaniem kodu z UI | WYSOKI | `plan pracy/stable-diffusion-webui.md` |
-| 107 | MaxVideoAi | Produkcyjna platforma generacji wideo AI z Next.js, Supabase, Neon, S3, Stripe, MCP/OAuth i kontrolą płatnych prób | KRYTYCZNY | `plan pracy/MaxVideoAi.md` |
-| 108 | Awesome-LLMs-meet-Multimodal-Generation | Kuratorowany katalog badań multimodalnej generacji/edycji/rozumienia i bezpieczeństwa | NISKI | `plan pracy/Awesome-LLMs-meet-Multimodal-Generation.md` |
-| 109 | awesome-agent-skills | Duży katalog Agent Skills z wielu źródeł, organizacji i społeczności; wymaga provenance i oceny uprawnień | ŚREDNI | `plan pracy/awesome-agent-skills.md` |
-| 110 | Email-Generator-Using-Langchain-Flask | Mała aplikacja Flask + LangChain/Together z generowaniem maili i konfiguracją `.env` | ŚREDNI | `plan pracy/Email-Generator-Using-Langchain-Flask.md` |
-| 111 | ArchGen | Next.js/React/TypeScript + Gemini do generowania architektur, diagramów i eksportów; deklarowane benchmarki wymagają reprodukcji | WYSOKI | `plan pracy/ArchGen.md` |
-| 112 | pegasus_spyware | Zdekompilowane materiały opisane jako Pegasus spyware; wartość wyłącznie badawcza/forensic | KRYTYCZNY | `plan pracy/pegasus_spyware.md` |
-| 113 | AllHackingTools | Historyczny instalator wielu narzędzi bezpieczeństwa dla Termux, z szerokim zakresem ofensywnym | WYSOKI | `plan pracy/AllHackingTools.md` |
-| 114 | Chemia-game | Prywatna, consent-first gra PWA dla dwóch dorosłych osób; localStorage, offline, silnik kart i testy | ŚREDNI | `plan pracy/Chemia-game.md` |
-| 115 | OpenCodeEnterpise | Minimalne README bez informacji o zakresie; wymaga mapowania kodu i wyjaśnienia relacji do OpenCode | ŚREDNI | `plan pracy/OpenCodeEnterpise.md` |
-| 116 | WAO-AI | Warstwowy agent operacyjny z CTCO, policy gates, MCP/REST, observability i anti-prompt-injection | KRYTYCZNY | `plan pracy/WAO-AI.md` |
+| 117 | wda-photo-agent | Mobilny Wirtualny Dyrektor Artystyczny; OpenAI Responses + Structured Output + Adobe Firefly + OAuth/CI | WYSOKI | `plan pracy/wda-photo-agent.md` |
+| 118 | OmniMAS-Advanced | Androidowy agent AccessibilityService z pętlą Planner/Grounding/Decision/Execution/Validation i Security Gate | KRYTYCZNY | `plan pracy/OmniMAS-Advanced.md` |
+| 119 | ride-voice-agent | Lokalny agent głosowy LiveKit do rezerwacji przejazdów; guardrails, OTP, płatności demo, idempotencja i testy | KRYTYCZNY | `plan pracy/ride-voice-agent.md` |
+| 120 | docs | Dokumentacja Future AGI na Astro/MDX/React/Tailwind; build, Pagefind, audit-links i workflow PR | ŚREDNI | `plan pracy/docs.md` |
+| 121 | traceAI | OpenTelemetry-native observability dla LLM/agentów w Python/TS/Java/C# z wieloma integracjami | WYSOKI | `plan pracy/traceAI.md` |
+| 122 | simulate-sdk | SDK Python z dokumentacją, lockfile, CI, przykładami i pakietem `fi/` | WYSOKI | `plan pracy/simulate-sdk.md` |
+| 123 | agent-opt | Sześć algorytmów optymalizacji promptów, LiteLLM, evaluatory i integracja z traceAI | WYSOKI | `plan pracy/agent-opt.md` |
+| 124 | agy-claude-plugin | Plugin Claude Code z komendami review/personas/ask i wrapperem stdin + timeout | ŚREDNI | `plan pracy/agy-claude-plugin.md` |
+| 125 | n8n-nodes-futureagi | Community node n8n dla prompt management, loggingu, ewaluacji i ochrony treści | WYSOKI | `plan pracy/n8n-nodes-futureagi.md` |
+| 126 | futureagi-mcp-vscode | Mały adapter MCP integrujący Future AGI z VS Code | ŚREDNI | `plan pracy/futureagi-mcp-vscode.md` |
+| 127 | hackGPT | Projekt związany z automatyzacją bezpieczeństwa; zakres wykonawczy wymaga ścisłej granicy autoryzowanego laboratorium | WYSOKI | `plan pracy/hackGPT.md` |
+| 128 | Agent-God-Level | Puste repozytorium; brak podstaw do przypisywania stosu lub funkcjonalności | KRYTYCZNY | `plan pracy/Agent-God-Level.md` |
+| 129 | pocketpal-ai | Aplikacja lokalnego AI; do weryfikacji modele, storage, sieć i zgodność urządzeniowa | WYSOKI | `plan pracy/pocketpal-ai.md` |
+| 130 | LocalAI | Duży serwer lokalnych modeli AI; szeroka powierzchnia API/providerów i wymagający hardening | KRYTYCZNY | `plan pracy/LocalAI.md` |
+| 131 | threema-android | Duży klient Android bezpiecznej komunikacji; krytyczne obszary kryptografii, storage, sieci i uprawnień | KRYTYCZNY | `plan pracy/threema-android.md` |
+| 132 | gpt_mobile | Aplikacja mobilna związana z GPT; wymagany audyt manifestu, API, storage i bezpieczeństwa kluczy | WYSOKI | `plan pracy/gpt_mobile.md` |
+| 133 | hexstrike-ai | MCP cyberbezpieczeństwa z szeroką automatyzacją i narzędziami ofensywnymi; wyłącznie autoryzowane laboratoria | KRYTYCZNY | `plan pracy/hexstrike-ai.md` |
+| 134 | eSim-Cloud | Projekt chmurowy eSIM; provisioning, auth, API, storage i audit trail wymagają hardeningu | KRYTYCZNY | `plan pracy/eSim-Cloud.md` |
+| 135 | episodic-memory | Projekt pamięci epizodycznej dla agentów; kluczowe izolacja kontekstu, retencja i usuwanie danych | WYSOKI | `plan pracy/episodic-memory.md` |
+| 136 | OpenAlpha_Evolve | Mały projekt eksperymentalny sugerujący automatyczną ewolucję/optymalizację kodu; wymaga sandboxu wykonania | WYSOKI | `plan pracy/OpenAlpha_Evolve.md` |
+| 137 | atrilabs-engine | Silnik no-code/low-code ok. 33 MB; do weryfikacji pluginy, build i bezpieczeństwo rozszerzeń | ŚREDNI/WYSOKI | `plan pracy/atrilabs-engine.md` |
 
 ## Poprzednie audyty
 
-Audyty 1–96 pozostają zapisane w tym rejestrze oraz w odpowiednich plikach `plan pracy/`. Pozycje 97–116 są opisane powyżej.
+Audyty 1–116 pozostają zapisane w tym rejestrze oraz w odpowiednich plikach `plan pracy/`. Pozycje 117–137 są opisane powyżej.
 
 ## Postęp
 
-**116 / 299 repozytoriów — 38,80% audytu szczegółowego.**  
-**183 repozytoria pozostają do audytu.**
+**137 / 299 repozytoriów — 45,82% audytu szczegółowego.**  
+**162 repozytoria pozostają do audytu.**
 
 ## Aktualizacja inwentaryzacji
 
