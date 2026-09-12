@@ -14,46 +14,46 @@ Każde repozytorium przechodzi osobny audyt. Dla każdego powstaje osobny plik w
 | Zakres | Stan |
 |---|---|
 | Inwentaryzacja portfela | ZAKOŃCZONA — **319 repozytoriów** |
-| Audyt szczegółowy | W TOKU — **237/319** |
-| Plany pracy | UTWORZONE — **237/319** |
+| Audyt szczegółowy | W TOKU — **257/319** |
+| Plany pracy | UTWORZONE — **257/319** |
 | Refaktoryzacja | OCZEKUJE NA AUDYT DANEGO REPOZYTORIUM |
 | Rebranding | OCZEKUJE |
 | Pełna polonizacja | OCZEKUJE |
 | Projekty z bazy wiedzy | OCZEKUJĄ NA ZAKOŃCZENIE ETAPU ISTNIEJĄCEGO PORTFELA |
 
-## Ostatnio wykonane audyty — 218–237
+## Ostatnio wykonane audyty — 238–257
 
 | Nr | Repozytorium | Wynik audytu | Priorytet | Plan pracy |
 |---:|---|---|---|---|
-| 218 | IBM-Cloud-automation | Governed agentic automation dla IBM Cloud: control plane, polityki, IaC, evidence i bridge | KRYTYCZNY | `plan pracy/IBM-Cloud-automation.md` |
-| 219 | EchoPBX | Projekt PBX/telekomunikacyjny wymagający mapowania usług, auth/TLS i ekspozycji sieciowej | WYSOKI | `plan pracy/EchoPBX.md` |
-| 220 | OnlineSimBot2 | Mały projekt integracyjny wymagający potwierdzenia API, danych i testów | ŚREDNI/WYSOKI | `plan pracy/OnlineSimBot2.md` |
-| 221 | flutter | Duży upstream framework Flutter, traktowany jako referencja/toolchain | WYSOKI/REFERENCYJNY | `plan pracy/flutter.md` |
-| 222 | ToolNeuron | Bardzo duży projekt narzędzi/agentów, branch `re-write`; wymaga kontroli execution boundary | KRYTYCZNY | `plan pracy/ToolNeuron.md` |
-| 223 | localmind | Lokalna aplikacja AI; modele, storage, runtime i izolacja narzędzi | WYSOKI | `plan pracy/localmind.md` |
-| 224 | skills-phone | Skills związane z telefonią; wymagają jawnej permission matrix i approval gates | WYSOKI | `plan pracy/skills-phone.md` |
-| 225 | ollama | Duży runtime lokalnych modeli AI i infrastruktura API | KRYTYCZNY/REFERENCYJNY | `plan pracy/ollama.md` |
-| 226 | virtual-phone | Aplikacja/usługa wirtualnej telefonii wymagająca kontroli danych i providerów | WYSOKI | `plan pracy/virtual-phone.md` |
-| 227 | Nem-master | Puste repozytorium; brak podstaw do przypisania funkcji | KRYTYCZNY | `plan pracy/Nem-master.md` |
-| 228 | activepieces | Duża platforma automatyzacji workflow/connectorów | KRYTYCZNY/REFERENCYJNY | `plan pracy/activepieces.md` |
-| 229 | agent-framework | Framework agentowy wymagający kontroli narzędzi, auth, limitów i pętli | KRYTYCZNY | `plan pracy/agent-framework.md` |
-| 230 | tiktok-downloader | Narzędzie pobierania treści z zewnętrznego serwisu; parser, URL i limity | ŚREDNI/WYSOKI | `plan pracy/tiktok-downloader.md` |
-| 231 | elevenlabs-swift-sdk | SDK Swift dla ElevenLabs; audio, transport, credentials i kompatybilność API | WYSOKI | `plan pracy/elevenlabs-swift-sdk.md` |
-| 232 | HunyuanVideo-I2V | Duży pipeline image-to-video; GPU, provenance wag i bezpieczeństwo danych | WYSOKI/REFERENCYJNY | `plan pracy/HunyuanVideo-I2V.md` |
-| 233 | mcp-server-phone | MCP do funkcji telefonu; kontrakty narzędzi i uprawnienia są krytyczne | WYSOKI | `plan pracy/mcp-server-phone.md` |
-| 234 | Box | Duże repozytorium o niepotwierdzonym jeszcze zakresie; wymagane pełne mapowanie | ŚREDNI/WYSOKI | `plan pracy/Box.md` |
-| 235 | Stable-Diffusion-KMP | Stable Diffusion dla Kotlin Multiplatform; native/GPU i provenance modeli | WYSOKI/REFERENCYJNY | `plan pracy/Stable-Diffusion-KMP.md` |
-| 236 | autopentest-ai | Automatyzacja testów bezpieczeństwa AI; wyłącznie autoryzowane środowiska/lab | KRYTYCZNY | `plan pracy/autopentest-ai.md` |
-| 237 | DorkAgent | Agent wyszukiwania/OSINT; provenance wyników, limity i kontrola zakresu | WYSOKI | `plan pracy/DorkAgent.md` |
+| 238 | open-agent-platform | Zdeprecjonowany no-code agent builder; zachować jako materiał referencyjny | NISKI/REFERENCYJNY | `plan pracy/open-agent-platform.md` |
+| 239 | SMS-MAN-vs-TextNow-2026-free-vs-paid-virtual-numbers-key | Publikacja porównawcza; wymagane źródła i metodologia dla danych dynamicznych | NISKI/REFERENCYJNY | `plan pracy/SMS-MAN-vs-TextNow-2026-free-vs-paid-virtual-numbers-key.md` |
+| 240 | OpenHands | Agent Canvas/self-hosted control center; szerokie granice filesystem/tool/automation | KRYTYCZNY | `plan pracy/OpenHands.md` |
+| 241 | Decepticon | Duże repozytorium wymagające potwierdzenia rzeczywistego zakresu, entrypointów i zależności | WYSOKI | `plan pracy/Decepticon.md` |
+| 242 | Resolver-Stable-Diffusion-Client-for-android | Android client Stable Diffusion; API, storage, modele i sekrety | WYSOKI | `plan pracy/Resolver-Stable-Diffusion-Client-for-android.md` |
+| 243 | Email-Generation | Małe repozytorium generatora e-maili; zakres wymaga potwierdzenia kodem | ŚREDNI | `plan pracy/Email-Generation.md` |
+| 244 | AutoAgent | Rozbudowany projekt agentowy; sandbox, narzędzia, limity i autonomia | KRYTYCZNY | `plan pracy/AutoAgent.md` |
+| 245 | twine | Duże repozytorium narzędziowe; wymagane mapowanie build/test/security | ŚREDNI/WYSOKI | `plan pracy/twine.md` |
+| 246 | base44-platform-starter | Starter platformowy; konfiguracja, środowisko i sekrety | ŚREDNI | `plan pracy/base44-platform-starter.md` |
+| 247 | google-analytics-mcp | MCP dla Google Analytics; auth, least privilege i kontrakty narzędzi | WYSOKI | `plan pracy/google-analytics-mcp.md` |
+| 248 | ai-email-generator-2 | Mały generator e-maili; env, dane wejściowe i test smoke | ŚREDNI | `plan pracy/ai-email-generator-2.md` |
+| 249 | mailtm_client | Klient Mail.tm; tokeny, dane pocztowe, timeouty i rate limits | ŚREDNI/WYSOKI | `plan pracy/mailtm_client.md` |
+| 250 | lume | Duże repozytorium web/3D; rendering, assety, build i wydajność | WYSOKI/REFERENCYJNY | `plan pracy/lume.md` |
+| 251 | secret-pie-adult-edition-unlocked | Minimalne repozytorium treściowe; konieczna klasyfikacja i provenance | NISKI/ŚREDNI | `plan pracy/secret-pie-adult-edition-unlocked.md` |
+| 252 | MumbleLink | Integracja komunikacji głosowej; audio/IPC/native dependencies | WYSOKI | `plan pracy/MumbleLink.md` |
+| 253 | dialogic | Narzędzie dialogowe dla silnika gier; plugin/runtime/data format | ŚREDNI/WYSOKI | `plan pracy/dialogic.md` |
+| 254 | unity-mcp | Integracja MCP z Unity; operacje na projekcie i granica zaufania | KRYTYCZNY | `plan pracy/unity-mcp.md` |
+| 255 | USB-Uncensored-LLM | Lokalny projekt LLM; provenance wag i izolacja runtime | WYSOKI | `plan pracy/USB-Uncensored-LLM.md` |
+| 256 | agent | Projekt agentowy; autonomia, narzędzia, sekrety i limity | KRYTYCZNY | `plan pracy/agent.md` |
+| 257 | Claude-Code-Game-Studios | Środowisko agentowe dla tworzenia gier; workspace, permissions i build/test | KRYTYCZNY | `plan pracy/Claude-Code-Game-Studios.md` |
 
 ## Poprzednie audyty
 
-Audyty 1–217 pozostają zapisane w tym rejestrze oraz w odpowiednich plikach `plan pracy/`. Pozycje 218–237 zostały dodane w bieżącym przebiegu.
+Audyty 1–237 pozostają zapisane w tym rejestrze oraz w odpowiednich plikach `plan pracy/`. Pozycje 238–257 zostały dodane w bieżącym przebiegu.
 
 ## Postęp
 
-**237 / 319 repozytoriów — 74,29% audytu szczegółowego.**  
-**82 repozytoria pozostają do audytu.**
+**257 / 319 repozytoriów — 80,56% audytu szczegółowego.**  
+**62 repozytoria pozostają do audytu.**
 
 ## Aktualizacja inwentaryzacji
 
