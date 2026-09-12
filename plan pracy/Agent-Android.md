@@ -2,7 +2,7 @@
 
 ## Stan
 
-**WYBRANY FUNDAMENT P0 — REFAKTORYZACJA R1 ROZPOCZĘTA.**
+**WYBRANY FUNDAMENT P0 — REFAKTORYZACJA R1/R2 W TOKU.**
 
 `Agent-Android` został wybrany jako główny własny fundament wykonawczy pierwszego produktu P0: **B2B AI Employee**.
 
@@ -10,30 +10,37 @@
 
 Repo ma `apps/mobile`, `services/agent-api`, `services/mcp-server`, `plugins/agent-android`, `packages/shared` i CI. README deklaruje server-side authorization, explicit approval dla działań konsekwencyjnych, brak kluczy w repo i obserwowalność. Root `package.json` v0.2.0 posiada workspace'y oraz wspólny `check`: typecheck → lint → test → build.
 
-## Wykonane w Etapie 3 / R1
+## Wykonane — R1 Auth/Session
 
-1. Rozszerzono `packages/shared/src/contracts.ts` o `organizationId`, `actorId` i `AgentExecutionContext`.
-2. Dodano kontrakty `ToolAuthorizationRequest` i `ToolAuthorizationDecision`.
-3. Utworzono `docs/P0-B2B-AI-EMPLOYEE.md`.
-4. Zmieniono kontrakt endpointu `/v1/agent/ask`: `organizationId` i `actorId` są wymagane przez walidację wejścia.
-5. Dodano test kontraktowy potwierdzający odrzucenie żądania bez kontekstu organizacji i aktora.
+1. Dodano `services/agent-api/src/session.ts` z weryfikacją podpisanego, wygasającego bearer session assertion.
+2. Endpoint `/v1/agent/ask` wymaga uwierzytelnionego bearer session przed uruchomieniem agenta.
+3. `organizationId`, `actorId` i `sessionId` są wyprowadzane z zweryfikowanej sesji; dane klienta nie są źródłem autorytatywnego tenant context.
+4. Dodano odmowę cross-tenant/cross-actor: mismatch kończy się `403`.
+5. Brak sesji lub sesja nieprawidłowa/wygasła kończy się `401`.
+6. Brak konfiguracji `AUTH_SESSION_SECRET` kończy się fail-closed `503`.
+7. Dodano testy: brak sesji, brak konfiguracji, malformed token, actor mismatch, organization mismatch, poprawna sesja i wygasła sesja.
+8. CI podniesiono do Node `22.13.0`, zgodnie z wymaganiem projektu.
+9. `docs/ARCHITECTURE.md` zaktualizowano o rzeczywistą granicę weryfikacji sesji i ograniczenia obecnego mechanizmu.
 
-## Ważne ograniczenie
+## Ograniczenie R1
 
-Samo przyjęcie `organizationId` i `actorId` z żądania **nie jest jeszcze uwierzytelnieniem**. Komentarz w implementacji wyraźnie ustanawia te wartości jako kontekst wymagający późniejszego związania z autentyczną sesją serwerową. Do czasu implementacji Auth/Session nie wolno traktować tych identyfikatorów jako dowodu tożsamości lub członkostwa w organizacji.
+To jest wewnętrzna granica weryfikacji podpisanej sesji, a nie kompletny dostawca OAuth/OIDC. Przed produkcją należy podłączyć zaufanego issuer'a enterprise, rotację kluczy i właściwy mechanizm sesyjny. Długowieczny sekret podpisujący nie może trafić do klienta.
 
-## Następny krok R1
+## R2 — deny-by-default Tool Authorization
 
-- znaleźć/wybrać mechanizm sesji i tożsamości,
-- powiązać aktora z sesją serwerową,
-- wyznaczać organizację na podstawie autoryzowanego kontekstu,
-- odrzucać spoofing `actorId` / `organizationId`,
-- dodać testy cross-tenant denial,
-- fail-closed przy braku sesji.
+**Następny punkt wykonywany teraz.**
+
+Cel:
+- nieznane narzędzie → odmowa,
+- narzędzie niezarejestrowane → odmowa,
+- brak wymaganej zgody → odmowa,
+- działanie konsekwencyjne → wymaga osobnej bramki approval,
+- polityka ma być testowalna niezależnie od transportu MCP,
+- dopiero jawnie zarejestrowane narzędzia mogą zostać rozważone do wykonania.
 
 ## Kolejne etapy
 
-R2 — deny-by-default tool authorization → R3 — approval state machine → R4 — MCP/execution isolation → R5 — Memory/RAG → R6 — Audit/Observability → R7 — security/integration/E2E → R8 — B2B integrations → R9 — billing/quotas → R10 — Android E2E/release.
+R3 — approval state machine → R4 — MCP/execution isolation → R5 — Memory/RAG → R6 — Audit/Observability → R7 — security/integration/E2E → R8 — B2B integrations → R9 — billing/quotas → R10 — Android E2E/release.
 
 ## Kryterium produkcyjne
 
