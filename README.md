@@ -10,8 +10,8 @@
 | Zakres | Stan |
 |---|---|
 | Inwentaryzacja portfela | ZAKTUALIZOWANA — **415** |
-| Audyt szczegółowy | W TOKU — **386/415 (92,77%)** |
-| Plany pracy | UTWORZONE — **386/415** |
+| Audyt szczegółowy | W TOKU — **387/415 (93,01%)** |
+| Plany pracy | UTWORZONE — **387/415** |
 | Refaktoryzacja | OCZEKUJE NA AUDYT DANEGO REPOZYTORIUM |
 | Rebranding | OCZEKUJE |
 | Pełna polonizacja | OCZEKUJE |
@@ -19,31 +19,41 @@
 
 ## Ostatnia tura — 20 repozytoriów zweryfikowanych
 
-Zweryfikowano kolejną pulę 20 repozytoriów z aktualnej inwentaryzacji. Repozytoria posiadające już plan nie zostały ponownie doliczone.
+Zweryfikowano kolejną pulę **20 repozytoriów** z aktualnej inwentaryzacji, porównując rzeczywistą zawartość README z istniejącymi planami pracy. Repozytoria posiadające już plan nie zostały ponownie doliczone.
 
-### Nowe, unikalne plany
+### Nowy, unikalny plan
 
 | Nr | Repozytorium | Wynik audytu | Priorytet |
 |---:|---|---|---|
-| 382 | ZeroAI | Android/Kotlin/Rust/UniFFI; długowieczny agent on-device | KRYTYCZNY |
-| 383 | lonlybot | Next.js AI companion; multi-provider i pamięć lokalna | WYSOKI |
-| 384 | hack-skills | 101 security Agent Skills; katalog autoryzowanych zastosowań | KRYTYCZNY — LAB/EDUKACJA |
-| 385 | MyGirlGPT | Telegram + LLM + TTS + Stable Diffusion; self-hosted companion | WYSOKI |
-| 386 | sherpa | Brak README; zakres wymaga dalszej identyfikacji | ŚREDNI |
+| 387 | mobile-ai-agents | 19 agentów, 53 skills i 16 workflowów dla Android/iOS/Flutter/RN/KMP/Unity/Unreal | WYSOKI/KRYTYCZNY |
+
+### Zweryfikowane repozytoria z istniejącym planem
+
+W tej samej turze potwierdzono istnienie planów dla `nocodb`, `OpenConstructionERP`, `alexandria-audiobook`, `open-agent-platform`, `Ptero`, `duix-doc`, `open-router-android-client`, `ext-skills`, `termux-app`, `Librechat-Mobile`, `webstudio`, `Meta3D`, `Llamatik`, `visionclaw`, `anything-llm`, `AutoGPT`, `SuperAGI`, `autogen` i `ragflow`. Nie zwiększyły licznika.
 
 ## Dowody z audytu
 
-`ZeroAI` jest eksperymentalnym agentem Android opartym na Kotlinie, Compose, Rust i UniFFI. Posiada długowieczny runtime, narzędzia, kanały Telegram/Discord/Messages/Terminal, SSH, pamięć, harmonogram i sandbox Rhai; sam projekt deklaruje konieczność dalszego hardeningu. fileciteturn986file0
+`mobile-ai-agents` deklaruje kompletny zespół agentów dla inżynierii mobilnej: 19 agentów, 53 skills i 16 workflowów obejmujących planowanie, architekturę, development, wydajność, bezpieczeństwo, testy, release i maintenance. README przewiduje integrację m.in. z Codex oraz bramki bezpieczeństwa i QA urządzeniowego. fileciteturn998file0
 
-`lonlybot` jest aplikacją Next.js 16 z Tailwind, Framer Motion i Zustand, integrującą Gemini, OpenAI, Anthropic i OpenRouter oraz przechowującą stan rozmów lokalnie. fileciteturn978file0
+`nocodb` potwierdza rozbudowaną platformę bazodanową z widokami, RBAC, REST/SDK, automatyzacjami, storage i integracjami. fileciteturn999file0
 
-`hack-skills` organizuje 101 security skills w strukturę master → category → deep topic i deklaruje zastosowanie do bug bounty, pentestów, CTF i autoryzowanych badań. Wymaga ścisłego provenance oraz granic użycia. fileciteturn982file0
+`OpenConstructionERP` jest dużą self-hosted platformą ERP dla budownictwa z BOQ, CAD/BIM, harmonogramowaniem 4D, kosztami 5D i modułową architekturą. fileciteturn1000file0
 
-`MyGirlGPT` składa się z TelegramBota, serwera LLM, TTS i serwera text-to-image, z możliwością self-hostingu oraz generowania głosu i obrazów. fileciteturn981file0
+`open-agent-platform` jest zdeprecjonowanym no-code builderem agentów i pozostaje materiałem referencyjnym. fileciteturn1002file0
 
-`con-terminal`, sprawdzony w tej samej turze jako repozytorium posiadające już plan, został potwierdzony jako aktywny beta terminal Rust/GPU z wbudowanym agentem AI, SSH/tmux i agent-native workflows; nie zwiększa licznika. fileciteturn963file0
+`ext-skills` jest eksperymentalną grupą roboczą dotyczącą dostarczania skills przez MCP i nie stanowi oficjalnej specyfikacji. fileciteturn1006file0
 
-`example-remote-server`, również zweryfikowany w turze, jest referencyjnym serwerem MCP z OAuth 2.0, Redis, narzędziami, zasobami, promptami, samplingiem i testami e2e; nie zwiększa licznika. fileciteturn969file0
+`Librechat-Mobile` jest natywnym klientem Android/iOS dla self-hosted LibreChat z KMP, bezpiecznym storage tokenów, MCP, multi-account i release provenance. fileciteturn1008file0
+
+`Llamatik` dostarcza KMP API dla lokalnego llama.cpp, whisper.cpp i stable-diffusion.cpp, z natywnym inference, sesjami KV i opcjonalnym trybem zdalnym. fileciteturn1011file0
+
+`visionclaw` łączy visionOS/RealityKit z głosową interakcją i WebSocketowym mostem do agenta działającego na Macu. fileciteturn1012file0
+
+`AutoGPT` obejmuje platformę budowania, wdrażania i uruchamiania agentów oraz rozdziela hosted platform od self-hostingu. fileciteturn1014file0
+
+`autogen` jest obecnie w maintenance mode; README kieruje nowe projekty do Microsoft Agent Framework i ostrzega, że AutoGen Studio nie jest produkcyjną aplikacją. fileciteturn1015file0
+
+`ragflow` jest rozbudowanym RAG engine z agentic workflow, MCP i code executor sandbox; README wymaga gVisor dla funkcji wykonywania kodu. fileciteturn1016file0
 
 ## Zasada procesu
 
@@ -53,12 +63,12 @@ Każde repozytorium musi mieć osobny plan pracy oparty na rzeczywistej zawarto�
 
 ## Postęp
 
-**386 / 415 repozytoriów — 92,77% audytu szczegółowego.**  
-**29 repozytoriów pozostaje do jednoznacznego rozliczenia/audytu.**
+**387 / 415 repozytoriów — 93,01% audytu szczegółowego.**  
+**28 repozytoriów pozostaje do jednoznacznego rozliczenia/audytu.**
 
 ## Następna tura
 
-Ponownie zweryfikować aktualną inwentaryzację i kontynuować od repozytoriów bez jednoznacznie rozliczonego audytu. W jednej turze analizować **co najmniej 20 repozytoriów**.
+Ponownie zweryfikować aktualną inwentaryzację i kontynuować od repozytoriów bez jednoznacznie rozliczonego audytu. W jednej turze analizować **co najmniej 20 repozytoriów**. Licznik zwiększać wyłącznie dla unikalnych repozytoriów, dla których rzeczywiście powstaje brakujący plan.
 
 ## Zasada produkcyjna
 
