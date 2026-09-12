@@ -11,31 +11,43 @@
 |---|---|
 | Inwentaryzacja portfela | **414** |
 | Rekonsyliacja inwentarza | **ZAKOŃCZONA — 414/414** |
-| Audyt szczegółowy | W TOKU — **410/414 (99,03%)** |
-| Pozostałe audyty | **4** |
-| Refaktoryzacja | OCZEKUJE NA AUDYT DANEGO REPOZYTORIUM |
-| Rebranding | OCZEKUJE |
-| Pełna polonizacja | OCZEKUJE |
-| Projekty z bazy wiedzy | OCZEKUJĄ NA ZAKOŃCZENIE ETAPU ISTNIEJĄCEGO PORTFELA |
+| Audyt szczegółowy | **ZAKOŃCZONY — 414/414 (100%)** |
+| Pozostałe audyty | **0** |
+| Refaktoryzacja | **NIE ROZPOCZĘTA GLOBALNIE — kwalifikacja po audycie** |
+| Rebranding | **OCZEKUJE** |
+| Pełna polonizacja | **OCZEKUJE** |
+| Projekty z bazy wiedzy | **OCZEKUJĄ NA ZAKOŃCZENIE ETAPU ISTNIEJĄCEGO PORTFELA** |
 
 ## Rekonsyliacja inwentarza — zamknięta 2026-09-12
 
 Prawidłowa liczba repozytoriów użytkownika wynosi **414**. Historyczna liczba 415 zawierała jeden błędnie doliczony wpis systemowy, który nie był repozytorium użytkownika. Nie jest on częścią portfolio ani mianownika audytu.
 
-## Ostatnia tura — 20 nowych audytów
+## Zakończenie audytu — 2026-09-12
 
-Dodano 20 nowych, unikalnych planów audytu w `plan pracy/`, opartych na rzeczywistej zawartości repozytoriów i ich README oraz na rozpoznanej klasie projektu:
+Audyt szczegółowy osiągnął **414/414 — 100%**. W końcowej turze domknięto pozostałe pozycje, w tym `nocodb`, `twine`, `YuE` i `tauri`, oraz wcześniej nierozliczoną pulę 20 nowych planów.
 
-`datadog-agent`, `OpenHands`, `OGAM`, `f95-gallery-gleaner`, `rust-sdk`, `langflow`, `Librechat-Mobile`, `renpy`, `n8n`, `termux-app`, `awesome-seedance-prompts`, `appsmith`, `OpenConstructionERP`, `ollama`, `agnes-ai-video-suite`, `webstudio`, `Googleskills`, `fdroidclient`, `unsloth`, `langgraph`.
+Każde nowe rozliczenie otrzymało osobny plik w `plan pracy/`. Projekty upstreamowe i archiwalne zostały sklasyfikowane jako referencje zamiast sztucznie traktować je jako własne produkty. Projekty z powierzchnią wykonawczą AI, narzędziami, kodem, siecią lub danymi otrzymały priorytet bezpieczeństwa.
 
-### Kluczowe ustalenia
+## Zakończony etap
 
-- `OpenHands`: bez sandboxa agent może mieć pełny dostęp do filesystemu; wymagane są izolacja, least privilege i kontrola automatyzacji.
-- `OGAM`: lokalna aplikacja AI z tool callingiem, modelami i pobieraniem artefaktów; wymagane potwierdzenie deklaracji offline i integralności modeli.
-- `rust-sdk`: oficjalny Rust SDK MCP; priorytetem są conformance tests, fuzzing parserów i bezpieczeństwo transportów.
-- `n8n`, `langflow`, `appsmith`, `webstudio`: duże upstreamowe platformy; krytyczne są credentials, wykonanie kodu, SSRF, RBAC i plugin/tool boundaries.
-- `datadog-agent`, `termux-app`, `renpy`, `ollama`, `unsloth`, `fdroidclient`: upstream/reference; nie należy wykonywać ślepego rebrandingu.
-- `f95-gallery-gleaner`: narzędzie katalogujące/aktualizujące kolekcję gier; audyt ograniczony do legalnego użycia, integralności pobrań i braku omijania zabezpieczeń.
+### 1. Inwentaryzacja
+**414/414 — zamknięta.**
+
+### 2. Audyt szczegółowy
+**414/414 — 100%.** Audyt nie jest równoznaczny z refaktoryzacją ani gotowością produkcyjną.
+
+### 3. Plany pracy
+Dla rozliczonych repozytoriów utworzono/utrzymano indywidualne plany w `plan pracy/`. Plany rozróżniają projekty własne, upstream/reference, archiwalne, eksperymentalne i projekty wymagające specjalnych granic bezpieczeństwa.
+
+## Najważniejsze klasy ryzyka z audytu
+
+- **Agenci AI / tool calling:** default-deny, least privilege, approval gates, sandbox, audyt i rozdzielenie planowania od wykonania.
+- **Aplikacje mobilne:** secure storage, Android/iOS permissions, WebView/deep links, backup i lifecycle.
+- **Desktop:** IPC/capabilities, filesystem/shell access, updater i podpisywanie artefaktów.
+- **Platformy web/low-code:** auth/RBAC, SSRF, uploady, pluginy, wykonywanie kodu i sekrety.
+- **Modele generatywne:** provenance wag i danych, integralność pobrań, reprodukowalność benchmarków i licencje.
+- **Telephony/SMS/mail:** prywatność, sekrety, rate limiting, zgodność i brak mechanizmów obchodzenia zabezpieczeń.
+- **Cybersecurity:** wyłącznie autoryzowane laboratoria, izolacja i bezpieczna dokumentacja; brak rozwijania funkcji nieautoryzowanego dostępu.
 
 ## Zasada procesu
 
@@ -45,10 +57,14 @@ Każde repozytorium musi mieć osobny plan pracy oparty na rzeczywistej zawarto�
 
 ## Postęp
 
-**410 / 414 repozytoriów — 99,03% audytu szczegółowego.**  
+**414 / 414 repozytoriów — 100% audytu szczegółowego.**  
 **414 / 414 repozytoriów — 100% rekonsyliacji inwentarza.**  
-**4 repozytoria pozostają do zakończenia audytu szczegółowego.**
+**0 repozytoriów pozostaje do audytu.**
 
-## Następna tura
+## Następny etap
 
-Dokończyć pozostałe **4** audyty, a następnie przejść do konsolidacji wyników i kwalifikacji kolejnego etapu: refaktoryzacja, rebranding i polonizacja. Żaden projekt nie otrzymuje statusu produkcyjnego wyłącznie na podstawie audytu.
+Portfolio jest zamknięte audytowo. Można rozpocząć **kwalifikację i realizację refaktoryzacji, rebrandingu oraz pełnej polonizacji** zgodnie z indywidualnymi planami. Dopiero po implementacji, kompilacji/testach i weryfikacji kryteriów akceptacyjnych można nadawać status produkcyjny.
+
+## Zasada produkcyjna
+
+Żaden projekt nie zostanie uznany za zakończony po samym audycie. Po audycie następuje implementacja zgodnie z planem, kompilacja/testy i dopiero wtedy zmiana statusu na produkcyjny.
