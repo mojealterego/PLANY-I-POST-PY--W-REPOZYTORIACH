@@ -14,8 +14,8 @@ Każde repozytorium przechodzi osobny audyt. Dla każdego powstaje osobny plik w
 | Zakres | Stan |
 |---|---|
 | Inwentaryzacja portfela | ZAKOŃCZONA — **299 repozytoriów** |
-| Audyt szczegółowy | W TOKU — **71/299** |
-| Plany pracy | UTWORZONE — **71/299** |
+| Audyt szczegółowy | W TOKU — **76/299** |
+| Plany pracy | UTWORZONE — **76/299** |
 | Refaktoryzacja | OCZEKUJE NA AUDYT DANEGO REPOZYTORIUM |
 | Rebranding | OCZEKUJE |
 | Pełna polonizacja | OCZEKUJE |
@@ -25,25 +25,25 @@ Każde repozytorium przechodzi osobny audyt. Dla każdego powstaje osobny plik w
 
 | Nr | Repozytorium | Wynik audytu | Priorytet | Plan pracy |
 |---:|---|---|---|---|
-| 62 | hermes-agent | Duży wieloplatformowy agent z terminalem, MCP, skills/plugins, gatewayami i sandboxami; OS isolation jest rzeczywistą granicą bezpieczeństwa | KRYTYCZNY | `plan pracy/hermes-agent.md` |
-| 63 | gptAssist | Lekki klient Android/WebView dla ChatGPT; kluczowe są allowlista URL, WebView, uploady, intenty i modernizacja SDK | WYSOKI | `plan pracy/gptAssist.md` |
-| 64 | simplex-chat | Bardzo duży komunikator wieloplatformowy z kryptografią i Haskell; wymagane audyty protokołu, FFI, storage, zależności Git i reprodukowalności | KRYTYCZNY | `plan pracy/simplex-chat.md` |
-| 65 | element-x-android | Duży klient Matrix Android oparty o Compose i Matrix Rust SDK; krytyczne FFI, E2EE, storage, release i separacja upstream/własne zmiany | KRYTYCZNY | `plan pracy/element-x-android.md` |
-| 66 | strykerapp | Rootowana aplikacja pentestowa Android z chroot, root/su, Wi-Fi/BLE, USB HID, Metasploit i innymi narzędziami; wymaga ścisłych granic laboratoryjnych | KRYTYCZNY | `plan pracy/strykerapp.md` |
 | 67 | developerPortfolio | Stary szablon portfolio React/CRA; React 16, CRA 3.2, node-sass i historyczne zależności wymagają modernizacji oraz bezpiecznej integracji GitHub API | ŚREDNI | `plan pracy/developerPortfolio.md` |
 | 68 | eSim | Duży projekt EDA z PyQt6 oraz KiCad/Ngspice/GHDL/Verilator/OpenModelica; wymaga macierzy kompatybilności i testów regresyjnych symulacji | WYSOKI | `plan pracy/eSim.md` |
 | 69 | PyPhone | Eksperymentalny klient VoIP/PyQt z MySQL, socketami, PyAudio i ngrok; krytyczne bezpieczeństwo transportu, sekretów i współbieżności | WYSOKI | `plan pracy/PyPhone.md` |
 | 70 | telephony | Platforma telekomunikacyjna VoxImplant z konfiguracją stref, routingu, harmonogramów i CI/CD; wymaga walidacji konfiguracji i kontroli sekretów | WYSOKI | `plan pracy/telephony.md` |
 | 71 | Issabel-PBX | Konteneryzowany PBX z macvlan, reverse proxy, wieloma portami i NET_ADMIN; wymaga minimalizacji ekspozycji i uprawnień | WYSOKI | `plan pracy/Issabel-PBX.md` |
+| 72 | plasmic | Duży monorepo visual buildera z codegen, CMS, auth/RBAC i wieloma pakietami; dodatkowo zawiera mechanizmy safehouse dla automatyzacji agentowej | KRYTYCZNY | `plan pracy/plasmic.md` |
+| 73 | dcache | Duży rozproszony system storage z wieloma protokołami; Java 21, Maven i Jenkins, wymagane testy recovery/interoperacyjności | KRYTYCZNY | `plan pracy/dcache.md` |
+| 74 | ai | Lokalny generator obrazu/wideo 18+ oparty o Wan 2.5 i LoRA; krytyczne provenance modeli, supply chain i guardraile treściowe | KRYTYCZNY | `plan pracy/ai.md` |
+| 75 | stumblybot | Historyczny eksperyment robotyki Marty + Google Assistant/DialogFlow; README wskazuje brak własnego auth/encryption routera | ŚREDNI | `plan pracy/stumblybot.md` |
+| 76 | grapesjs | Duży monorepo visual web buildera; pnpm/Node 20+, TypeScript, Jest, lint/typecheck i osobne pakiety core/CLI/docs | WYSOKI | `plan pracy/grapesjs.md` |
 
 ## Poprzednie audyty
 
-Audyty 1–61 pozostają zapisane w tym rejestrze oraz w odpowiednich plikach `plan pracy/`. Pozycje 62–71 są opisane powyżej.
+Audyty 1–66 pozostają zapisane w tym rejestrze oraz w odpowiednich plikach `plan pracy/`. Pozycje 67–76 są opisane powyżej.
 
 ## Postęp
 
-**71 / 299 repozytoriów — 23,75% audytu szczegółowego.**  
-**228 repozytoriów pozostaje do audytu.**
+**76 / 299 repozytoriów — 25,42% audytu szczegółowego.**  
+**223 repozytoria pozostają do audytu.**
 
 ## Aktualizacja inwentaryzacji
 
