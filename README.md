@@ -2,7 +2,7 @@
 
 **Data rozpoczęcia:** 2026-09-11  
 **Zakres:** wszystkie repozytoria właściciela `mojealterego` wykryte przez połączone konto GitHub  
-**Liczba repozytoriów wykryta w aktualnej inwentaryzacji:** **319**  
+**Liczba repozytoriów wykryta w aktualnej inwentaryzacji:** **364**  
 **Repozytorium monitorujące:** `mojealterego/PLANY-I-POST-PY--W-REPOZYTORIACH`
 
 ## Zasada procesu
@@ -13,51 +13,55 @@ Każde repozytorium przechodzi osobny audyt. Dla każdego powstaje osobny plik w
 
 | Zakres | Stan |
 |---|---|
-| Inwentaryzacja portfela | ZAKOŃCZONA — **319 repozytoriów** |
-| Audyt szczegółowy | W TOKU — **257/319** |
-| Plany pracy | UTWORZONE — **257/319** |
+| Inwentaryzacja portfela | ZAKOŃCZONA — **364 repozytoria** |
+| Audyt szczegółowy | W TOKU — **277/364** |
+| Plany pracy | UTWORZONE — **277/364** |
 | Refaktoryzacja | OCZEKUJE NA AUDYT DANEGO REPOZYTORIUM |
 | Rebranding | OCZEKUJE |
 | Pełna polonizacja | OCZEKUJE |
 | Projekty z bazy wiedzy | OCZEKUJĄ NA ZAKOŃCZENIE ETAPU ISTNIEJĄCEGO PORTFELA |
 
-## Ostatnio wykonane audyty — 238–257
+## Ostatnio wykonane audyty — 258–279
+
+W bieżącym przebiegu utworzono **20 nowych planów**. Numer 265 (`elevenlabs-android`) miał już wcześniej istniejący plan i dlatego nie został policzony drugi raz.
 
 | Nr | Repozytorium | Wynik audytu | Priorytet | Plan pracy |
 |---:|---|---|---|---|
-| 238 | open-agent-platform | Zdeprecjonowany no-code agent builder; zachować jako materiał referencyjny | NISKI/REFERENCYJNY | `plan pracy/open-agent-platform.md` |
-| 239 | SMS-MAN-vs-TextNow-2026-free-vs-paid-virtual-numbers-key | Publikacja porównawcza; wymagane źródła i metodologia dla danych dynamicznych | NISKI/REFERENCYJNY | `plan pracy/SMS-MAN-vs-TextNow-2026-free-vs-paid-virtual-numbers-key.md` |
-| 240 | OpenHands | Agent Canvas/self-hosted control center; szerokie granice filesystem/tool/automation | KRYTYCZNY | `plan pracy/OpenHands.md` |
-| 241 | Decepticon | Duże repozytorium wymagające potwierdzenia rzeczywistego zakresu, entrypointów i zależności | WYSOKI | `plan pracy/Decepticon.md` |
-| 242 | Resolver-Stable-Diffusion-Client-for-android | Android client Stable Diffusion; API, storage, modele i sekrety | WYSOKI | `plan pracy/Resolver-Stable-Diffusion-Client-for-android.md` |
-| 243 | Email-Generation | Małe repozytorium generatora e-maili; zakres wymaga potwierdzenia kodem | ŚREDNI | `plan pracy/Email-Generation.md` |
-| 244 | AutoAgent | Rozbudowany projekt agentowy; sandbox, narzędzia, limity i autonomia | KRYTYCZNY | `plan pracy/AutoAgent.md` |
-| 245 | twine | Duże repozytorium narzędziowe; wymagane mapowanie build/test/security | ŚREDNI/WYSOKI | `plan pracy/twine.md` |
-| 246 | base44-platform-starter | Starter platformowy; konfiguracja, środowisko i sekrety | ŚREDNI | `plan pracy/base44-platform-starter.md` |
-| 247 | google-analytics-mcp | MCP dla Google Analytics; auth, least privilege i kontrakty narzędzi | WYSOKI | `plan pracy/google-analytics-mcp.md` |
-| 248 | ai-email-generator-2 | Mały generator e-maili; env, dane wejściowe i test smoke | ŚREDNI | `plan pracy/ai-email-generator-2.md` |
-| 249 | mailtm_client | Klient Mail.tm; tokeny, dane pocztowe, timeouty i rate limits | ŚREDNI/WYSOKI | `plan pracy/mailtm_client.md` |
-| 250 | lume | Duże repozytorium web/3D; rendering, assety, build i wydajność | WYSOKI/REFERENCYJNY | `plan pracy/lume.md` |
-| 251 | secret-pie-adult-edition-unlocked | Minimalne repozytorium treściowe; konieczna klasyfikacja i provenance | NISKI/ŚREDNI | `plan pracy/secret-pie-adult-edition-unlocked.md` |
-| 252 | MumbleLink | Integracja komunikacji głosowej; audio/IPC/native dependencies | WYSOKI | `plan pracy/MumbleLink.md` |
-| 253 | dialogic | Narzędzie dialogowe dla silnika gier; plugin/runtime/data format | ŚREDNI/WYSOKI | `plan pracy/dialogic.md` |
-| 254 | unity-mcp | Integracja MCP z Unity; operacje na projekcie i granica zaufania | KRYTYCZNY | `plan pracy/unity-mcp.md` |
-| 255 | USB-Uncensored-LLM | Lokalny projekt LLM; provenance wag i izolacja runtime | WYSOKI | `plan pracy/USB-Uncensored-LLM.md` |
-| 256 | agent | Projekt agentowy; autonomia, narzędzia, sekrety i limity | KRYTYCZNY | `plan pracy/agent.md` |
-| 257 | Claude-Code-Game-Studios | Środowisko agentowe dla tworzenia gier; workspace, permissions i build/test | KRYTYCZNY | `plan pracy/Claude-Code-Game-Studios.md` |
+| 258 | Problemy-milenijne | Projekt badawczy TRS; jawne rozdzielenie definicji, aksjomatów, weryfikacji, otwartych lematów i dowodów | WYSOKI/REFERENCYJNY | `plan pracy/Problemy-milenijne.md` |
+| 259 | free-claude-code | Narzędzie związane z Claude Code; kluczowe permissions, sekrety, shell/filesystem i sandbox | KRYTYCZNY | `plan pracy/free-claude-code.md` |
+| 260 | MCP-Server-Eleven-Labs | Prywatny MCP ElevenLabs; auth, tool contracts i koszty generowania | WYSOKI | `plan pracy/MCP-Server-Eleven-Labs.md` |
+| 261 | Longview-Philanthropy-Grant | Pakiet grantowy/dokumentacyjny | NISKI/REFERENCYJNY | `plan pracy/Longview-Philanthropy-Grant.md` |
+| 262 | packages | Repozytorium pakietów; publikacja, wersjonowanie i supply chain | WYSOKI/REFERENCYJNY | `plan pracy/packages.md` |
+| 263 | elevenlabs-js | SDK JavaScript ElevenLabs; kontrakty API, auth, streaming i testy | WYSOKI/REFERENCYJNY | `plan pracy/elevenlabs-js.md` |
+| 264 | elevenlabs-python | SDK Python ElevenLabs; kontrakty, credentials, streaming i release | WYSOKI/REFERENCYJNY | `plan pracy/elevenlabs-python.md` |
+| 265 | elevenlabs-android | Istniejący wcześniej plan; SDK Android ElevenLabs | WYSOKI | `plan pracy/elevenlabs-android.md` |
+| 266 | plugin | Repozytorium pluginu; host API, permissions, sandbox i packaging | WYSOKI | `plan pracy/plugin.md` |
+| 267 | examples | Zbiór przykładów/integracji; aktualność API, sekrety i smoke tests | ŚREDNI/REFERENCYJNY | `plan pracy/examples.md` |
+| 268 | homebrew-tap | Tap Homebrew; integralność formuł, checksumy i provenance artefaktów | WYSOKI/REFERENCYJNY | `plan pracy/homebrew-tap.md` |
+| 269 | scoop-bucket | Bucket Scoop; manifesty, źródła i checksumy binariów | WYSOKI/REFERENCYJNY | `plan pracy/scoop-bucket.md` |
+| 270 | ui | Biblioteka komponentów UI; package boundaries, accessibility i release | WYSOKI/REFERENCYJNY | `plan pracy/ui.md` |
+| 271 | elevenlabs-mcp-player | Zdeprecjonowany MCP audio player; zachować jako snapshot referencyjny | NISKI/REFERENCYJNY | `plan pracy/elevenlabs-mcp-player.md` |
+| 272 | elevenlabs-n8n | Integracja ElevenLabs z n8n; credentials, node contracts i testy | WYSOKI | `plan pracy/elevenlabs-n8n.md` |
+| 273 | unity | Upstream Unity engine; traktowany jako toolchain/reference | WYSOKI/REFERENCYJNY | `plan pracy/unity.md` |
+| 274 | Alibaba-Grants | Repozytorium grantowe/dokumentacyjne | NISKI/REFERENCYJNY | `plan pracy/Alibaba-Grants.md` |
+| 275 | Feng-Grants | Puste repozytorium grantowe; brak podstaw do przypisania funkcji | KRYTYCZNY/BOOTSTRAP | `plan pracy/Feng-Grants.md` |
+| 276 | ID-Xbox-Grants | Repozytorium grantowe/dokumentacyjne | NISKI/REFERENCYJNY | `plan pracy/ID-Xbox-Grants.md` |
+| 277 | Roblox-Grants | Repozytorium grantowe/dokumentacyjne | NISKI/REFERENCYJNY | `plan pracy/Roblox-Grants.md` |
+| 278 | South-Park-Grants | Repozytorium grantowo-dokumentacyjne; wymagane źródła/licencje | NISKI/REFERENCYJNY | `plan pracy/South-Park-Grants.md` |
+| 279 | Neo-residency-Grants | Aegis State Management; referencyjna implementacja durable state/concurrency z testami i jawnymi evidence gates | WYSOKI | `plan pracy/Neo-residency-Grants.md` |
 
 ## Poprzednie audyty
 
-Audyty 1–237 pozostają zapisane w tym rejestrze oraz w odpowiednich plikach `plan pracy/`. Pozycje 238–257 zostały dodane w bieżącym przebiegu.
+Audyty 1–257 pozostają zapisane w tym rejestrze oraz w odpowiednich plikach `plan pracy/`. Pozycje 258–279 obejmują bieżący przebieg; 265 był już wcześniej pokryty istniejącym planem i nie został ponownie doliczony.
 
 ## Postęp
 
-**257 / 319 repozytoriów — 80,56% audytu szczegółowego.**  
-**62 repozytoria pozostają do audytu.**
+**277 / 364 repozytoriów — 76,10% audytu szczegółowego.**  
+**87 repozytoriów pozostaje do audytu.**
 
 ## Aktualizacja inwentaryzacji
 
-Portfel wynosi obecnie **319 repozytoriów**. Licznik jest dynamiczny i będzie ponownie weryfikowany przy każdym kolejnym przebiegu. Nowe repozytoria nie są automatycznie uznawane za zbadane; muszą przejść rzeczywisty audyt zawartości i otrzymać własny plan.
+Portfel wynosi obecnie **364 repozytoria**. Licznik jest dynamiczny i będzie ponownie weryfikowany przy każdym kolejnym przebiegu. Nowe repozytoria nie są automatycznie uznawane za zbadane; muszą przejść rzeczywisty audyt zawartości i otrzymać własny plan.
 
 ## Reguła kolejnych audytów
 
