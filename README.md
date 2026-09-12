@@ -14,8 +14,8 @@ Każde repozytorium przechodzi osobny audyt. Dla każdego powstaje osobny plik w
 | Zakres | Stan |
 |---|---|
 | Inwentaryzacja portfela | ZAKOŃCZONA — **293 repozytoria** |
-| Audyt szczegółowy | W TOKU — **51/293** |
-| Plany pracy | UTWORZONE — **51/293** |
+| Audyt szczegółowy | W TOKU — **56/293** |
+| Plany pracy | UTWORZONE — **56/293** |
 | Refaktoryzacja | OCZEKUJE NA AUDYT DANEGO REPOZYTORIUM |
 | Rebranding | OCZEKUJE |
 | Pełna polonizacja | OCZEKUJE |
@@ -33,15 +33,20 @@ Każde repozytorium przechodzi osobny audyt. Dla każdego powstaje osobny plik w
 | 49 | artemis | Zaawansowana automatyzacja realnych urządzeń Android przez AI/MCP; silne testowanie, ale wymagane niezależne potwierdzenie benchmarków i security boundary | KRYTYCZNY | `plan pracy/artemis.md` |
 | 50 | Kartografia | React/Vite/PWA + Capacitor Android; rozbudowany fundament gry, ale zależności `latest` osłabiają reprodukowalność | WYSOKI | `plan pracy/Kartografia.md` |
 | 51 | MetaGPT | Duży framework wieloagentowy; wysoka wartość referencyjna, konieczna weryfikacja kompatybilności, granic narzędzi i aktualności dokumentacji | KRYTYCZNY | `plan pracy/MetaGPT.md` |
+| 52 | Agentic-Cinema-The-Blockbuster-Hackathon | StudioSync: agentowa warstwa odzyskiwania produkcji filmowej; deterministyczne demo jest rozdzielone od live, ale live runner/session ADK wymaga dokończenia | KRYTYCZNY | `plan pracy/Agentic-Cinema-The-Blockbuster-Hackathon.md` |
+| 53 | Nebius-x-NVIDIA-Global-AI-Hackathon | InfraSentinel: evidence-first SRE z deterministyczną polityką, governance i symulatorem; realna infrastruktura wymaga osobnych adapterów i kontroli blast radius | KRYTYCZNY | `plan pracy/Nebius-x-NVIDIA-Global-AI-Hackathon.md` |
+| 54 | ChatGPT-CodeReview | Probot/GitHub Action do automatycznego code review; historyczna dokumentacja, szerokie permissions w przykładzie i błędne `homepage` wymagają uporządkowania | WYSOKI | `plan pracy/ChatGPT-CodeReview.md` |
+| 55 | AgentGPT | Duży system webowy do uruchamiania agentów autonomicznych; historyczny stos Next/FastAPI wymaga aktualizacji i ponownej weryfikacji granic narzędzi | KRYTYCZNY | `plan pracy/AgentGPT.md` |
+| 56 | mcp-coding-agent | Builder agentów i oprogramowania przez MCP; silne ograniczenia workspace, ale potrzebna twarda izolacja wykonania niezaufanego kodu | KRYTYCZNY | `plan pracy/mcp-coding-agent.md` |
 
 ## Poprzednie audyty
 
-Audyty 1–43 pozostają zapisane w tym rejestrze oraz w odpowiednich plikach `plan pracy/`. Pozycje 44–51 są opisane powyżej.
+Audyty 1–43 pozostają zapisane w tym rejestrze oraz w odpowiednich plikach `plan pracy/`. Pozycje 44–56 są opisane powyżej.
 
 ## Postęp
 
-**51 / 293 repozytoriów — 17,41% audytu szczegółowego.**  
-**242 repozytoria pozostają do audytu.**
+**56 / 293 repozytoriów — 19,11% audytu szczegółowego.**  
+**237 repozytoriów pozostaje do audytu.**
 
 ## Aktualizacja inwentaryzacji
 
