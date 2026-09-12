@@ -14,8 +14,8 @@ Każde repozytorium przechodzi osobny audyt. Dla każdego powstaje osobny plik w
 | Zakres | Stan |
 |---|---|
 | Inwentaryzacja portfela | ZAKOŃCZONA — **299 repozytoriów** |
-| Audyt szczegółowy | W TOKU — **96/299** |
-| Plany pracy | UTWORZONE — **96/299** |
+| Audyt szczegółowy | W TOKU — **116/299** |
+| Plany pracy | UTWORZONE — **116/299** |
 | Refaktoryzacja | OCZEKUJE NA AUDYT DANEGO REPOZYTORIUM |
 | Rebranding | OCZEKUJE |
 | Pełna polonizacja | OCZEKUJE |
@@ -25,35 +25,35 @@ Każde repozytorium przechodzi osobny audyt. Dla każdego powstaje osobny plik w
 
 | Nr | Repozytorium | Wynik audytu | Priorytet | Plan pracy |
 |---:|---|---|---|---|
-| 77 | builder-www | Frappe Builder; low-code builder z AI, CMS, skryptami, publikacją i analityką; workspace frontend/Frappe UI | WYSOKI | `plan pracy/builder-www.md` |
-| 78 | futureagi-sdk | SDK ewaluacji/observability/guardrails/RAG dla Python + TypeScript; kluczowe dane ewaluacyjne i sekrety API | WYSOKI | `plan pracy/futureagi-sdk.md` |
-| 79 | MATS-Grants | Reproducowalny syntetyczny harness badawczy z CI, testami i safety boundary; brak roszczeń o realne scheming | WYSOKI | `plan pracy/MATS-Grants.md` |
-| 80 | Agent-Android | Foundation Android AI agent z Expo/RN, API, MCP, skills i approval gates; Node >=22.13 | KRYTYCZNY | `plan pracy/Agent-Android.md` |
-| 81 | skills | Biblioteka ElevenLabs Agent Skills z trigger/functional evals i izolowanymi workspace'ami testowymi | WYSOKI | `plan pracy/skills.md` |
-| 82 | engram | MCP-native pamięć agentów; verbatim transcripts, semantic search, multi-tenancy, Cloudflare Workers/D1/Vectorize | KRYTYCZNY | `plan pracy/engram.md` |
-| 83 | git-lfs | Duży upstreamowy projekt Git LFS w Go z CI, podpisywanymi release'ami i rozbudowaną specyfikacją | ŚREDNI | `plan pracy/git-lfs.md` |
-| 84 | softphone | Eksperymentalny SIP/RTP softphone PHP/Swoole z bridge RTP↔PCM i aktywną gałęzią inbound | KRYTYCZNY | `plan pracy/softphone.md` |
-| 85 | SMS-MAN-vs-OnlineSIM-2026-disposable-numbers-from-0.01-service-compariso | Mikro-repo porównawcze usług numerów tymczasowych; brak podstaw do klasyfikacji jako aplikacja | NISKI | `plan pracy/SMS-MAN-vs-OnlineSIM-2026-disposable-numbers-from-0.01-service-compariso.md` |
-| 86 | FastRecvSMS | CLI/MCP do usług SMS verification; multi-provider, zakup numerów i operacje na zamówieniach | KRYTYCZNY | `plan pracy/FastRecvSMS.md` |
-| 87 | astro | hermitAI: Astro + Gemini/Vertex + Bright Data + MongoDB RAG + JWT/credits + wiele narzędzi web | KRYTYCZNY | `plan pracy/astro.md` |
-| 88 | layla-sdk | TypeScript SDK dla mini-aplikacji Layla; WebView bridge, SQLite/files, multimodal, audio i generowanie treści | WYSOKI | `plan pracy/layla-sdk.md` |
-| 89 | pentagram | Niezależny memory substrate w TypeScript/S-expression z evaluator sandbox, MCP, HNSW, provenance i tenant isolation | KRYTYCZNY | `plan pracy/pentagram.md` |
-| 90 | agenticSeek | Lokalny/autonomiczny agent z browsingiem, wykonywaniem kodu, Docker/SearXNG/Redis i wieloma providerami LLM | KRYTYCZNY | `plan pracy/agenticSeek.md` |
-| 91 | cli | ElevenLabs CLI/Agents as Code; Rust, OpenAPI-generated SDK, push/pull agentów, tools/tests i data residency | WYSOKI | `plan pracy/cli.md` |
-| 92 | elevenlabs-mcp | Historyczny lokalny MCP ElevenLabs, jednoznacznie deprecated na rzecz hosted MCP; repo nie jest aktywnie utrzymywane | NISKI | `plan pracy/elevenlabs-mcp.md` |
-| 93 | freemail | Cloudflare Workers/D1/R2 temporary-mail service z REST API, forwardingiem, auth i wieloma providerami wysyłki | KRYTYCZNY | `plan pracy/freemail.md` |
-| 94 | 26CP3600177-ai-email-generator | Bardzo mały projekt akademicki z README o charakterze szablonowym i licznymi niezweryfikowanymi alternatywami stacku | NISKI | `plan pracy/26CP3600177-ai-email-generator.md` |
-| 95 | mailtm-client | Lekki Python wrapper MailTM do tworzenia skrzynek, JWT i odczytu inboxu; README zawiera placeholder repo URL | ŚREDNI | `plan pracy/mailtm-client.md` |
-| 96 | krypton-byte | Repozytorium profilowe agregujące projekty autora; m.in. neonize/tryx/thundra i narzędzia komunikatorowe | NISKI/ŚREDNI | `plan pracy/krypton-byte.md` |
+| 97 | mcp-server | MCP do komercyjnego API numerów SMS; operacje płatne, kody weryfikacyjne, TOTP i zewnętrzny provider | WYSOKI | `plan pracy/mcp-server.md` |
+| 98 | mailtm-client | Lekki Python wrapper MailTM z tworzeniem kont, JWT i obsługą inboxu; dokumentacja zawiera placeholder URL | ŚREDNI | `plan pracy/mailtm-client.md` |
+| 99 | Host-a-Static-Website-on-Amazon-S3 | Edukacyjny projekt hostowania strony statycznej w S3; historyczne instrukcje publicznych ACL/polityk wymagają aktualizacji | NISKI | `plan pracy/Host-a-Static-Website-on-Amazon-S3.md` |
+| 100 | xalgorix | Autonomiczna platforma AI pentest z narzędziami ofensywnymi, root/privileged container i szerokim zakresem wykonawczym | KRYTYCZNY | `plan pracy/xalgorix.md` |
+| 101 | Flowise | Duży monorepo wizualnego budowania agentów; upstream oznaczony jako zarchiwizowany | NISKI/ŚREDNI | `plan pracy/Flowise.md` |
+| 102 | lore | Rustowy system kontroli wersji Epic Games, content-addressed/Merkle, binary-first, pre-1.0 | ŚREDNI | `plan pracy/lore.md` |
+| 103 | chappie-bot | Historyczny bot Python z wieloma komendami multimedialnymi, społecznościowymi i administracyjnymi; wiele statusów ERROR/?/BUG | ŚREDNI | `plan pracy/chappie-bot.md` |
+| 104 | email-generator | Repozytorium bez odnalezionego README na domyślnej gałęzi; rzeczywisty zakres wymaga mapowania zawartości | ŚREDNI | `plan pracy/email-generator.md` |
+| 105 | L3MON-1 | Projekt zdalnego monitorowania Android/Termux obejmujący GPS, SMS, mikrofon, pliki i polecenia | KRYTYCZNY | `plan pracy/L3MON-1.md` |
+| 106 | stable-diffusion-webui | Duży interfejs Gradio dla Stable Diffusion z rozszerzeniami, API i opcjonalnym wykonywaniem kodu z UI | WYSOKI | `plan pracy/stable-diffusion-webui.md` |
+| 107 | MaxVideoAi | Produkcyjna platforma generacji wideo AI z Next.js, Supabase, Neon, S3, Stripe, MCP/OAuth i kontrolą płatnych prób | KRYTYCZNY | `plan pracy/MaxVideoAi.md` |
+| 108 | Awesome-LLMs-meet-Multimodal-Generation | Kuratorowany katalog badań multimodalnej generacji/edycji/rozumienia i bezpieczeństwa | NISKI | `plan pracy/Awesome-LLMs-meet-Multimodal-Generation.md` |
+| 109 | awesome-agent-skills | Duży katalog Agent Skills z wielu źródeł, organizacji i społeczności; wymaga provenance i oceny uprawnień | ŚREDNI | `plan pracy/awesome-agent-skills.md` |
+| 110 | Email-Generator-Using-Langchain-Flask | Mała aplikacja Flask + LangChain/Together z generowaniem maili i konfiguracją `.env` | ŚREDNI | `plan pracy/Email-Generator-Using-Langchain-Flask.md` |
+| 111 | ArchGen | Next.js/React/TypeScript + Gemini do generowania architektur, diagramów i eksportów; deklarowane benchmarki wymagają reprodukcji | WYSOKI | `plan pracy/ArchGen.md` |
+| 112 | pegasus_spyware | Zdekompilowane materiały opisane jako Pegasus spyware; wartość wyłącznie badawcza/forensic | KRYTYCZNY | `plan pracy/pegasus_spyware.md` |
+| 113 | AllHackingTools | Historyczny instalator wielu narzędzi bezpieczeństwa dla Termux, z szerokim zakresem ofensywnym | WYSOKI | `plan pracy/AllHackingTools.md` |
+| 114 | Chemia-game | Prywatna, consent-first gra PWA dla dwóch dorosłych osób; localStorage, offline, silnik kart i testy | ŚREDNI | `plan pracy/Chemia-game.md` |
+| 115 | OpenCodeEnterpise | Minimalne README bez informacji o zakresie; wymaga mapowania kodu i wyjaśnienia relacji do OpenCode | ŚREDNI | `plan pracy/OpenCodeEnterpise.md` |
+| 116 | WAO-AI | Warstwowy agent operacyjny z CTCO, policy gates, MCP/REST, observability i anti-prompt-injection | KRYTYCZNY | `plan pracy/WAO-AI.md` |
 
 ## Poprzednie audyty
 
-Audyty 1–76 pozostają zapisane w tym rejestrze oraz w odpowiednich plikach `plan pracy/`. Pozycje 77–96 są opisane powyżej.
+Audyty 1–96 pozostają zapisane w tym rejestrze oraz w odpowiednich plikach `plan pracy/`. Pozycje 97–116 są opisane powyżej.
 
 ## Postęp
 
-**96 / 299 repozytoriów — 32,11% audytu szczegółowego.**  
-**203 repozytoria pozostają do audytu.**
+**116 / 299 repozytoriów — 38,80% audytu szczegółowego.**  
+**183 repozytoria pozostają do audytu.**
 
 ## Aktualizacja inwentaryzacji
 
