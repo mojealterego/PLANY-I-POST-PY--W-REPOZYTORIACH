@@ -14,8 +14,8 @@ Każde repozytorium przechodzi osobny audyt. Dla każdego powstaje osobny plik w
 | Zakres | Stan |
 |---|---|
 | Inwentaryzacja portfela | ZAKOŃCZONA — **293 repozytoria** |
-| Audyt szczegółowy | W TOKU — **43/293** |
-| Plany pracy | UTWORZONE — **43/293** |
+| Audyt szczegółowy | W TOKU — **46/293** |
+| Plany pracy | UTWORZONE — **46/293** |
 | Refaktoryzacja | OCZEKUJE NA AUDYT DANEGO REPOZYTORIUM |
 | Rebranding | OCZEKUJE |
 | Pełna polonizacja | OCZEKUJE |
@@ -31,15 +31,18 @@ Każde repozytorium przechodzi osobny audyt. Dla każdego powstaje osobny plik w
 | 41 | no-code-ml-mpodel-training-app | Minimalna aplikacja Streamlit do treningu modeli ML; słaba dokumentacja i brak widocznej automatyzacji | WYSOKI | `plan pracy/no-code-ml-mpodel-training-app.md` |
 | 42 | AI-Rental-Hunter | Pythonowy MCP do wyszukiwania/rankingu ofert najmu; wymagane hardening SSRF, adapterów i testów | WYSOKI | `plan pracy/AI-Rental-Hunter.md` |
 | 43 | CALL-E-Your-Code-Is-Calling-Hacktown | AegisFleet; sterowany workflow telefoniczny z policy gate, idempotencją, walidacją wyniku i eskalacją | WYSOKI | `plan pracy/CALL-E-Your-Code-Is-Calling-Hacktown.md` |
+| 44 | JARVIS-2.0 | Android/Expo + Node backend; foundation działa, ale backend ma jeszcze plikowy stan, auth fail-open przy braku tokenu i CORS `*` | KRYTYCZNY | `plan pracy/JARVIS-2.0.md` |
+| 45 | omega-x-neuromesh | Verification-first control plane dla Unreal; mocny default-deny prototyp, ale UE 5.8/MCP runtime nadal nieweryfikowane | KRYTYCZNY | `plan pracy/omega-x-neuromesh.md` |
+| 46 | hermes-mobile | Dojrzały klient Android dla Hermes Agent; silne testy i szyfrowanie, ale release dopuszcza cleartext i wymaga pełnej weryfikacji transportu | WYSOKI | `plan pracy/hermes-mobile.md` |
 
 ## Poprzednie audyty
 
-Audyty 1–37 pozostają zapisane w tym rejestrze oraz w odpowiednich plikach `plan pracy/`.
+Audyty 1–37 pozostają zapisane w tym rejestrze oraz w odpowiednich plikach `plan pracy/`. Pozycje 38–46 są opisane powyżej.
 
 ## Postęp
 
-**43 / 293 repozytoriów — 14,68% audytu szczegółowego.**  
-**250 repozytoriów pozostaje do audytu.**
+**46 / 293 repozytoriów — 15,70% audytu szczegółowego.**  
+**247 repozytoriów pozostaje do audytu.**
 
 ## Aktualizacja inwentaryzacji
 
