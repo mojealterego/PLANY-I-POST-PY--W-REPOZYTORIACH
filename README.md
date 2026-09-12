@@ -10,8 +10,8 @@
 | Zakres | Stan |
 |---|---|
 | Inwentaryzacja portfela | ZAKTUALIZOWANA — **415** |
-| Audyt szczegółowy | W TOKU — **381/415 (91,81%)** |
-| Plany pracy | UTWORZONE — **381/415** |
+| Audyt szczegółowy | W TOKU — **386/415 (92,77%)** |
+| Plany pracy | UTWORZONE — **386/415** |
 | Refaktoryzacja | OCZEKUJE NA AUDYT DANEGO REPOZYTORIUM |
 | Rebranding | OCZEKUJE |
 | Pełna polonizacja | OCZEKUJE |
@@ -25,31 +25,25 @@ Zweryfikowano kolejną pulę 20 repozytoriów z aktualnej inwentaryzacji. Repozy
 
 | Nr | Repozytorium | Wynik audytu | Priorytet |
 |---:|---|---|---|
-| 369 | hackerai | Next.js/Convex/Trigger.dev/E2B; agent pentestowy | KRYTYCZNY — LAB ONLY |
-| 370 | codeql | Biblioteki i query CodeQL | WYSOKI/REFERENCYJNY |
-| 371 | Open-Generative-AI | Katalog zasobów generatywnej AI | ŚREDNI/REFERENCYJNY |
-| 372 | Duix-Mobile | Cross-platform on-device AI avatar SDK | KRYTYCZNY |
-| 373 | dgm | Projekt AI wymagający dalszego mapowania | ŚREDNI |
-| 374 | sugar-mcp | MCP layer dla pamięci/agenta Sugar | KRYTYCZNY |
-| 375 | OpenDevin | Agent programistyczny | KRYTYCZNY |
-| 376 | bisheng | Platforma LLM/RAG/agent/workflow | KRYTYCZNY |
-| 377 | SillyTavern | Interfejs konwersacyjny i rozszerzenia | WYSOKI/KRYTYCZNY |
-| 378 | n8n | Workflow automation i integracje | KRYTYCZNY |
-| 379 | Duix-Avatar | AI avatar/video generation | KRYTYCZNY |
-| 380 | perplexicapp | Aplikacja AI/search | WYSOKI |
-| 381 | virtual-girlfriend | AI companion | WYSOKI |
-
-Pozostałe repozytoria z badanej puli miały już plany i nie zwiększyły licznika.
+| 382 | ZeroAI | Android/Kotlin/Rust/UniFFI; długowieczny agent on-device | KRYTYCZNY |
+| 383 | lonlybot | Next.js AI companion; multi-provider i pamięć lokalna | WYSOKI |
+| 384 | hack-skills | 101 security Agent Skills; katalog autoryzowanych zastosowań | KRYTYCZNY — LAB/EDUKACJA |
+| 385 | MyGirlGPT | Telegram + LLM + TTS + Stable Diffusion; self-hosted companion | WYSOKI |
+| 386 | sherpa | Brak README; zakres wymaga dalszej identyfikacji | ŚREDNI |
 
 ## Dowody z audytu
 
-`hackerai` deklaruje Next.js, Convex, WorkOS, Trigger.dev i E2B oraz agenta wykonującego zadania pentestowe w izolowanym środowisku. fileciteturn919file0
+`ZeroAI` jest eksperymentalnym agentem Android opartym na Kotlinie, Compose, Rust i UniFFI. Posiada długowieczny runtime, narzędzia, kanały Telegram/Discord/Messages/Terminal, SSH, pamięć, harmonogram i sandbox Rhai; sam projekt deklaruje konieczność dalszego hardeningu. fileciteturn986file0
 
-`codeql` zawiera standardowe biblioteki i query CodeQL wykorzystywane przez produkty bezpieczeństwa GitHub; CLI jest utrzymywane osobno. fileciteturn940file0
+`lonlybot` jest aplikacją Next.js 16 z Tailwind, Framer Motion i Zustand, integrującą Gemini, OpenAI, Anthropic i OpenRouter oraz przechowującą stan rozmów lokalnie. fileciteturn978file0
 
-`Duix-Mobile` deklaruje on-device AI avatar dla Android/iOS, integracje LLM/ASR/TTS, streaming audio i barge-in. fileciteturn924file0
+`hack-skills` organizuje 101 security skills w strukturę master → category → deep topic i deklaruje zastosowanie do bug bounty, pentestów, CTF i autoryzowanych badań. Wymaga ścisłego provenance oraz granic użycia. fileciteturn982file0
 
-`PhoneClaw`, sprawdzony w tej samej puli jako repozytorium posiadające już plan, potwierdza lokalnego agenta i natywne Skills z dostępem do danych telefonu oraz opcjonalny Mac Gateway; nie zwiększa licznika. fileciteturn928file0
+`MyGirlGPT` składa się z TelegramBota, serwera LLM, TTS i serwera text-to-image, z możliwością self-hostingu oraz generowania głosu i obrazów. fileciteturn981file0
+
+`con-terminal`, sprawdzony w tej samej turze jako repozytorium posiadające już plan, został potwierdzony jako aktywny beta terminal Rust/GPU z wbudowanym agentem AI, SSH/tmux i agent-native workflows; nie zwiększa licznika. fileciteturn963file0
+
+`example-remote-server`, również zweryfikowany w turze, jest referencyjnym serwerem MCP z OAuth 2.0, Redis, narzędziami, zasobami, promptami, samplingiem i testami e2e; nie zwiększa licznika. fileciteturn969file0
 
 ## Zasada procesu
 
@@ -59,8 +53,8 @@ Każde repozytorium musi mieć osobny plan pracy oparty na rzeczywistej zawarto�
 
 ## Postęp
 
-**381 / 415 repozytoriów — 91,81% audytu szczegółowego.**  
-**34 repozytoria pozostają do jednoznacznego rozliczenia/audytu.**
+**386 / 415 repozytoriów — 92,77% audytu szczegółowego.**  
+**29 repozytoriów pozostaje do jednoznacznego rozliczenia/audytu.**
 
 ## Następna tura
 
